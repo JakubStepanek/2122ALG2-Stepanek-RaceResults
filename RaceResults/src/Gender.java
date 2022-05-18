@@ -8,7 +8,7 @@
  * @author kubin
  */
 public enum Gender {
-    MUŽ("m"), ŽENA("f"), OSTATNÍ("o");
+    M("muž"), F("žena"), O("ostatní");
 
     private String gender;
 

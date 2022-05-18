@@ -12,7 +12,24 @@ public class Racer {
     private int racingNumber;
     private String name;
     private String surname;
-    private String dateOfBirth;
+    private TimeTools dateOfBirth;
     private Gender gender;
+
+    public Racer(String name, String surname, TimeTools dateOfBirth, Gender gender) {
+        this.name = name;
+        this.surname = surname;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %10s %10s %10s", gender.getGenderValue(), name, surname, dateOfBirth.toString());
+    }
+
+    public static void main(String[] args) {
+        //Racer r = new Racer("Jakub", "Štěpánek", "AKJDKA", Gender.M);
+        //System.out.println(r);
+    }
 
 }
