@@ -1,352 +1,352 @@
-year,category,sequence,shortname,circuit_name,rider,rider_name,team_name,bike_name,position,points,number,country,speed,time
-2021,MotoGP,1,QAT,Losail,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,1,25,12,ES,167.1,42'28.663
-2021,MotoGP,1,QAT,Losail,2330,"Zarco, Johann",Pramac Racing,Ducati,2,20,5,FR,167.1,+1.092
-2021,MotoGP,1,QAT,Losail,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,3,16,63,IT,167.1,+1.129
-2021,MotoGP,1,QAT,Losail,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,4,13,36,ES,167.1,+1.222
-2021,MotoGP,1,QAT,Losail,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,5,11,20,FR,166.9,+3.030
-2021,MotoGP,1,QAT,Losail,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,6,10,42,ES,166.9,+3.357
-2021,MotoGP,1,QAT,Losail,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,7,9,41,ES,166.7,+5.934
-2021,MotoGP,1,QAT,Losail,2218,"Espargaro, Pol",Repsol Honda Team,Honda,8,8,44,ES,166.7,+5.990
-2021,MotoGP,1,QAT,Losail,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,9,7,43,AU,166.7,+7.058
-2021,MotoGP,1,QAT,Losail,2535,"Bastianini, Enea",Esponsorama Racing,Ducati,10,6,23,IT,166.5,+9.288
-2021,MotoGP,1,QAT,Losail,2174,"Bradl, Stefan",Repsol Honda Team,Honda,11,5,6,DE,166.5,+10.299
-2021,MotoGP,1,QAT,Losail,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,12,4,46,IT,166.4,+10.742
-2021,MotoGP,1,QAT,Losail,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,13,3,88,PT,166.4,+11.457
-2021,MotoGP,1,QAT,Losail,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,14,2,33,ZA,166.2,+14.100
-2021,MotoGP,1,QAT,Losail,2564,"Martin, Jorge",Pramac Racing,Ducati,15,1,89,ES,166.1,+16.422
-2021,MotoGP,1,QAT,Losail,2520,"Marini, Luca",SKY VR46 Esponsorama,Ducati,16,0,10,IT,165.8,+20.916
-2021,MotoGP,1,QAT,Losail,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,17,0,27,ES,165.8,+21.026
-2021,MotoGP,1,QAT,Losail,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,18,0,21,IT,165.6,+23.892
-2021,MotoGP,1,QAT,Losail,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,19,0,32,IT,164.1,+46.346
-2021,MotoGP,1,QAT,Losail,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-1,0,73,ES,166.3,9 Laps
-2021,MotoGP,1,QAT,Losail,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,-1,0,30,JP,165.0,16 Laps
-2021,MotoGP,1,QAT,Losail,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,-4,0,9,IT,,0 Lap
-2021,MotoGP,2,DOH,Losail,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,1,25,20,FR,167.4,42'23.997
-2021,MotoGP,2,DOH,Losail,2330,"Zarco, Johann",Pramac Racing,Ducati,2,20,5,FR,167.3,+1.457
-2021,MotoGP,2,DOH,Losail,2564,"Martin, Jorge",Pramac Racing,Ducati,3,16,89,ES,167.3,+1.500
-2021,MotoGP,2,DOH,Losail,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,4,13,42,ES,167.3,+2.088
-2021,MotoGP,2,DOH,Losail,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,5,11,12,ES,167.3,+2.110
-2021,MotoGP,2,DOH,Losail,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,6,10,63,IT,167.3,+2.642
-2021,MotoGP,2,DOH,Losail,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,7,9,36,ES,167.1,+4.868
-2021,MotoGP,2,DOH,Losail,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,8,8,33,ZA,167.1,+4.979
-2021,MotoGP,2,DOH,Losail,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,9,7,43,AU,167.1,+5.365
-2021,MotoGP,2,DOH,Losail,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,10,6,41,ES,167.1,+5.382
-2021,MotoGP,2,DOH,Losail,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,11,5,23,IT,167.1,+5.550
-2021,MotoGP,2,DOH,Losail,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,12,4,21,IT,167.1,+5.787
-2021,MotoGP,2,DOH,Losail,2218,"Espargaro, Pol",Repsol Honda Team,Honda,13,3,44,ES,167.0,+6.063
-2021,MotoGP,2,DOH,Losail,2174,"Bradl, Stefan",Repsol Honda Team,Honda,14,2,6,DE,167.0,+6.453
-2021,MotoGP,2,DOH,Losail,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,15,1,88,PT,166.9,+8.928
-2021,MotoGP,2,DOH,Losail,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,16,0,46,IT,166.5,+14.246
-2021,MotoGP,2,DOH,Losail,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,17,0,30,JP,166.4,+16.241
-2021,MotoGP,2,DOH,Losail,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,18,0,10,IT,166.4,+16.472
-2021,MotoGP,2,DOH,Losail,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,19,0,9,IT,166.3,+16.779
-2021,MotoGP,2,DOH,Losail,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,20,0,32,IT,164.9,+38.775
-2021,MotoGP,2,DOH,Losail,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-1,0,73,ES,166.5,10 Laps
-2021,MotoGP,2,DOH,Losail,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,-1,0,27,ES,166.4,10 Laps
-2021,MotoGP,3,POR,Algarve,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,1,25,20,FR,164.8,41'46.412
-2021,MotoGP,3,POR,Algarve,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,2,20,63,IT,164.5,+4.809
-2021,MotoGP,3,POR,Algarve,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,3,16,36,ES,164.5,+4.948
-2021,MotoGP,3,POR,Algarve,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,4,13,21,IT,164.5,+5.127
-2021,MotoGP,3,POR,Algarve,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,5,11,33,ZA,164.4,+6.668
-2021,MotoGP,3,POR,Algarve,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,6,10,41,ES,164.3,+8.885
-2021,MotoGP,3,POR,Algarve,2293,"Marquez, Marc",Repsol Honda Team,Honda,7,9,93,ES,164.0,+13.208
-2021,MotoGP,3,POR,Algarve,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,8,8,73,ES,163.7,+17.992
-2021,MotoGP,3,POR,Algarve,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,9,7,23,IT,163.4,+22.369
-2021,MotoGP,3,POR,Algarve,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,10,6,30,JP,163.3,+23.676
-2021,MotoGP,3,POR,Algarve,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,11,5,12,ES,163.3,+23.761
-2021,MotoGP,3,POR,Algarve,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,12,4,10,IT,162.9,+29.660
-2021,MotoGP,3,POR,Algarve,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,13,3,9,IT,162.9,+29.836
-2021,MotoGP,3,POR,Algarve,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,14,2,32,IT,162.3,+38.941
-2021,MotoGP,3,POR,Algarve,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,15,1,27,ES,161.6,+50.642
-2021,MotoGP,3,POR,Algarve,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,16,0,88,PT,157.2,1 Lap
-2021,MotoGP,3,POR,Algarve,2330,"Zarco, Johann",Pramac Racing,Ducati,-1,0,5,FR,164.5,6 Laps
-2021,MotoGP,3,POR,Algarve,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,-1,0,42,ES,164.8,7 Laps
-2021,MotoGP,3,POR,Algarve,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,-1,0,46,IT,163.1,11 Laps
-2021,MotoGP,3,POR,Algarve,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,-1,0,43,AU,162.9,20 Laps
-2021,MotoGP,3,POR,Algarve,2218,"Espargaro, Pol",Repsol Honda Team,Honda,-1,0,44,ES,150.7,21 Laps
-2021,MotoGP,4,SPA,Jerez,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,1,25,43,AU,161.4,41'05.602
-2021,MotoGP,4,SPA,Jerez,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,2,20,63,IT,161.3,+1.912
-2021,MotoGP,4,SPA,Jerez,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,3,16,21,IT,161.2,+2.516
-2021,MotoGP,4,SPA,Jerez,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,4,13,30,JP,161.2,+3.206
-2021,MotoGP,4,SPA,Jerez,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,5,11,36,ES,161.1,+4.256
-2021,MotoGP,4,SPA,Jerez,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,6,10,41,ES,161.1,+5.164
-2021,MotoGP,4,SPA,Jerez,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,7,9,12,ES,161.0,+5.651
-2021,MotoGP,4,SPA,Jerez,2330,"Zarco, Johann",Pramac Racing,Ducati,8,8,5,FR,160.9,+7.161
-2021,MotoGP,4,SPA,Jerez,2293,"Marquez, Marc",Repsol Honda Team,Honda,9,7,93,ES,160.7,+10.494
-2021,MotoGP,4,SPA,Jerez,2218,"Espargaro, Pol",Repsol Honda Team,Honda,10,6,44,ES,160.6,+11.776
-2021,MotoGP,4,SPA,Jerez,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,11,5,88,PT,160.4,+14.766
-2021,MotoGP,4,SPA,Jerez,2174,"Bradl, Stefan",Honda HRC,Honda,12,4,6,DE,160.3,+17.243
-2021,MotoGP,4,SPA,Jerez,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,13,3,20,FR,160.2,+18.907
-2021,MotoGP,4,SPA,Jerez,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,14,2,9,IT,160.1,+20.095
-2021,MotoGP,4,SPA,Jerez,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,15,1,10,IT,160.0,+20.922
-2021,MotoGP,4,SPA,Jerez,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,16,0,46,IT,159.9,+22.731
-2021,MotoGP,4,SPA,Jerez,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,17,0,27,ES,160.1,+23.277
-2021,MotoGP,4,SPA,Jerez,2202,"Rabat, Tito",Pramac Racing,Ducati,18,0,53,ES,159.4,+30.314
-2021,MotoGP,4,SPA,Jerez,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,19,0,32,IT,159.0,+37.912
-2021,MotoGP,4,SPA,Jerez,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,20,0,42,ES,158.9,+38.234
-2021,MotoGP,4,SPA,Jerez,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,-1,0,33,ZA,156.2,14 Laps
-2021,MotoGP,4,SPA,Jerez,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,-1,0,23,IT,154.9,14 Laps
-2021,MotoGP,4,SPA,Jerez,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-4,0,73,ES,,0 Lap
-2021,MotoGP,5,FRA,Le Mans,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,1,25,43,AU,142.9,47'25.473
-2021,MotoGP,5,FRA,Le Mans,2330,"Zarco, Johann",Pramac Racing,Ducati,2,20,5,FR,142.7,+3.970
-2021,MotoGP,5,FRA,Le Mans,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,3,16,20,FR,142.2,+14.468
-2021,MotoGP,5,FRA,Le Mans,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,4,13,63,IT,142.1,+16.172
-2021,MotoGP,5,FRA,Le Mans,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,5,11,9,IT,141.8,+21.430
-2021,MotoGP,5,FRA,Le Mans,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,6,10,73,ES,141.7,+23.509
-2021,MotoGP,5,FRA,Le Mans,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,7,9,30,JP,141.4,+30.164
-2021,MotoGP,5,FRA,Le Mans,2218,"Espargaro, Pol",Repsol Honda Team,Honda,8,8,44,ES,141.2,+35.221
-2021,MotoGP,5,FRA,Le Mans,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,9,7,27,ES,140.9,+40.432
-2021,MotoGP,5,FRA,Le Mans,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,10,6,12,ES,140.9,+40.577
-2021,MotoGP,5,FRA,Le Mans,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,11,5,46,IT,140.8,+42.198
-2021,MotoGP,5,FRA,Le Mans,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,12,4,10,IT,140.3,+52.408
-2021,MotoGP,5,FRA,Le Mans,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,13,3,33,ZA,140.0,+59.377
-2021,MotoGP,5,FRA,Le Mans,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,14,2,23,IT,139.8,+1'02.224
-2021,MotoGP,5,FRA,Le Mans,2202,"Rabat, Tito",Pramac Racing,Ducati,15,1,53,ES,139.5,+1'09.651
-2021,MotoGP,5,FRA,Le Mans,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,16,0,21,IT,118.4,4 Laps
-2021,MotoGP,5,FRA,Le Mans,2293,"Marquez, Marc",Repsol Honda Team,Honda,-1,0,93,ES,137.6,10 Laps
-2021,MotoGP,5,FRA,Le Mans,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,-1,0,41,ES,138.7,12 Laps
-2021,MotoGP,5,FRA,Le Mans,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,-1,0,88,PT,137.6,15 Laps
-2021,MotoGP,5,FRA,Le Mans,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,-1,0,42,ES,128.6,15 Laps
-2021,MotoGP,5,FRA,Le Mans,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,-1,0,32,IT,137.1,16 Laps
-2021,MotoGP,5,FRA,Le Mans,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,-1,0,36,ES,155.2,23 Laps
-2021,MotoGP,6,ITA,Mugello,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,1,25,20,FR,175.3,41'16.344
-2021,MotoGP,6,ITA,Mugello,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,2,20,88,PT,175.1,+2.592
-2021,MotoGP,6,ITA,Mugello,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,3,16,36,ES,175.1,+3.000
-2021,MotoGP,6,ITA,Mugello,2330,"Zarco, Johann",Pramac Racing,Ducati,4,13,5,FR,175.1,+3.535
-2021,MotoGP,6,ITA,Mugello,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,5,11,33,ZA,175.0,+4.903
-2021,MotoGP,6,ITA,Mugello,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,6,10,43,AU,174.9,+6.233
-2021,MotoGP,6,ITA,Mugello,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,7,9,41,ES,174.8,+8.030
-2021,MotoGP,6,ITA,Mugello,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,8,8,12,ES,174.1,+17.239
-2021,MotoGP,6,ITA,Mugello,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,9,7,9,IT,173.7,+23.296
-2021,MotoGP,6,ITA,Mugello,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,10,6,46,IT,173.6,+25.146
-2021,MotoGP,6,ITA,Mugello,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,11,5,27,ES,173.6,+25.152
-2021,MotoGP,6,ITA,Mugello,2218,"Espargaro, Pol",Repsol Honda Team,Honda,12,4,44,ES,173.5,+26.059
-2021,MotoGP,6,ITA,Mugello,2107,"Pirro, Michele",Pramac Racing,Ducati,13,3,51,IT,173.5,+26.182
-2021,MotoGP,6,ITA,Mugello,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,14,2,73,ES,173.3,+29.400
-2021,MotoGP,6,ITA,Mugello,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,15,1,32,IT,173.1,+32.378
-2021,MotoGP,6,ITA,Mugello,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,16,0,21,IT,172.7,+37.906
-2021,MotoGP,6,ITA,Mugello,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,17,0,10,IT,171.8,+50.306
-2021,MotoGP,6,ITA,Mugello,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,-1,0,30,JP,174.7,4 Laps
-2021,MotoGP,6,ITA,Mugello,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,-1,0,42,ES,175.0,5 Laps
-2021,MotoGP,6,ITA,Mugello,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,-1,0,63,IT,167.5,22 Laps
-2021,MotoGP,6,ITA,Mugello,2293,"Marquez, Marc",Repsol Honda Team,Honda,-1,0,93,ES,165.1,22 Laps
-2021,MotoGP,6,ITA,Mugello,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,-4,0,23,IT,,0 Lap
-2021,MotoGP,7,CAT,Catalunya,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,1,25,88,PT,166.1,40'21.749
-2021,MotoGP,7,CAT,Catalunya,2330,"Zarco, Johann",Pramac Racing,Ducati,2,20,5,FR,166.1,+0.175
-2021,MotoGP,7,CAT,Catalunya,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,3,16,43,AU,166.0,+1.990
-2021,MotoGP,7,CAT,Catalunya,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,4,13,36,ES,165.7,+5.325
-2021,MotoGP,7,CAT,Catalunya,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,5,11,12,ES,165.7,+6.281
-2021,MotoGP,7,CAT,Catalunya,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,6,10,20,FR,166.0,+7.815
-2021,MotoGP,7,CAT,Catalunya,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,7,9,63,IT,165.5,+8.175
-2021,MotoGP,7,CAT,Catalunya,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,8,8,33,ZA,165.5,+8.378
-2021,MotoGP,7,CAT,Catalunya,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,9,7,21,IT,165.0,+15.652
-2021,MotoGP,7,CAT,Catalunya,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,10,6,23,IT,164.8,+19.297
-2021,MotoGP,7,CAT,Catalunya,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,11,5,73,ES,164.6,+21.650
-2021,MotoGP,7,CAT,Catalunya,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,12,4,10,IT,164.6,+22.533
-2021,MotoGP,7,CAT,Catalunya,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,13,3,30,JP,164.2,+27.833
-2021,MotoGP,7,CAT,Catalunya,2564,"Martin, Jorge",Pramac Racing,Ducati,14,2,89,ES,164.1,+29.075
-2021,MotoGP,7,CAT,Catalunya,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,15,1,32,IT,163.4,+40.291
-2021,MotoGP,7,CAT,Catalunya,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,-1,0,27,ES,165.3,8 Laps
-2021,MotoGP,7,CAT,Catalunya,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,-1,0,46,IT,164.9,9 Laps
-2021,MotoGP,7,CAT,Catalunya,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,-1,0,41,ES,165.5,14 Laps
-2021,MotoGP,7,CAT,Catalunya,2293,"Marquez, Marc",Repsol Honda Team,Honda,-1,0,93,ES,165.0,17 Laps
-2021,MotoGP,7,CAT,Catalunya,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,-1,0,9,IT,163.2,19 Laps
-2021,MotoGP,7,CAT,Catalunya,2218,"Espargaro, Pol",Repsol Honda Team,Honda,-1,0,44,ES,163.5,20 Laps
-2021,MotoGP,8,GER,Sachsenring,2293,"Marquez, Marc",Repsol Honda Team,Honda,1,25,93,ES,160.6,41'07.243
-2021,MotoGP,8,GER,Sachsenring,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,2,20,88,PT,160.5,+1.610
-2021,MotoGP,8,GER,Sachsenring,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,3,16,20,FR,160.2,+6.772
-2021,MotoGP,8,GER,Sachsenring,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,4,13,33,ZA,160.1,+7.922
-2021,MotoGP,8,GER,Sachsenring,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,5,11,63,IT,160.1,+8.591
-2021,MotoGP,8,GER,Sachsenring,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,6,10,43,AU,160.1,+9.086
-2021,MotoGP,8,GER,Sachsenring,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,7,9,41,ES,160.0,+9.371
-2021,MotoGP,8,GER,Sachsenring,2330,"Zarco, Johann",Pramac Racing,Ducati,8,8,5,FR,159.9,+11.439
-2021,MotoGP,8,GER,Sachsenring,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,9,7,36,ES,159.9,+11.625
-2021,MotoGP,8,GER,Sachsenring,2218,"Espargaro, Pol",Repsol Honda Team,Honda,10,6,44,ES,159.7,+14.769
-2021,MotoGP,8,GER,Sachsenring,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,11,5,42,ES,159.6,+16.803
-2021,MotoGP,8,GER,Sachsenring,2564,"Martin, Jorge",Pramac Racing,Ducati,12,4,89,ES,159.5,+16.915
-2021,MotoGP,8,GER,Sachsenring,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,13,3,30,JP,159.4,+19.217
-2021,MotoGP,8,GER,Sachsenring,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,14,2,46,IT,159.2,+22.300
-2021,MotoGP,8,GER,Sachsenring,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,15,1,10,IT,159.1,+23.615
-2021,MotoGP,8,GER,Sachsenring,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,16,0,23,IT,159.1,+23.738
-2021,MotoGP,8,GER,Sachsenring,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,17,0,27,ES,159.1,+23.946
-2021,MotoGP,8,GER,Sachsenring,2517,"Morbidelli, Franco",Petronas Yamaha SRT,Yamaha,18,0,21,IT,159.1,+24.414
-2021,MotoGP,8,GER,Sachsenring,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,19,0,12,ES,159.0,+24.715
-2021,MotoGP,8,GER,Sachsenring,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,-1,0,32,IT,157.7,25 Laps
-2021,MotoGP,8,GER,Sachsenring,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,-1,0,9,IT,157.9,26 Laps
-2021,MotoGP,8,GER,Sachsenring,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-1,0,73,ES,157.8,26 Laps
-2021,MotoGP,9,NED,Assen,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,1,25,20,FR,174.5,40'35.031
-2021,MotoGP,9,NED,Assen,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,2,20,12,ES,174.3,+2.757
-2021,MotoGP,9,NED,Assen,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,3,16,36,ES,174.1,+5.760
-2021,MotoGP,9,NED,Assen,2330,"Zarco, Johann",Pramac Racing,Ducati,4,13,5,FR,174.1,+6.130
-2021,MotoGP,9,NED,Assen,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,5,11,88,PT,173.9,+8.402
-2021,MotoGP,9,NED,Assen,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,6,10,63,IT,173.8,+10.035
-2021,MotoGP,9,NED,Assen,2293,"Marquez, Marc",Repsol Honda Team,Honda,7,9,93,ES,173.8,+10.110
-2021,MotoGP,9,NED,Assen,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,8,8,41,ES,173.8,+10.346
-2021,MotoGP,9,NED,Assen,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,9,7,30,JP,173.7,+12.225
-2021,MotoGP,9,NED,Assen,2218,"Espargaro, Pol",Repsol Honda Team,Honda,10,6,44,ES,173.2,+18.565
-2021,MotoGP,9,NED,Assen,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,11,5,42,ES,173.0,+21.372
-2021,MotoGP,9,NED,Assen,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,12,4,33,ZA,173.0,+21.676
-2021,MotoGP,9,NED,Assen,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,13,3,9,IT,172.6,+27.783
-2021,MotoGP,9,NED,Assen,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,14,2,73,ES,172.4,+29.772
-2021,MotoGP,9,NED,Assen,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,15,1,23,IT,172.2,+32.785
-2021,MotoGP,9,NED,Assen,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,16,0,32,IT,171.9,+37.573
-2021,MotoGP,9,NED,Assen,2685,"Gerloff, Garrett",Petronas Yamaha SRT,Yamaha,17,0,31,US,170.8,+53.213
-2021,MotoGP,9,NED,Assen,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,18,0,10,IT,169.9,+1'06.791
-2021,MotoGP,9,NED,Assen,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,-1,0,27,ES,173.0,8 Laps
-2021,MotoGP,9,NED,Assen,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,-1,0,43,AU,167.8,8 Laps
-2021,MotoGP,9,NED,Assen,2564,"Martin, Jorge",Pramac Racing,Ducati,-1,0,89,ES,170.5,12 Laps
-2021,MotoGP,9,NED,Assen,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,-1,0,46,IT,170.3,19 Laps
-2021,MotoGP,10,STY,Spielberg,2564,"Martin, Jorge",Pramac Racing,Ducati,1,25,89,ES,183.4,38'07.879
-2021,MotoGP,10,STY,Spielberg,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,2,20,36,ES,183.3,+1.548
-2021,MotoGP,10,STY,Spielberg,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,3,16,20,FR,182.6,+9.632
-2021,MotoGP,10,STY,Spielberg,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,4,13,33,ZA,182.4,+12.771
-2021,MotoGP,10,STY,Spielberg,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,5,11,30,JP,182.4,+12.923
-2021,MotoGP,10,STY,Spielberg,2330,"Zarco, Johann",Pramac Racing,Ducati,6,10,5,FR,182.4,+13.031
-2021,MotoGP,10,STY,Spielberg,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,7,9,42,ES,182.2,+14.839
-2021,MotoGP,10,STY,Spielberg,2293,"Marquez, Marc",Repsol Honda Team,Honda,8,8,93,ES,182.0,+17.953
-2021,MotoGP,10,STY,Spielberg,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,9,7,73,ES,181.9,+19.059
-2021,MotoGP,10,STY,Spielberg,2015,"Pedrosa, Dani",Red Bull KTM Factory Racing,KTM,10,6,26,ES,181.9,+19.389
-2021,MotoGP,10,STY,Spielberg,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,11,5,63,IT,181.9,+21.667
-2021,MotoGP,10,STY,Spielberg,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,12,4,23,IT,181.4,+25.267
-2021,MotoGP,10,STY,Spielberg,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,13,3,46,IT,181.3,+26.282
-2021,MotoGP,10,STY,Spielberg,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,14,2,10,IT,181.2,+27.492
-2021,MotoGP,10,STY,Spielberg,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,15,1,27,ES,180.9,+31.076
-2021,MotoGP,10,STY,Spielberg,2218,"Espargaro, Pol",Repsol Honda Team,Honda,16,0,44,ES,180.9,+31.150
-2021,MotoGP,10,STY,Spielberg,2425,"Crutchlow, Cal",Petronas Yamaha SRT,Yamaha,17,0,35,GB,180.2,+40.408
-2021,MotoGP,10,STY,Spielberg,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,18,0,9,IT,179.6,+48.114
-2021,MotoGP,10,STY,Spielberg,2428,"Viñales, Maverick",Monster Energy Yamaha MotoGP,Yamaha,-1,0,12,ES,178.5,+1'03.149
-2021,MotoGP,10,STY,Spielberg,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,-1,0,43,AU,178.2,9 Laps
-2021,MotoGP,10,STY,Spielberg,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,-1,0,88,PT,178.2,13 Laps
-2021,MotoGP,10,STY,Spielberg,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,-1,0,41,ES,178.3,23 Laps
-2021,MotoGP,10,STY,Spielberg,2294,"Savadori, Lorenzo",Aprilia Racing Team Gresini,Aprilia,-2,0,32,IT,,0 Lap
-2021,MotoGP,11,AUT,Spielberg,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,1,25,33,ZA,178.0,40'43.928
-2021,MotoGP,11,AUT,Spielberg,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,2,20,63,IT,177.1,+12.991
-2021,MotoGP,11,AUT,Spielberg,2564,"Martin, Jorge",Pramac Racing,Ducati,3,16,89,ES,177.0,+14.570
-2021,MotoGP,11,AUT,Spielberg,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,4,13,36,ES,176.9,+15.623
-2021,MotoGP,11,AUT,Spielberg,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,5,11,10,IT,176.8,+17.831
-2021,MotoGP,11,AUT,Spielberg,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,6,10,27,ES,176.7,+17.952
-2021,MotoGP,11,AUT,Spielberg,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,7,9,20,FR,176.6,+19.650
-2021,MotoGP,11,AUT,Spielberg,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,8,8,46,IT,176.6,+20.150
-2021,MotoGP,11,AUT,Spielberg,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,9,7,73,ES,176.6,+20.692
-2021,MotoGP,11,AUT,Spielberg,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,10,6,41,ES,176.5,+21.270
-2021,MotoGP,11,AUT,Spielberg,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,11,5,43,AU,176.0,+28.144
-2021,MotoGP,11,AUT,Spielberg,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,12,4,9,IT,176.0,+28.193
-2021,MotoGP,11,AUT,Spielberg,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,13,3,30,JP,176.0,+28.603
-2021,MotoGP,11,AUT,Spielberg,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,14,2,42,ES,175.6,+33.642
-2021,MotoGP,11,AUT,Spielberg,2293,"Marquez, Marc",Repsol Honda Team,Honda,15,1,93,ES,175.3,+38.459
-2021,MotoGP,11,AUT,Spielberg,2218,"Espargaro, Pol",Repsol Honda Team,Honda,16,0,44,ES,174.9,+43.384
-2021,MotoGP,11,AUT,Spielberg,2425,"Crutchlow, Cal",Petronas Yamaha SRT,Yamaha,17,0,35,GB,174.1,+55.950
-2021,MotoGP,11,AUT,Spielberg,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,-1,0,88,PT,182.1,6 Laps
-2021,MotoGP,11,AUT,Spielberg,2330,"Zarco, Johann",Pramac Racing,Ducati,-1,0,5,FR,167.0,10 Laps
-2021,MotoGP,11,AUT,Spielberg,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,-1,0,23,IT,172.4,22 Laps
-2021,MotoGP,12,GBR,Silverstone,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,1,25,20,FR,175.4,40'20.579
-2021,MotoGP,12,GBR,Silverstone,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,2,20,42,ES,175.3,+2.663
-2021,MotoGP,12,GBR,Silverstone,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,3,16,41,ES,175.1,+4.105
-2021,MotoGP,12,GBR,Silverstone,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,4,13,43,AU,175.1,+4.254
-2021,MotoGP,12,GBR,Silverstone,2218,"Espargaro, Pol",Repsol Honda Team,Honda,5,11,44,ES,174.8,+8.462
-2021,MotoGP,12,GBR,Silverstone,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,6,10,33,ZA,174.6,+12.189
-2021,MotoGP,12,GBR,Silverstone,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,7,9,27,ES,174.5,+13.560
-2021,MotoGP,12,GBR,Silverstone,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,8,8,73,ES,174.4,+14.044
-2021,MotoGP,12,GBR,Silverstone,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,9,7,36,ES,174.3,+16.226
-2021,MotoGP,12,GBR,Silverstone,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,10,6,9,IT,174.3,+16.287
-2021,MotoGP,12,GBR,Silverstone,2330,"Zarco, Johann",Pramac Racing,Ducati,11,5,5,FR,174.3,+16.339
-2021,MotoGP,12,GBR,Silverstone,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,12,4,23,IT,174.2,+17.696
-2021,MotoGP,12,GBR,Silverstone,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,13,3,30,JP,174.1,+18.285
-2021,MotoGP,12,GBR,Silverstone,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,14,2,63,IT,173.9,+20.913
-2021,MotoGP,12,GBR,Silverstone,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,15,1,10,IT,173.9,+21.018
-2021,MotoGP,12,GBR,Silverstone,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,16,0,88,PT,173.9,+22.022
-2021,MotoGP,12,GBR,Silverstone,2425,"Crutchlow, Cal",Monster Energy Yamaha MotoGP,Yamaha,17,0,35,GB,173.8,+23.232
-2021,MotoGP,12,GBR,Silverstone,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,18,0,46,IT,173.3,+29.758
-2021,MotoGP,12,GBR,Silverstone,2624,"Dixon, Jake",Petronas Yamaha SRT,Yamaha,19,0,96,GB,171.8,+50.845
-2021,MotoGP,12,GBR,Silverstone,2564,"Martin, Jorge",Pramac Racing,Ducati,-1,0,89,ES,111.1,19 Laps
-2021,MotoGP,12,GBR,Silverstone,2293,"Marquez, Marc",Repsol Honda Team,Honda,-4,0,93,ES,,0 Lap
-2021,MotoGP,13,ARA,Aragón,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,1,25,63,IT,167.8,41'44.422
-2021,MotoGP,13,ARA,Aragón,2293,"Marquez, Marc",Repsol Honda Team,Honda,2,20,93,ES,167.8,+0.673
-2021,MotoGP,13,ARA,Aragón,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,3,16,36,ES,167.5,+3.911
-2021,MotoGP,13,ARA,Aragón,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,4,13,41,ES,167.2,+9.269
-2021,MotoGP,13,ARA,Aragón,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,5,11,43,AU,167.0,+11.928
-2021,MotoGP,13,ARA,Aragón,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,6,10,23,IT,166.9,+13.757
-2021,MotoGP,13,ARA,Aragón,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,7,9,33,ZA,166.9,+14.064
-2021,MotoGP,13,ARA,Aragón,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,8,8,20,FR,166.7,+16.575
-2021,MotoGP,13,ARA,Aragón,2564,"Martin, Jorge",Pramac Racing,Ducati,9,7,89,ES,166.7,+16.615
-2021,MotoGP,13,ARA,Aragón,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,10,6,30,JP,166.7,+16.904
-2021,MotoGP,13,ARA,Aragón,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,11,5,27,ES,166.7,+17.124
-2021,MotoGP,13,ARA,Aragón,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,12,4,42,ES,166.6,+17.710
-2021,MotoGP,13,ARA,Aragón,2218,"Espargaro, Pol",Repsol Honda Team,Honda,13,3,44,ES,166.5,+19.680
-2021,MotoGP,13,ARA,Aragón,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,14,2,88,PT,166.3,+22.703
-2021,MotoGP,13,ARA,Aragón,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,15,1,9,IT,166.1,+25.723
-2021,MotoGP,13,ARA,Aragón,2425,"Crutchlow, Cal",Monster Energy Yamaha MotoGP,Yamaha,16,0,35,GB,166.1,+26.413
-2021,MotoGP,13,ARA,Aragón,2330,"Zarco, Johann",Pramac Racing,Ducati,17,0,5,FR,166.0,+26.620
-2021,MotoGP,13,ARA,Aragón,2428,"Viñales, Maverick",Aprilia Racing Team Gresini,Aprilia,18,0,12,ES,166.0,+27.128
-2021,MotoGP,13,ARA,Aragón,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,19,0,46,IT,165.7,+32.517
-2021,MotoGP,13,ARA,Aragón,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,20,0,10,IT,165.2,+39.073
-2021,MotoGP,13,ARA,Aragón,2624,"Dixon, Jake",Petronas Yamaha SRT,Yamaha,-1,0,96,GB,156.8,22 Laps
-2021,MotoGP,13,ARA,Aragón,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-4,0,73,ES,,0 Lap
-2021,MotoGP,14,RSM,Misano,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,1,25,63,IT,163.7,41'48.305
-2021,MotoGP,14,RSM,Misano,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,2,20,20,FR,163.7,+0.364
-2021,MotoGP,14,RSM,Misano,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,3,16,23,IT,163.4,+4.789
-2021,MotoGP,14,RSM,Misano,2293,"Marquez, Marc",Repsol Honda Team,Honda,4,13,93,ES,163.0,+10.245
-2021,MotoGP,14,RSM,Misano,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,5,11,43,AU,163.0,+10.469
-2021,MotoGP,14,RSM,Misano,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,6,10,36,ES,163.0,+10.325
-2021,MotoGP,14,RSM,Misano,2218,"Espargaro, Pol",Repsol Honda Team,Honda,7,9,44,ES,162.9,+13.234
-2021,MotoGP,14,RSM,Misano,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,8,8,41,ES,162.7,+15.698
-2021,MotoGP,14,RSM,Misano,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,9,7,33,ZA,162.7,+16.129
-2021,MotoGP,14,RSM,Misano,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,10,6,30,JP,162.5,+18.519
-2021,MotoGP,14,RSM,Misano,2107,"Pirro, Michele",Ducati Lenovo Team,Ducati,11,5,51,IT,162.4,+20.373
-2021,MotoGP,14,RSM,Misano,2330,"Zarco, Johann",Pramac Racing,Ducati,12,4,5,FR,162.3,+21.066
-2021,MotoGP,14,RSM,Misano,2428,"Viñales, Maverick",Aprilia Racing Team Gresini,Aprilia,13,3,12,ES,162.3,+21.258
-2021,MotoGP,14,RSM,Misano,2174,"Bradl, Stefan",Team Honda HRC,Honda,14,2,6,DE,161.9,+28.142
-2021,MotoGP,14,RSM,Misano,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,15,1,73,ES,161.7,+30.686
-2021,MotoGP,14,RSM,Misano,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,16,0,9,IT,161.6,+32.654
-2021,MotoGP,14,RSM,Misano,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,17,0,46,IT,161.5,+33.853
-2021,MotoGP,14,RSM,Misano,2517,"Morbidelli, Franco",Monster Energy Yamaha MotoGP,Yamaha,18,0,21,IT,161.4,+36.272
-2021,MotoGP,14,RSM,Misano,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,19,0,10,IT,161.3,+36.839
-2021,MotoGP,14,RSM,Misano,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,20,0,88,PT,161.3,+37.202
-2021,MotoGP,14,RSM,Misano,2055,"Dovizioso, Andrea",Petronas Yamaha SRT,Yamaha,21,0,4,IT,161.0,+42.587
-2021,MotoGP,14,RSM,Misano,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,-1,0,42,ES,163.0,10 Laps
-2021,MotoGP,14,RSM,Misano,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,-1,0,27,ES,161.2,13 Laps
-2021,MotoGP,14,RSM,Misano,2564,"Martin, Jorge",Pramac Racing,Ducati,-1,0,89,ES,158.3,17 Laps
-2021,MotoGP,15,AME,Texas,2293,"Marquez, Marc",Repsol Honda Team,Honda,1,25,93,ES,158.6,41'41.435
-2021,MotoGP,15,AME,Texas,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,2,20,20,FR,158.3,+4.679
-2021,MotoGP,15,AME,Texas,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,3,16,63,IT,158.1,+8.547
-2021,MotoGP,15,AME,Texas,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,4,13,42,ES,157.9,+11.098
-2021,MotoGP,15,AME,Texas,2564,"Martin, Jorge",Pramac Racing,Ducati,5,11,89,ES,157.9,+11.752
-2021,MotoGP,15,AME,Texas,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,6,10,23,IT,157.8,+13.269
-2021,MotoGP,15,AME,Texas,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,7,9,43,AU,157.7,+14.722
-2021,MotoGP,15,AME,Texas,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,8,8,36,ES,157.8,+13.406
-2021,MotoGP,15,AME,Texas,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,9,7,33,ZA,157.6,+15.832
-2021,MotoGP,15,AME,Texas,2218,"Espargaro, Pol",Repsol Honda Team,Honda,10,6,44,ES,157.4,+20.265
-2021,MotoGP,15,AME,Texas,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,11,5,88,PT,157.2,+23.055
-2021,MotoGP,15,AME,Texas,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,12,4,73,ES,157.1,+24.743
-2021,MotoGP,15,AME,Texas,2055,"Dovizioso, Andrea",Petronas Yamaha SRT,Yamaha,13,3,4,IT,157.0,+25.307
-2021,MotoGP,15,AME,Texas,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,14,2,10,IT,156.9,+26.853
-2021,MotoGP,15,AME,Texas,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,15,1,46,IT,156.9,+28.055
-2021,MotoGP,15,AME,Texas,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,16,0,27,ES,156.7,+30.989
-2021,MotoGP,15,AME,Texas,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,17,0,30,JP,156.4,+35.251
-2021,MotoGP,15,AME,Texas,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,18,0,9,IT,156.0,+42.239
-2021,MotoGP,15,AME,Texas,2517,"Morbidelli, Franco",Monster Energy Yamaha MotoGP,Yamaha,19,0,21,IT,155.5,+49.854
-2021,MotoGP,15,AME,Texas,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,-1,0,41,ES,156.8,12 Laps
-2021,MotoGP,15,AME,Texas,2330,"Zarco, Johann",Pramac Racing,Ducati,-1,0,5,FR,146.1,15 Laps
-2021,MotoGP,16,EMI,Misano,2293,"Marquez, Marc",Repsol Honda Team,Honda,1,25,93,ES,163.4,41'52.830
-2021,MotoGP,16,EMI,Misano,2218,"Espargaro, Pol",Repsol Honda Team,Honda,2,20,44,ES,163.1,+4.859
-2021,MotoGP,16,EMI,Misano,2535,"Bastianini, Enea",Avintia Esponsorama,Ducati,3,16,23,IT,162.6,+12.013
-2021,MotoGP,16,EMI,Misano,2563,"Quartararo, Fabio",Monster Energy Yamaha MotoGP,Yamaha,4,13,20,FR,162.6,+12.775
-2021,MotoGP,16,EMI,Misano,2330,"Zarco, Johann",Pramac Racing,Ducati,5,11,5,FR,162.4,+16.458
-2021,MotoGP,16,EMI,Misano,2471,"Rins, Alex",Team SUZUKI ECSTAR,Suzuki,6,10,42,ES,162.3,+17.669
-2021,MotoGP,16,EMI,Misano,2152,"Espargaro, Aleix",Aprilia Racing Team Gresini,Aprilia,7,9,41,ES,162.2,+18.468
-2021,MotoGP,16,EMI,Misano,2428,"Viñales, Maverick",Aprilia Racing Team Gresini,Aprilia,8,8,12,ES,162.2,+18.607
-2021,MotoGP,16,EMI,Misano,2520,"Marini, Luca",SKY VR46 Avintia,Ducati,9,7,10,IT,161.8,+25.417
-2021,MotoGP,16,EMI,Misano,1762,"Rossi, Valentino",Petronas Yamaha SRT,Yamaha,10,6,46,IT,161.6,+27.735
-2021,MotoGP,16,EMI,Misano,2450,"Binder, Brad",Red Bull KTM Factory Racing,KTM,11,5,33,ZA,161.6,+27.879
-2021,MotoGP,16,EMI,Misano,2107,"Pirro, Michele",Ducati Lenovo Team,Ducati,12,4,51,IT,161.6,+28.137
-2021,MotoGP,16,EMI,Misano,2055,"Dovizioso, Andrea",Petronas Yamaha SRT,Yamaha,13,3,4,IT,160.8,+41.413
-2021,MotoGP,16,EMI,Misano,2517,"Morbidelli, Franco",Monster Energy Yamaha MotoGP,Yamaha,14,2,21,IT,160.7,+42.830
-2021,MotoGP,16,EMI,Misano,2284,"Nakagami, Takaaki",LCR Honda IDEMITSU,Honda,15,1,30,JP,158.2,+1'22.462
-2021,MotoGP,16,EMI,Misano,2499,"Bagnaia, Francesco",Ducati Lenovo Team,Ducati,-1,0,63,IT,163.9,5 Laps
-2021,MotoGP,16,EMI,Misano,2429,"Oliveira, Miguel",Red Bull KTM Factory Racing,KTM,-1,0,88,PT,163.0,5 Laps
-2021,MotoGP,16,EMI,Misano,2564,"Martin, Jorge",Pramac Racing,Ducati,-1,0,89,ES,161.6,15 Laps
-2021,MotoGP,16,EMI,Misano,2597,"Lecuona, Iker",Tech 3 KTM Factory Racing,KTM,-1,0,27,ES,160.6,17 Laps
-2021,MotoGP,16,EMI,Misano,2475,"Marquez, Alex",LCR Honda CASTROL,Honda,-1,0,73,ES,160.8,18 Laps
-2021,MotoGP,16,EMI,Misano,2445,"Miller, Jack",Ducati Lenovo Team,Ducati,-1,0,43,AU,160.5,24 Laps
-2021,MotoGP,16,EMI,Misano,2464,"Petrucci, Danilo",Tech 3 KTM Factory Racing,KTM,-1,0,9,IT,154.0,25 Laps
-2021,MotoGP,16,EMI,Misano,2585,"Mir, Joan",Team SUZUKI ECSTAR,Suzuki,-1,0,36,ES,153.9,25 Laps
+year;category;sequence;shortname;circuit_name;rider_name;rider_surname;team_name;bike_name;position;points;number;country;speed;time
+2021;MotoGP;1;QAT;Losail;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;1;25;12;ES;167.1;42'28.663
+2021;MotoGP;1;QAT;Losail;Zarco; Johann;Pramac Racing;Ducati;2;20;5;FR;167.1;+1.092
+2021;MotoGP;1;QAT;Losail;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;3;16;63;IT;167.1;+1.129
+2021;MotoGP;1;QAT;Losail;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;4;13;36;ES;167.1;+1.222
+2021;MotoGP;1;QAT;Losail;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;5;11;20;FR;166.9;+3.030
+2021;MotoGP;1;QAT;Losail;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;6;10;42;ES;166.9;+3.357
+2021;MotoGP;1;QAT;Losail;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;7;9;41;ES;166.7;+5.934
+2021;MotoGP;1;QAT;Losail;Espargaro; Pol;Repsol Honda Team;Honda;8;8;44;ES;166.7;+5.990
+2021;MotoGP;1;QAT;Losail;Miller; Jack;Ducati Lenovo Team;Ducati;9;7;43;AU;166.7;+7.058
+2021;MotoGP;1;QAT;Losail;Bastianini; Enea;Esponsorama Racing;Ducati;10;6;23;IT;166.5;+9.288
+2021;MotoGP;1;QAT;Losail;Bradl; Stefan;Repsol Honda Team;Honda;11;5;6;DE;166.5;+10.299
+2021;MotoGP;1;QAT;Losail;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;12;4;46;IT;166.4;+10.742
+2021;MotoGP;1;QAT;Losail;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;13;3;88;PT;166.4;+11.457
+2021;MotoGP;1;QAT;Losail;Binder; Brad;Red Bull KTM Factory Racing;KTM;14;2;33;ZA;166.2;+14.100
+2021;MotoGP;1;QAT;Losail;Martin; Jorge;Pramac Racing;Ducati;15;1;89;ES;166.1;+16.422
+2021;MotoGP;1;QAT;Losail;Marini; Luca;SKY VR46 Esponsorama;Ducati;16;0;10;IT;165.8;+20.916
+2021;MotoGP;1;QAT;Losail;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;17;0;27;ES;165.8;+21.026
+2021;MotoGP;1;QAT;Losail;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;18;0;21;IT;165.6;+23.892
+2021;MotoGP;1;QAT;Losail;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;19;0;32;IT;164.1;+46.346
+2021;MotoGP;1;QAT;Losail;Marquez; Alex;LCR Honda CASTROL;Honda;-1;0;73;ES;166.3;9 Laps
+2021;MotoGP;1;QAT;Losail;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;-1;0;30;JP;165.0;16 Laps
+2021;MotoGP;1;QAT;Losail;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;-4;0;9;IT;;0 Lap
+2021;MotoGP;2;DOH;Losail;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;1;25;20;FR;167.4;42'23.997
+2021;MotoGP;2;DOH;Losail;Zarco; Johann;Pramac Racing;Ducati;2;20;5;FR;167.3;+1.457
+2021;MotoGP;2;DOH;Losail;Martin; Jorge;Pramac Racing;Ducati;3;16;89;ES;167.3;+1.500
+2021;MotoGP;2;DOH;Losail;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;4;13;42;ES;167.3;+2.088
+2021;MotoGP;2;DOH;Losail;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;5;11;12;ES;167.3;+2.110
+2021;MotoGP;2;DOH;Losail;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;6;10;63;IT;167.3;+2.642
+2021;MotoGP;2;DOH;Losail;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;7;9;36;ES;167.1;+4.868
+2021;MotoGP;2;DOH;Losail;Binder; Brad;Red Bull KTM Factory Racing;KTM;8;8;33;ZA;167.1;+4.979
+2021;MotoGP;2;DOH;Losail;Miller; Jack;Ducati Lenovo Team;Ducati;9;7;43;AU;167.1;+5.365
+2021;MotoGP;2;DOH;Losail;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;10;6;41;ES;167.1;+5.382
+2021;MotoGP;2;DOH;Losail;Bastianini; Enea;Avintia Esponsorama;Ducati;11;5;23;IT;167.1;+5.550
+2021;MotoGP;2;DOH;Losail;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;12;4;21;IT;167.1;+5.787
+2021;MotoGP;2;DOH;Losail;Espargaro; Pol;Repsol Honda Team;Honda;13;3;44;ES;167.0;+6.063
+2021;MotoGP;2;DOH;Losail;Bradl; Stefan;Repsol Honda Team;Honda;14;2;6;DE;167.0;+6.453
+2021;MotoGP;2;DOH;Losail;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;15;1;88;PT;166.9;+8.928
+2021;MotoGP;2;DOH;Losail;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;16;0;46;IT;166.5;+14.246
+2021;MotoGP;2;DOH;Losail;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;17;0;30;JP;166.4;+16.241
+2021;MotoGP;2;DOH;Losail;Marini; Luca;SKY VR46 Avintia;Ducati;18;0;10;IT;166.4;+16.472
+2021;MotoGP;2;DOH;Losail;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;19;0;9;IT;166.3;+16.779
+2021;MotoGP;2;DOH;Losail;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;20;0;32;IT;164.9;+38.775
+2021;MotoGP;2;DOH;Losail;Marquez; Alex;LCR Honda CASTROL;Honda;-1;0;73;ES;166.5;10 Laps
+2021;MotoGP;2;DOH;Losail;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;-1;0;27;ES;166.4;10 Laps
+2021;MotoGP;3;POR;Algarve;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;1;25;20;FR;164.8;41'46.412
+2021;MotoGP;3;POR;Algarve;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;2;20;63;IT;164.5;+4.809
+2021;MotoGP;3;POR;Algarve;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;164.5;+4.948
+2021;MotoGP;3;POR;Algarve;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;4;13;21;IT;164.5;+5.127
+2021;MotoGP;3;POR;Algarve;Binder; Brad;Red Bull KTM Factory Racing;KTM;5;11;33;ZA;164.4;+6.668
+2021;MotoGP;3;POR;Algarve;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;6;10;41;ES;164.3;+8.885
+2021;MotoGP;3;POR;Algarve;Marquez; Marc;Repsol Honda Team;Honda;7;9;93;ES;164.0;+13.208
+2021;MotoGP;3;POR;Algarve;Marquez; Alex;LCR Honda CASTROL;Honda;8;8;73;ES;163.7;+17.992
+2021;MotoGP;3;POR;Algarve;Bastianini; Enea;Avintia Esponsorama;Ducati;9;7;23;IT;163.4;+22.369
+2021;MotoGP;3;POR;Algarve;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;10;6;30;JP;163.3;+23.676
+2021;MotoGP;3;POR;Algarve;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;11;5;12;ES;163.3;+23.761
+2021;MotoGP;3;POR;Algarve;Marini; Luca;SKY VR46 Avintia;Ducati;12;4;10;IT;162.9;+29.660
+2021;MotoGP;3;POR;Algarve;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;13;3;9;IT;162.9;+29.836
+2021;MotoGP;3;POR;Algarve;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;14;2;32;IT;162.3;+38.941
+2021;MotoGP;3;POR;Algarve;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;15;1;27;ES;161.6;+50.642
+2021;MotoGP;3;POR;Algarve;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;16;0;88;PT;157.2;1 Lap
+2021;MotoGP;3;POR;Algarve;Zarco; Johann;Pramac Racing;Ducati;-1;0;5;FR;164.5;6 Laps
+2021;MotoGP;3;POR;Algarve;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-1;0;42;ES;164.8;7 Laps
+2021;MotoGP;3;POR;Algarve;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;-1;0;46;IT;163.1;11 Laps
+2021;MotoGP;3;POR;Algarve;Miller; Jack;Ducati Lenovo Team;Ducati;-1;0;43;AU;162.9;20 Laps
+2021;MotoGP;3;POR;Algarve;Espargaro; Pol;Repsol Honda Team;Honda;-1;0;44;ES;150.7;21 Laps
+2021;MotoGP;4;SPA;Jerez;Miller; Jack;Ducati Lenovo Team;Ducati;1;25;43;AU;161.4;41'05.602
+2021;MotoGP;4;SPA;Jerez;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;2;20;63;IT;161.3;+1.912
+2021;MotoGP;4;SPA;Jerez;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;3;16;21;IT;161.2;+2.516
+2021;MotoGP;4;SPA;Jerez;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;4;13;30;JP;161.2;+3.206
+2021;MotoGP;4;SPA;Jerez;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;5;11;36;ES;161.1;+4.256
+2021;MotoGP;4;SPA;Jerez;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;6;10;41;ES;161.1;+5.164
+2021;MotoGP;4;SPA;Jerez;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;7;9;12;ES;161.0;+5.651
+2021;MotoGP;4;SPA;Jerez;Zarco; Johann;Pramac Racing;Ducati;8;8;5;FR;160.9;+7.161
+2021;MotoGP;4;SPA;Jerez;Marquez; Marc;Repsol Honda Team;Honda;9;7;93;ES;160.7;+10.494
+2021;MotoGP;4;SPA;Jerez;Espargaro; Pol;Repsol Honda Team;Honda;10;6;44;ES;160.6;+11.776
+2021;MotoGP;4;SPA;Jerez;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;11;5;88;PT;160.4;+14.766
+2021;MotoGP;4;SPA;Jerez;Bradl; Stefan;Honda HRC;Honda;12;4;6;DE;160.3;+17.243
+2021;MotoGP;4;SPA;Jerez;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;13;3;20;FR;160.2;+18.907
+2021;MotoGP;4;SPA;Jerez;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;14;2;9;IT;160.1;+20.095
+2021;MotoGP;4;SPA;Jerez;Marini; Luca;SKY VR46 Avintia;Ducati;15;1;10;IT;160.0;+20.922
+2021;MotoGP;4;SPA;Jerez;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;16;0;46;IT;159.9;+22.731
+2021;MotoGP;4;SPA;Jerez;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;17;0;27;ES;160.1;+23.277
+2021;MotoGP;4;SPA;Jerez;Rabat; Tito;Pramac Racing;Ducati;18;0;53;ES;159.4;+30.314
+2021;MotoGP;4;SPA;Jerez;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;19;0;32;IT;159.0;+37.912
+2021;MotoGP;4;SPA;Jerez;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;20;0;42;ES;158.9;+38.234
+2021;MotoGP;4;SPA;Jerez;Binder; Brad;Red Bull KTM Factory Racing;KTM;-1;0;33;ZA;156.2;14 Laps
+2021;MotoGP;4;SPA;Jerez;Bastianini; Enea;Avintia Esponsorama;Ducati;-1;0;23;IT;154.9;14 Laps
+2021;MotoGP;4;SPA;Jerez;Marquez; Alex;LCR Honda CASTROL;Honda;-4;0;73;ES;;0 Lap
+2021;MotoGP;5;FRA;Le Mans;Miller; Jack;Ducati Lenovo Team;Ducati;1;25;43;AU;142.9;47'25.473
+2021;MotoGP;5;FRA;Le Mans;Zarco; Johann;Pramac Racing;Ducati;2;20;5;FR;142.7;+3.970
+2021;MotoGP;5;FRA;Le Mans;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;3;16;20;FR;142.2;+14.468
+2021;MotoGP;5;FRA;Le Mans;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;4;13;63;IT;142.1;+16.172
+2021;MotoGP;5;FRA;Le Mans;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;5;11;9;IT;141.8;+21.430
+2021;MotoGP;5;FRA;Le Mans;Marquez; Alex;LCR Honda CASTROL;Honda;6;10;73;ES;141.7;+23.509
+2021;MotoGP;5;FRA;Le Mans;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;7;9;30;JP;141.4;+30.164
+2021;MotoGP;5;FRA;Le Mans;Espargaro; Pol;Repsol Honda Team;Honda;8;8;44;ES;141.2;+35.221
+2021;MotoGP;5;FRA;Le Mans;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;9;7;27;ES;140.9;+40.432
+2021;MotoGP;5;FRA;Le Mans;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;10;6;12;ES;140.9;+40.577
+2021;MotoGP;5;FRA;Le Mans;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;11;5;46;IT;140.8;+42.198
+2021;MotoGP;5;FRA;Le Mans;Marini; Luca;SKY VR46 Avintia;Ducati;12;4;10;IT;140.3;+52.408
+2021;MotoGP;5;FRA;Le Mans;Binder; Brad;Red Bull KTM Factory Racing;KTM;13;3;33;ZA;140.0;+59.377
+2021;MotoGP;5;FRA;Le Mans;Bastianini; Enea;Avintia Esponsorama;Ducati;14;2;23;IT;139.8;+1'02.224
+2021;MotoGP;5;FRA;Le Mans;Rabat; Tito;Pramac Racing;Ducati;15;1;53;ES;139.5;+1'09.651
+2021;MotoGP;5;FRA;Le Mans;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;16;0;21;IT;118.4;4 Laps
+2021;MotoGP;5;FRA;Le Mans;Marquez; Marc;Repsol Honda Team;Honda;-1;0;93;ES;137.6;10 Laps
+2021;MotoGP;5;FRA;Le Mans;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;138.7;12 Laps
+2021;MotoGP;5;FRA;Le Mans;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;-1;0;88;PT;137.6;15 Laps
+2021;MotoGP;5;FRA;Le Mans;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-1;0;42;ES;128.6;15 Laps
+2021;MotoGP;5;FRA;Le Mans;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;-1;0;32;IT;137.1;16 Laps
+2021;MotoGP;5;FRA;Le Mans;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;-1;0;36;ES;155.2;23 Laps
+2021;MotoGP;6;ITA;Mugello;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;1;25;20;FR;175.3;41'16.344
+2021;MotoGP;6;ITA;Mugello;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;2;20;88;PT;175.1;+2.592
+2021;MotoGP;6;ITA;Mugello;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;175.1;+3.000
+2021;MotoGP;6;ITA;Mugello;Zarco; Johann;Pramac Racing;Ducati;4;13;5;FR;175.1;+3.535
+2021;MotoGP;6;ITA;Mugello;Binder; Brad;Red Bull KTM Factory Racing;KTM;5;11;33;ZA;175.0;+4.903
+2021;MotoGP;6;ITA;Mugello;Miller; Jack;Ducati Lenovo Team;Ducati;6;10;43;AU;174.9;+6.233
+2021;MotoGP;6;ITA;Mugello;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;7;9;41;ES;174.8;+8.030
+2021;MotoGP;6;ITA;Mugello;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;8;8;12;ES;174.1;+17.239
+2021;MotoGP;6;ITA;Mugello;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;9;7;9;IT;173.7;+23.296
+2021;MotoGP;6;ITA;Mugello;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;10;6;46;IT;173.6;+25.146
+2021;MotoGP;6;ITA;Mugello;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;11;5;27;ES;173.6;+25.152
+2021;MotoGP;6;ITA;Mugello;Espargaro; Pol;Repsol Honda Team;Honda;12;4;44;ES;173.5;+26.059
+2021;MotoGP;6;ITA;Mugello;Pirro; Michele;Pramac Racing;Ducati;13;3;51;IT;173.5;+26.182
+2021;MotoGP;6;ITA;Mugello;Marquez; Alex;LCR Honda CASTROL;Honda;14;2;73;ES;173.3;+29.400
+2021;MotoGP;6;ITA;Mugello;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;15;1;32;IT;173.1;+32.378
+2021;MotoGP;6;ITA;Mugello;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;16;0;21;IT;172.7;+37.906
+2021;MotoGP;6;ITA;Mugello;Marini; Luca;SKY VR46 Avintia;Ducati;17;0;10;IT;171.8;+50.306
+2021;MotoGP;6;ITA;Mugello;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;-1;0;30;JP;174.7;4 Laps
+2021;MotoGP;6;ITA;Mugello;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-1;0;42;ES;175.0;5 Laps
+2021;MotoGP;6;ITA;Mugello;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;-1;0;63;IT;167.5;22 Laps
+2021;MotoGP;6;ITA;Mugello;Marquez; Marc;Repsol Honda Team;Honda;-1;0;93;ES;165.1;22 Laps
+2021;MotoGP;6;ITA;Mugello;Bastianini; Enea;Avintia Esponsorama;Ducati;-4;0;23;IT;;0 Lap
+2021;MotoGP;7;CAT;Catalunya;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;1;25;88;PT;166.1;40'21.749
+2021;MotoGP;7;CAT;Catalunya;Zarco; Johann;Pramac Racing;Ducati;2;20;5;FR;166.1;+0.175
+2021;MotoGP;7;CAT;Catalunya;Miller; Jack;Ducati Lenovo Team;Ducati;3;16;43;AU;166.0;+1.990
+2021;MotoGP;7;CAT;Catalunya;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;4;13;36;ES;165.7;+5.325
+2021;MotoGP;7;CAT;Catalunya;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;5;11;12;ES;165.7;+6.281
+2021;MotoGP;7;CAT;Catalunya;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;6;10;20;FR;166.0;+7.815
+2021;MotoGP;7;CAT;Catalunya;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;7;9;63;IT;165.5;+8.175
+2021;MotoGP;7;CAT;Catalunya;Binder; Brad;Red Bull KTM Factory Racing;KTM;8;8;33;ZA;165.5;+8.378
+2021;MotoGP;7;CAT;Catalunya;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;9;7;21;IT;165.0;+15.652
+2021;MotoGP;7;CAT;Catalunya;Bastianini; Enea;Avintia Esponsorama;Ducati;10;6;23;IT;164.8;+19.297
+2021;MotoGP;7;CAT;Catalunya;Marquez; Alex;LCR Honda CASTROL;Honda;11;5;73;ES;164.6;+21.650
+2021;MotoGP;7;CAT;Catalunya;Marini; Luca;SKY VR46 Avintia;Ducati;12;4;10;IT;164.6;+22.533
+2021;MotoGP;7;CAT;Catalunya;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;13;3;30;JP;164.2;+27.833
+2021;MotoGP;7;CAT;Catalunya;Martin; Jorge;Pramac Racing;Ducati;14;2;89;ES;164.1;+29.075
+2021;MotoGP;7;CAT;Catalunya;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;15;1;32;IT;163.4;+40.291
+2021;MotoGP;7;CAT;Catalunya;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;-1;0;27;ES;165.3;8 Laps
+2021;MotoGP;7;CAT;Catalunya;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;-1;0;46;IT;164.9;9 Laps
+2021;MotoGP;7;CAT;Catalunya;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;165.5;14 Laps
+2021;MotoGP;7;CAT;Catalunya;Marquez; Marc;Repsol Honda Team;Honda;-1;0;93;ES;165.0;17 Laps
+2021;MotoGP;7;CAT;Catalunya;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;-1;0;9;IT;163.2;19 Laps
+2021;MotoGP;7;CAT;Catalunya;Espargaro; Pol;Repsol Honda Team;Honda;-1;0;44;ES;163.5;20 Laps
+2021;MotoGP;8;GER;Sachsenring;Marquez; Marc;Repsol Honda Team;Honda;1;25;93;ES;160.6;41'07.243
+2021;MotoGP;8;GER;Sachsenring;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;2;20;88;PT;160.5;+1.610
+2021;MotoGP;8;GER;Sachsenring;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;3;16;20;FR;160.2;+6.772
+2021;MotoGP;8;GER;Sachsenring;Binder; Brad;Red Bull KTM Factory Racing;KTM;4;13;33;ZA;160.1;+7.922
+2021;MotoGP;8;GER;Sachsenring;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;5;11;63;IT;160.1;+8.591
+2021;MotoGP;8;GER;Sachsenring;Miller; Jack;Ducati Lenovo Team;Ducati;6;10;43;AU;160.1;+9.086
+2021;MotoGP;8;GER;Sachsenring;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;7;9;41;ES;160.0;+9.371
+2021;MotoGP;8;GER;Sachsenring;Zarco; Johann;Pramac Racing;Ducati;8;8;5;FR;159.9;+11.439
+2021;MotoGP;8;GER;Sachsenring;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;9;7;36;ES;159.9;+11.625
+2021;MotoGP;8;GER;Sachsenring;Espargaro; Pol;Repsol Honda Team;Honda;10;6;44;ES;159.7;+14.769
+2021;MotoGP;8;GER;Sachsenring;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;11;5;42;ES;159.6;+16.803
+2021;MotoGP;8;GER;Sachsenring;Martin; Jorge;Pramac Racing;Ducati;12;4;89;ES;159.5;+16.915
+2021;MotoGP;8;GER;Sachsenring;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;13;3;30;JP;159.4;+19.217
+2021;MotoGP;8;GER;Sachsenring;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;14;2;46;IT;159.2;+22.300
+2021;MotoGP;8;GER;Sachsenring;Marini; Luca;SKY VR46 Avintia;Ducati;15;1;10;IT;159.1;+23.615
+2021;MotoGP;8;GER;Sachsenring;Bastianini; Enea;Avintia Esponsorama;Ducati;16;0;23;IT;159.1;+23.738
+2021;MotoGP;8;GER;Sachsenring;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;17;0;27;ES;159.1;+23.946
+2021;MotoGP;8;GER;Sachsenring;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;18;0;21;IT;159.1;+24.414
+2021;MotoGP;8;GER;Sachsenring;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;19;0;12;ES;159.0;+24.715
+2021;MotoGP;8;GER;Sachsenring;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;-1;0;32;IT;157.7;25 Laps
+2021;MotoGP;8;GER;Sachsenring;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;-1;0;9;IT;157.9;26 Laps
+2021;MotoGP;8;GER;Sachsenring;Marquez; Alex;LCR Honda CASTROL;Honda;-1;0;73;ES;157.8;26 Laps
+2021;MotoGP;9;NED;Assen;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;1;25;20;FR;174.5;40'35.031
+2021;MotoGP;9;NED;Assen;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;2;20;12;ES;174.3;+2.757
+2021;MotoGP;9;NED;Assen;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;174.1;+5.760
+2021;MotoGP;9;NED;Assen;Zarco; Johann;Pramac Racing;Ducati;4;13;5;FR;174.1;+6.130
+2021;MotoGP;9;NED;Assen;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;5;11;88;PT;173.9;+8.402
+2021;MotoGP;9;NED;Assen;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;6;10;63;IT;173.8;+10.035
+2021;MotoGP;9;NED;Assen;Marquez; Marc;Repsol Honda Team;Honda;7;9;93;ES;173.8;+10.110
+2021;MotoGP;9;NED;Assen;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;8;8;41;ES;173.8;+10.346
+2021;MotoGP;9;NED;Assen;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;9;7;30;JP;173.7;+12.225
+2021;MotoGP;9;NED;Assen;Espargaro; Pol;Repsol Honda Team;Honda;10;6;44;ES;173.2;+18.565
+2021;MotoGP;9;NED;Assen;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;11;5;42;ES;173.0;+21.372
+2021;MotoGP;9;NED;Assen;Binder; Brad;Red Bull KTM Factory Racing;KTM;12;4;33;ZA;173.0;+21.676
+2021;MotoGP;9;NED;Assen;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;13;3;9;IT;172.6;+27.783
+2021;MotoGP;9;NED;Assen;Marquez; Alex;LCR Honda CASTROL;Honda;14;2;73;ES;172.4;+29.772
+2021;MotoGP;9;NED;Assen;Bastianini; Enea;Avintia Esponsorama;Ducati;15;1;23;IT;172.2;+32.785
+2021;MotoGP;9;NED;Assen;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;16;0;32;IT;171.9;+37.573
+2021;MotoGP;9;NED;Assen;Gerloff; Garrett;Petronas Yamaha SRT;Yamaha;17;0;31;US;170.8;+53.213
+2021;MotoGP;9;NED;Assen;Marini; Luca;SKY VR46 Avintia;Ducati;18;0;10;IT;169.9;+1'06.791
+2021;MotoGP;9;NED;Assen;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;-1;0;27;ES;173.0;8 Laps
+2021;MotoGP;9;NED;Assen;Miller; Jack;Ducati Lenovo Team;Ducati;-1;0;43;AU;167.8;8 Laps
+2021;MotoGP;9;NED;Assen;Martin; Jorge;Pramac Racing;Ducati;-1;0;89;ES;170.5;12 Laps
+2021;MotoGP;9;NED;Assen;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;-1;0;46;IT;170.3;19 Laps
+2021;MotoGP;10;STY;Spielberg;Martin; Jorge;Pramac Racing;Ducati;1;25;89;ES;183.4;38'07.879
+2021;MotoGP;10;STY;Spielberg;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;2;20;36;ES;183.3;+1.548
+2021;MotoGP;10;STY;Spielberg;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;3;16;20;FR;182.6;+9.632
+2021;MotoGP;10;STY;Spielberg;Binder; Brad;Red Bull KTM Factory Racing;KTM;4;13;33;ZA;182.4;+12.771
+2021;MotoGP;10;STY;Spielberg;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;5;11;30;JP;182.4;+12.923
+2021;MotoGP;10;STY;Spielberg;Zarco; Johann;Pramac Racing;Ducati;6;10;5;FR;182.4;+13.031
+2021;MotoGP;10;STY;Spielberg;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;7;9;42;ES;182.2;+14.839
+2021;MotoGP;10;STY;Spielberg;Marquez; Marc;Repsol Honda Team;Honda;8;8;93;ES;182.0;+17.953
+2021;MotoGP;10;STY;Spielberg;Marquez; Alex;LCR Honda CASTROL;Honda;9;7;73;ES;181.9;+19.059
+2021;MotoGP;10;STY;Spielberg;Pedrosa; Dani;Red Bull KTM Factory Racing;KTM;10;6;26;ES;181.9;+19.389
+2021;MotoGP;10;STY;Spielberg;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;11;5;63;IT;181.9;+21.667
+2021;MotoGP;10;STY;Spielberg;Bastianini; Enea;Avintia Esponsorama;Ducati;12;4;23;IT;181.4;+25.267
+2021;MotoGP;10;STY;Spielberg;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;13;3;46;IT;181.3;+26.282
+2021;MotoGP;10;STY;Spielberg;Marini; Luca;SKY VR46 Avintia;Ducati;14;2;10;IT;181.2;+27.492
+2021;MotoGP;10;STY;Spielberg;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;15;1;27;ES;180.9;+31.076
+2021;MotoGP;10;STY;Spielberg;Espargaro; Pol;Repsol Honda Team;Honda;16;0;44;ES;180.9;+31.150
+2021;MotoGP;10;STY;Spielberg;Crutchlow; Cal;Petronas Yamaha SRT;Yamaha;17;0;35;GB;180.2;+40.408
+2021;MotoGP;10;STY;Spielberg;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;18;0;9;IT;179.6;+48.114
+2021;MotoGP;10;STY;Spielberg;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;-1;0;12;ES;178.5;+1'03.149
+2021;MotoGP;10;STY;Spielberg;Miller; Jack;Ducati Lenovo Team;Ducati;-1;0;43;AU;178.2;9 Laps
+2021;MotoGP;10;STY;Spielberg;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;-1;0;88;PT;178.2;13 Laps
+2021;MotoGP;10;STY;Spielberg;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;178.3;23 Laps
+2021;MotoGP;10;STY;Spielberg;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;-2;0;32;IT;;0 Lap
+2021;MotoGP;11;AUT;Spielberg;Binder; Brad;Red Bull KTM Factory Racing;KTM;1;25;33;ZA;178.0;40'43.928
+2021;MotoGP;11;AUT;Spielberg;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;2;20;63;IT;177.1;+12.991
+2021;MotoGP;11;AUT;Spielberg;Martin; Jorge;Pramac Racing;Ducati;3;16;89;ES;177.0;+14.570
+2021;MotoGP;11;AUT;Spielberg;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;4;13;36;ES;176.9;+15.623
+2021;MotoGP;11;AUT;Spielberg;Marini; Luca;SKY VR46 Avintia;Ducati;5;11;10;IT;176.8;+17.831
+2021;MotoGP;11;AUT;Spielberg;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;6;10;27;ES;176.7;+17.952
+2021;MotoGP;11;AUT;Spielberg;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;7;9;20;FR;176.6;+19.650
+2021;MotoGP;11;AUT;Spielberg;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;8;8;46;IT;176.6;+20.150
+2021;MotoGP;11;AUT;Spielberg;Marquez; Alex;LCR Honda CASTROL;Honda;9;7;73;ES;176.6;+20.692
+2021;MotoGP;11;AUT;Spielberg;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;10;6;41;ES;176.5;+21.270
+2021;MotoGP;11;AUT;Spielberg;Miller; Jack;Ducati Lenovo Team;Ducati;11;5;43;AU;176.0;+28.144
+2021;MotoGP;11;AUT;Spielberg;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;12;4;9;IT;176.0;+28.193
+2021;MotoGP;11;AUT;Spielberg;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;13;3;30;JP;176.0;+28.603
+2021;MotoGP;11;AUT;Spielberg;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;14;2;42;ES;175.6;+33.642
+2021;MotoGP;11;AUT;Spielberg;Marquez; Marc;Repsol Honda Team;Honda;15;1;93;ES;175.3;+38.459
+2021;MotoGP;11;AUT;Spielberg;Espargaro; Pol;Repsol Honda Team;Honda;16;0;44;ES;174.9;+43.384
+2021;MotoGP;11;AUT;Spielberg;Crutchlow; Cal;Petronas Yamaha SRT;Yamaha;17;0;35;GB;174.1;+55.950
+2021;MotoGP;11;AUT;Spielberg;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;-1;0;88;PT;182.1;6 Laps
+2021;MotoGP;11;AUT;Spielberg;Zarco; Johann;Pramac Racing;Ducati;-1;0;5;FR;167.0;10 Laps
+2021;MotoGP;11;AUT;Spielberg;Bastianini; Enea;Avintia Esponsorama;Ducati;-1;0;23;IT;172.4;22 Laps
+2021;MotoGP;12;GBR;Silverstone;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;1;25;20;FR;175.4;40'20.579
+2021;MotoGP;12;GBR;Silverstone;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;2;20;42;ES;175.3;+2.663
+2021;MotoGP;12;GBR;Silverstone;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;3;16;41;ES;175.1;+4.105
+2021;MotoGP;12;GBR;Silverstone;Miller; Jack;Ducati Lenovo Team;Ducati;4;13;43;AU;175.1;+4.254
+2021;MotoGP;12;GBR;Silverstone;Espargaro; Pol;Repsol Honda Team;Honda;5;11;44;ES;174.8;+8.462
+2021;MotoGP;12;GBR;Silverstone;Binder; Brad;Red Bull KTM Factory Racing;KTM;6;10;33;ZA;174.6;+12.189
+2021;MotoGP;12;GBR;Silverstone;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;7;9;27;ES;174.5;+13.560
+2021;MotoGP;12;GBR;Silverstone;Marquez; Alex;LCR Honda CASTROL;Honda;8;8;73;ES;174.4;+14.044
+2021;MotoGP;12;GBR;Silverstone;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;9;7;36;ES;174.3;+16.226
+2021;MotoGP;12;GBR;Silverstone;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;10;6;9;IT;174.3;+16.287
+2021;MotoGP;12;GBR;Silverstone;Zarco; Johann;Pramac Racing;Ducati;11;5;5;FR;174.3;+16.339
+2021;MotoGP;12;GBR;Silverstone;Bastianini; Enea;Avintia Esponsorama;Ducati;12;4;23;IT;174.2;+17.696
+2021;MotoGP;12;GBR;Silverstone;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;13;3;30;JP;174.1;+18.285
+2021;MotoGP;12;GBR;Silverstone;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;14;2;63;IT;173.9;+20.913
+2021;MotoGP;12;GBR;Silverstone;Marini; Luca;SKY VR46 Avintia;Ducati;15;1;10;IT;173.9;+21.018
+2021;MotoGP;12;GBR;Silverstone;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;16;0;88;PT;173.9;+22.022
+2021;MotoGP;12;GBR;Silverstone;Crutchlow; Cal;Monster Energy Yamaha MotoGP;Yamaha;17;0;35;GB;173.8;+23.232
+2021;MotoGP;12;GBR;Silverstone;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;18;0;46;IT;173.3;+29.758
+2021;MotoGP;12;GBR;Silverstone;Dixon; Jake;Petronas Yamaha SRT;Yamaha;19;0;96;GB;171.8;+50.845
+2021;MotoGP;12;GBR;Silverstone;Martin; Jorge;Pramac Racing;Ducati;-1;0;89;ES;111.1;19 Laps
+2021;MotoGP;12;GBR;Silverstone;Marquez; Marc;Repsol Honda Team;Honda;-4;0;93;ES;;0 Lap
+2021;MotoGP;13;ARA;Aragón;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;1;25;63;IT;167.8;41'44.422
+2021;MotoGP;13;ARA;Aragón;Marquez; Marc;Repsol Honda Team;Honda;2;20;93;ES;167.8;+0.673
+2021;MotoGP;13;ARA;Aragón;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;167.5;+3.911
+2021;MotoGP;13;ARA;Aragón;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;4;13;41;ES;167.2;+9.269
+2021;MotoGP;13;ARA;Aragón;Miller; Jack;Ducati Lenovo Team;Ducati;5;11;43;AU;167.0;+11.928
+2021;MotoGP;13;ARA;Aragón;Bastianini; Enea;Avintia Esponsorama;Ducati;6;10;23;IT;166.9;+13.757
+2021;MotoGP;13;ARA;Aragón;Binder; Brad;Red Bull KTM Factory Racing;KTM;7;9;33;ZA;166.9;+14.064
+2021;MotoGP;13;ARA;Aragón;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;8;8;20;FR;166.7;+16.575
+2021;MotoGP;13;ARA;Aragón;Martin; Jorge;Pramac Racing;Ducati;9;7;89;ES;166.7;+16.615
+2021;MotoGP;13;ARA;Aragón;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;10;6;30;JP;166.7;+16.904
+2021;MotoGP;13;ARA;Aragón;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;11;5;27;ES;166.7;+17.124
+2021;MotoGP;13;ARA;Aragón;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;12;4;42;ES;166.6;+17.710
+2021;MotoGP;13;ARA;Aragón;Espargaro; Pol;Repsol Honda Team;Honda;13;3;44;ES;166.5;+19.680
+2021;MotoGP;13;ARA;Aragón;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;14;2;88;PT;166.3;+22.703
+2021;MotoGP;13;ARA;Aragón;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;15;1;9;IT;166.1;+25.723
+2021;MotoGP;13;ARA;Aragón;Crutchlow; Cal;Monster Energy Yamaha MotoGP;Yamaha;16;0;35;GB;166.1;+26.413
+2021;MotoGP;13;ARA;Aragón;Zarco; Johann;Pramac Racing;Ducati;17;0;5;FR;166.0;+26.620
+2021;MotoGP;13;ARA;Aragón;Viñales; Maverick;Aprilia Racing Team Gresini;Aprilia;18;0;12;ES;166.0;+27.128
+2021;MotoGP;13;ARA;Aragón;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;19;0;46;IT;165.7;+32.517
+2021;MotoGP;13;ARA;Aragón;Marini; Luca;SKY VR46 Avintia;Ducati;20;0;10;IT;165.2;+39.073
+2021;MotoGP;13;ARA;Aragón;Dixon; Jake;Petronas Yamaha SRT;Yamaha;-1;0;96;GB;156.8;22 Laps
+2021;MotoGP;13;ARA;Aragón;Marquez; Alex;LCR Honda CASTROL;Honda;-4;0;73;ES;;0 Lap
+2021;MotoGP;14;RSM;Misano;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;1;25;63;IT;163.7;41'48.305
+2021;MotoGP;14;RSM;Misano;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;2;20;20;FR;163.7;+0.364
+2021;MotoGP;14;RSM;Misano;Bastianini; Enea;Avintia Esponsorama;Ducati;3;16;23;IT;163.4;+4.789
+2021;MotoGP;14;RSM;Misano;Marquez; Marc;Repsol Honda Team;Honda;4;13;93;ES;163.0;+10.245
+2021;MotoGP;14;RSM;Misano;Miller; Jack;Ducati Lenovo Team;Ducati;5;11;43;AU;163.0;+10.469
+2021;MotoGP;14;RSM;Misano;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;6;10;36;ES;163.0;+10.325
+2021;MotoGP;14;RSM;Misano;Espargaro; Pol;Repsol Honda Team;Honda;7;9;44;ES;162.9;+13.234
+2021;MotoGP;14;RSM;Misano;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;8;8;41;ES;162.7;+15.698
+2021;MotoGP;14;RSM;Misano;Binder; Brad;Red Bull KTM Factory Racing;KTM;9;7;33;ZA;162.7;+16.129
+2021;MotoGP;14;RSM;Misano;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;10;6;30;JP;162.5;+18.519
+2021;MotoGP;14;RSM;Misano;Pirro; Michele;Ducati Lenovo Team;Ducati;11;5;51;IT;162.4;+20.373
+2021;MotoGP;14;RSM;Misano;Zarco; Johann;Pramac Racing;Ducati;12;4;5;FR;162.3;+21.066
+2021;MotoGP;14;RSM;Misano;Viñales; Maverick;Aprilia Racing Team Gresini;Aprilia;13;3;12;ES;162.3;+21.258
+2021;MotoGP;14;RSM;Misano;Bradl; Stefan;Team Honda HRC;Honda;14;2;6;DE;161.9;+28.142
+2021;MotoGP;14;RSM;Misano;Marquez; Alex;LCR Honda CASTROL;Honda;15;1;73;ES;161.7;+30.686
+2021;MotoGP;14;RSM;Misano;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;16;0;9;IT;161.6;+32.654
+2021;MotoGP;14;RSM;Misano;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;17;0;46;IT;161.5;+33.853
+2021;MotoGP;14;RSM;Misano;Morbidelli; Franco;Monster Energy Yamaha MotoGP;Yamaha;18;0;21;IT;161.4;+36.272
+2021;MotoGP;14;RSM;Misano;Marini; Luca;SKY VR46 Avintia;Ducati;19;0;10;IT;161.3;+36.839
+2021;MotoGP;14;RSM;Misano;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;20;0;88;PT;161.3;+37.202
+2021;MotoGP;14;RSM;Misano;Dovizioso; Andrea;Petronas Yamaha SRT;Yamaha;21;0;4;IT;161.0;+42.587
+2021;MotoGP;14;RSM;Misano;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-1;0;42;ES;163.0;10 Laps
+2021;MotoGP;14;RSM;Misano;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;-1;0;27;ES;161.2;13 Laps
+2021;MotoGP;14;RSM;Misano;Martin; Jorge;Pramac Racing;Ducati;-1;0;89;ES;158.3;17 Laps
+2021;MotoGP;15;AME;Texas;Marquez; Marc;Repsol Honda Team;Honda;1;25;93;ES;158.6;41'41.435
+2021;MotoGP;15;AME;Texas;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;2;20;20;FR;158.3;+4.679
+2021;MotoGP;15;AME;Texas;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;3;16;63;IT;158.1;+8.547
+2021;MotoGP;15;AME;Texas;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;4;13;42;ES;157.9;+11.098
+2021;MotoGP;15;AME;Texas;Martin; Jorge;Pramac Racing;Ducati;5;11;89;ES;157.9;+11.752
+2021;MotoGP;15;AME;Texas;Bastianini; Enea;Avintia Esponsorama;Ducati;6;10;23;IT;157.8;+13.269
+2021;MotoGP;15;AME;Texas;Miller; Jack;Ducati Lenovo Team;Ducati;7;9;43;AU;157.7;+14.722
+2021;MotoGP;15;AME;Texas;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;8;8;36;ES;157.8;+13.406
+2021;MotoGP;15;AME;Texas;Binder; Brad;Red Bull KTM Factory Racing;KTM;9;7;33;ZA;157.6;+15.832
+2021;MotoGP;15;AME;Texas;Espargaro; Pol;Repsol Honda Team;Honda;10;6;44;ES;157.4;+20.265
+2021;MotoGP;15;AME;Texas;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;11;5;88;PT;157.2;+23.055
+2021;MotoGP;15;AME;Texas;Marquez; Alex;LCR Honda CASTROL;Honda;12;4;73;ES;157.1;+24.743
+2021;MotoGP;15;AME;Texas;Dovizioso; Andrea;Petronas Yamaha SRT;Yamaha;13;3;4;IT;157.0;+25.307
+2021;MotoGP;15;AME;Texas;Marini; Luca;SKY VR46 Avintia;Ducati;14;2;10;IT;156.9;+26.853
+2021;MotoGP;15;AME;Texas;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;15;1;46;IT;156.9;+28.055
+2021;MotoGP;15;AME;Texas;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;16;0;27;ES;156.7;+30.989
+2021;MotoGP;15;AME;Texas;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;17;0;30;JP;156.4;+35.251
+2021;MotoGP;15;AME;Texas;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;18;0;9;IT;156.0;+42.239
+2021;MotoGP;15;AME;Texas;Morbidelli; Franco;Monster Energy Yamaha MotoGP;Yamaha;19;0;21;IT;155.5;+49.854
+2021;MotoGP;15;AME;Texas;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;156.8;12 Laps
+2021;MotoGP;15;AME;Texas;Zarco; Johann;Pramac Racing;Ducati;-1;0;5;FR;146.1;15 Laps
+2021;MotoGP;16;EMI;Misano;Marquez; Marc;Repsol Honda Team;Honda;1;25;93;ES;163.4;41'52.830
+2021;MotoGP;16;EMI;Misano;Espargaro; Pol;Repsol Honda Team;Honda;2;20;44;ES;163.1;+4.859
+2021;MotoGP;16;EMI;Misano;Bastianini; Enea;Avintia Esponsorama;Ducati;3;16;23;IT;162.6;+12.013
+2021;MotoGP;16;EMI;Misano;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;4;13;20;FR;162.6;+12.775
+2021;MotoGP;16;EMI;Misano;Zarco; Johann;Pramac Racing;Ducati;5;11;5;FR;162.4;+16.458
+2021;MotoGP;16;EMI;Misano;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;6;10;42;ES;162.3;+17.669
+2021;MotoGP;16;EMI;Misano;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;7;9;41;ES;162.2;+18.468
+2021;MotoGP;16;EMI;Misano;Viñales; Maverick;Aprilia Racing Team Gresini;Aprilia;8;8;12;ES;162.2;+18.607
+2021;MotoGP;16;EMI;Misano;Marini; Luca;SKY VR46 Avintia;Ducati;9;7;10;IT;161.8;+25.417
+2021;MotoGP;16;EMI;Misano;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;10;6;46;IT;161.6;+27.735
+2021;MotoGP;16;EMI;Misano;Binder; Brad;Red Bull KTM Factory Racing;KTM;11;5;33;ZA;161.6;+27.879
+2021;MotoGP;16;EMI;Misano;Pirro; Michele;Ducati Lenovo Team;Ducati;12;4;51;IT;161.6;+28.137
+2021;MotoGP;16;EMI;Misano;Dovizioso; Andrea;Petronas Yamaha SRT;Yamaha;13;3;4;IT;160.8;+41.413
+2021;MotoGP;16;EMI;Misano;Morbidelli; Franco;Monster Energy Yamaha MotoGP;Yamaha;14;2;21;IT;160.7;+42.830
+2021;MotoGP;16;EMI;Misano;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;15;1;30;JP;158.2;+1'22.462
+2021;MotoGP;16;EMI;Misano;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;-1;0;63;IT;163.9;5 Laps
+2021;MotoGP;16;EMI;Misano;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;-1;0;88;PT;163.0;5 Laps
+2021;MotoGP;16;EMI;Misano;Martin; Jorge;Pramac Racing;Ducati;-1;0;89;ES;161.6;15 Laps
+2021;MotoGP;16;EMI;Misano;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;-1;0;27;ES;160.6;17 Laps
+2021;MotoGP;16;EMI;Misano;Marquez; Alex;LCR Honda CASTROL;Honda;-1;0;73;ES;160.8;18 Laps
+2021;MotoGP;16;EMI;Misano;Miller; Jack;Ducati Lenovo Team;Ducati;-1;0;43;AU;160.5;24 Laps
+2021;MotoGP;16;EMI;Misano;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;-1;0;9;IT;154.0;25 Laps
+2021;MotoGP;16;EMI;Misano;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;-1;0;36;ES;153.9;25 Laps
