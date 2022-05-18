@@ -72,7 +72,8 @@ public class Race {
             br.readLine();
             while ((line = br.readLine()) != null) {
                 parts = line.split(";");
-                r = new Racer(parts[5], parts[6], Nationality.of(parts[12]));
+                r = new Racer(parts[6], parts[5], Nationality.CZ);
+                racers.add(r);
             }
         }
     }
