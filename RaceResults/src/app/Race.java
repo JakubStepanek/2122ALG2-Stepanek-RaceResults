@@ -115,11 +115,10 @@ public class Race {
         // System.out.println(race.getRacer(racer2));
         String parentPath = System.getProperty("user.dir") + File.separator + "data" + File.separator
                 + "raceResults2021.csv";
-        File dataDirectory = new File(parentPath);
-        race.loadStats(new File(dataDirectory, sc.nextLine()));
+        File dataDirectory = new File("/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021.csv");
+        race.loadStats(dataDirectory);
         System.out.println(race);
 
-        System.out.println("kokor");
     }
 
 }
