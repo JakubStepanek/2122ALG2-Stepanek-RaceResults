@@ -72,7 +72,11 @@ public class Race {
             br.readLine();
             while ((line = br.readLine()) != null) {
                 parts = line.split(";");
-                r = new Racer(parts[6], parts[5], Nationality.CZ);
+                r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
+                r.setTeam(parts[7]);
+                r.setBike(parts[8]);
+                System.out.println(parts[11]);
+                r.setRacingNumber(parts[11]);
                 racers.add(r);
             }
         }
