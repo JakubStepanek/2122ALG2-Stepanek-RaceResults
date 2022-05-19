@@ -18,7 +18,7 @@ public class Racer implements Comparable<Racer> {
     private String bike;
     private String team;
     private String racingNumber;
-    private int maxSpeed;
+    private double maxSpeed;
 
     public Racer(String name, String surname, Nationality nationality) {
         this.name = name;
@@ -35,7 +35,7 @@ public class Racer implements Comparable<Racer> {
         this.bike = racer.bike;
         this.team = racer.team;
         this.racingNumber = racer.racingNumber;
-        this.maxSpeed = maxSpeed;
+        this.maxSpeed = racer.maxSpeed;
     }
 
     public String getName() {
@@ -102,26 +102,25 @@ public class Racer implements Comparable<Racer> {
         this.racingNumber = racingNumber;
     }
 
-    public int getMaxSpeed() {
+    public double getMaxSpeed() {
         return this.maxSpeed;
     }
 
-    public void setMaxSpeed(int maxSpeed) {
+    public void setMaxSpeed(double maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
     @Override
     public String toString() {
-        return String.format("%10s %10s %20s %5s", name, surname, this.nationality.getNationalityValue(),
-                this.getRacingNumber());
+        return String.format("%10s %10s %20s Startovní číslo: %5s pozice: %2d %.1fmph", name, surname, this.nationality.getNationalityValue(),
+                this.getRacingNumber(), getPozition(), getMaxSpeed());
     }
 
     public static void main(String[] args) {
-         Racer r = new Racer("Jakub", "Štěpánek", Nationality.CZ);
-         System.out.println(r);
-        //  r.setRacingNumber("88");
-        //  System.out.println(r);
-
+        Racer r = new Racer("Jakub", "Štěpánek", Nationality.CZ);
+        System.out.println(r);
+        // r.setRacingNumber("88");
+        // System.out.println(r);
 
     }
 
