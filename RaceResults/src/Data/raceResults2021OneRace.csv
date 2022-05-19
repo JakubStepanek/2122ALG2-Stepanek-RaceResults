@@ -1,0 +1,23 @@
+year;category;sequence;shortname;circuit_name;rider_name;rider_surname;team_name;bike_name;position;points;number;country;speed;time
+2021;MotoGP;1;QAT;Losail;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;1;25;12;ES;167.1;42'28.663
+2021;MotoGP;1;QAT;Losail;Zarco; Johann;Pramac Racing;Ducati;2;20;5;FR;167.1;+1.092
+2021;MotoGP;1;QAT;Losail;Bagnaia; Francesco;Ducati Lenovo Team;Ducati;3;16;63;IT;167.1;+1.129
+2021;MotoGP;1;QAT;Losail;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;4;13;36;ES;167.1;+1.222
+2021;MotoGP;1;QAT;Losail;Quartararo; Fabio;Monster Energy Yamaha MotoGP;Yamaha;5;11;20;FR;166.9;+3.030
+2021;MotoGP;1;QAT;Losail;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;6;10;42;ES;166.9;+3.357
+2021;MotoGP;1;QAT;Losail;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;7;9;41;ES;166.7;+5.934
+2021;MotoGP;1;QAT;Losail;Espargaro; Pol;Repsol Honda Team;Honda;8;8;44;ES;166.7;+5.990
+2021;MotoGP;1;QAT;Losail;Miller; Jack;Ducati Lenovo Team;Ducati;9;7;43;AU;166.7;+7.058
+2021;MotoGP;1;QAT;Losail;Bastianini; Enea;Esponsorama Racing;Ducati;10;6;23;IT;166.5;+9.288
+2021;MotoGP;1;QAT;Losail;Bradl; Stefan;Repsol Honda Team;Honda;11;5;6;DE;166.5;+10.299
+2021;MotoGP;1;QAT;Losail;Rossi; Valentino;Petronas Yamaha SRT;Yamaha;12;4;46;IT;166.4;+10.742
+2021;MotoGP;1;QAT;Losail;Oliveira; Miguel;Red Bull KTM Factory Racing;KTM;13;3;88;PT;166.4;+11.457
+2021;MotoGP;1;QAT;Losail;Binder; Brad;Red Bull KTM Factory Racing;KTM;14;2;33;ZA;166.2;+14.100
+2021;MotoGP;1;QAT;Losail;Martin; Jorge;Pramac Racing;Ducati;15;1;89;ES;166.1;+16.422
+2021;MotoGP;1;QAT;Losail;Marini; Luca;SKY VR46 Esponsorama;Ducati;16;0;10;IT;165.8;+20.916
+2021;MotoGP;1;QAT;Losail;Lecuona; Iker;Tech 3 KTM Factory Racing;KTM;17;0;27;ES;165.8;+21.026
+2021;MotoGP;1;QAT;Losail;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;18;0;21;IT;165.6;+23.892
+2021;MotoGP;1;QAT;Losail;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;19;0;32;IT;164.1;+46.346
+2021;MotoGP;1;QAT;Losail;Marquez; Alex;LCR Honda CASTROL;Honda;-1;0;73;ES;166.3;9 Laps
+2021;MotoGP;1;QAT;Losail;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;-1;0;30;JP;165.0;16 Laps
+2021;MotoGP;1;QAT;Losail;Petrucci; Danilo;Tech 3 KTM Factory Racing;KTM;-4;0;9;IT;;0 Lap

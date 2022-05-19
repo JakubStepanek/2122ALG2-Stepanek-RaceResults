@@ -6,9 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
-import java.util.function.Predicate;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -78,11 +78,12 @@ public class Race {
         }
     }
 
-    // arts = line.split("[ ]+");
-    // r = new Racer(parts[0], parts[1], parts[2], parts[4]);
-    // racers.add(r);
-    // r.setStartingNumber(index);
-    // index++;
+    public ArrayList<Racer> sortBySurname() {
+        ArrayList copy = getRacers();
+        Comparator cbs = new ComparatorRacerBySurname();
+        Collections.sort(copy);
+        return copy;
+    }
 
     @Override
     public String toString() {
@@ -101,25 +102,25 @@ public class Race {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         Scanner sc = new Scanner(System.in);
         Race race = new Race(2021, "Brno");
-        // Racer racer = new Racer("Jakub", "Štěpánek", Nationality.CZ);
-        // Racer racer1 = new Racer("Matěj", "SADA", Nationality.ES);
-        // Racer racer2 = new Racer("Pavel", "Vácha", Nationality.GB);
-        // Racer racer3 = new Racer("Fabian", "Klein", Nationality.DE);
-
-        // race.addRacer(racer);
-        // race.addRacer(racer1);
-        // race.addRacer(racer2);
-        // race.addRacer(racer3);
-
-        // System.out.println(race);
-        // System.out.println();
-        // System.out.println(race.getRacer(racer2));
         String parentPath = System.getProperty("user.dir") + File.separator + "data" + File.separator
                 + "raceResults2021.csv";
-        File dataDirectory = new File("/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021.csv");
+        File dataDirectory = new File(
+                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021OneRace.csv");
         race.loadStats(dataDirectory);
         System.out.println(race);
 
     }
-
 }
+
+// DEBUG CODES
+// Racer racer = new Racer("Jakub", "Štěpánek", Nationality.CZ);
+// Racer racer1 = new Racer("Matěj", "SADA", Nationality.ES);
+// Racer racer2 = new Racer("Pavel", "Vácha", Nationality.GB);
+// Racer racer3 = new Racer("Fabian", "Klein", Nationality.DE);
+// race.addRacer(racer);
+// race.addRacer(racer1);
+// race.addRacer(racer2);
+// race.addRacer(racer3);
+// System.out.println(race);
+// System.out.println();
+// System.out.println(race.getRacer(racer2));
