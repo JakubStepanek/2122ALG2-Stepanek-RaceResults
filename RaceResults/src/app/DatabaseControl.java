@@ -13,6 +13,4 @@ import java.io.File;
  */
 public class DatabaseControl {
 // import database
-
-    String parentPath = System.getProperty("user.dir") + File.separator + "Data";
 }

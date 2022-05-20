@@ -10,6 +10,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
+import javax.xml.crypto.Data;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -29,6 +31,10 @@ public class Race {
     private String teamName;
     private String bikeName;
     private TimeTools time;
+
+    public Race() {
+
+    }
 
     public Race(int seasonYear, String circuitName) {
         this.seasonYear = seasonYear;
@@ -96,7 +102,7 @@ public class Race {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
                 r.setPozition(Integer.parseInt(parts[9]));
-                racers.add(r);
+                addRacer(r);
             }
         }
     }
@@ -128,11 +134,13 @@ public class Race {
         // + "raceResults2021.csv";
         // File dataDirectory = new File(parentPath);
         File dataDirectory = new File(
-                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021OneRace.csv");
+                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2020.csv");
+        // DataControl.loadStats(dataDirectory, race);
         race.loadStats(dataDirectory);
+        // race.loadStats(dataDirectory);
         System.out.println(race);
-        // TODO: better show
-        System.out.println(race.sortBySurname());
+        // TODO: better show of sortBySurname
+        // System.out.println(race.sortBySurname());
 
     }
 }

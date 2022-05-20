@@ -1,7 +1,8 @@
 package app;
+
 public enum Nationality {
     AU("Austrálie"), DE("Německo"), CZ("Česká republika"), ES("Španělsko"), FR("Francie"), IT("Itálie"),
-    PT("Portugalsko"), ZA("Jižní Afrika"), JP("Japonsko"), US("Amerika"), GB("Velká Británie");
+    PT("Portugalsko"), ZA("Jižní Afrika"), JP("Japonsko"), US("Amerika"), GB("Velká Británie"), FI("Finsko");
 
     private String nationality;
 
@@ -22,6 +23,7 @@ public enum Nationality {
         return null;
 
     }
+
     public static void main(String[] args) {
         System.out.println();
     }

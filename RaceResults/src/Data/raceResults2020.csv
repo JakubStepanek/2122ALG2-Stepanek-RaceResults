@@ -1,0 +1,298 @@
+year;category;sequence;shortname;circuit_name;rider_name;rider_surname;team_name;bike_name;position;points;number;country;speed;time
+2020;MotoGP;2;SPA;Jerez;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;1;25;20;FR;160.2;41'23.796
+2020;MotoGP;2;SPA;Jerez;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;2;20;12;ES;159.9;+4.603
+2020;MotoGP;2;SPA;Jerez;Dovizioso; Andrea;Ducati Team;Ducati;3;16;4;IT;159.8;+5.946
+2020;MotoGP;2;SPA;Jerez;Miller; Jack;Pramac Racing;Ducati;4;13;43;AU;159.8;+6.668
+2020;MotoGP;2;SPA;Jerez;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;5;11;21;IT;159.8;+6.844
+2020;MotoGP;2;SPA;Jerez;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;6;10;44;ES;159.8;+6.938
+2020;MotoGP;2;SPA;Jerez;Bagnaia; Francesco;Pramac Racing;Ducati;7;9;63;IT;159.4;+13.027
+2020;MotoGP;2;SPA;Jerez;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;8;8;88;PT;159.4;+13.441
+2020;MotoGP;2;SPA;Jerez;Petrucci; Danilo;Ducati Team;Ducati;9;7;9;IT;159.0;+19.651
+2020;MotoGP;2;SPA;Jerez;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;10;6;30;JP;158.8;+21.553
+2020;MotoGP;2;SPA;Jerez;Zarco; Johann;Hublot Reale Avintia Racing;Ducati;11;5;5;FR;158.6;+25.100
+2020;MotoGP;2;SPA;Jerez;Marquez; Alex;Repsol Honda Team;Honda;12;4;73;ES;158.5;+27.350
+2020;MotoGP;2;SPA;Jerez;Binder; Brad;Red Bull KTM Factory Racing;KTM;13;3;33;ZA;158.3;+29.640
+2020;MotoGP;2;SPA;Jerez;Rabat; Tito;Hublot Reale Avintia Racing;Ducati;14;2;53;ES;158.1;+32.898
+2020;MotoGP;2;SPA;Jerez;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;15;1;38;GB;157.7;+39.682
+2020;MotoGP;2;SPA;Jerez;Marquez; Marc;Repsol Honda Team;Honda;-1;0;93;ES;160.0;4 Laps
+2020;MotoGP;2;SPA;Jerez;Lecuona; Iker;Red Bull KTM Tech 3;KTM;-1;0;27;ES;159.0;6 Laps
+2020;MotoGP;2;SPA;Jerez;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;-1;0;46;IT;159.1;7 Laps
+2020;MotoGP;2;SPA;Jerez;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;153.0;23 Laps
+2020;MotoGP;2;SPA;Jerez;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;-1;0;36;ES;147.7;24 Laps
+2020;MotoGP;3;ANC;Jerez;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;1;25;20;FR;160.3;41'22.666
+2020;MotoGP;3;ANC;Jerez;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;2;20;12;ES;160.0;+4.495
+2020;MotoGP;3;ANC;Jerez;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;3;16;46;IT;159.9;+5.546
+2020;MotoGP;3;ANC;Jerez;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;4;13;30;JP;159.9;+6.113
+2020;MotoGP;3;ANC;Jerez;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;5;11;36;ES;159.8;+7.693
+2020;MotoGP;3;ANC;Jerez;Dovizioso; Andrea;Ducati Team;Ducati;6;10;4;IT;159.5;+12.554
+2020;MotoGP;3;ANC;Jerez;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;7;9;44;ES;159.2;+17.488
+2020;MotoGP;3;ANC;Jerez;Marquez; Alex;Repsol Honda Team;Honda;8;8;73;ES;159.0;+19.357
+2020;MotoGP;3;ANC;Jerez;Zarco; Johann;Hublot Reale Avintia;Ducati;9;7;5;FR;158.8;+23.523
+2020;MotoGP;3;ANC;Jerez;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;10;6;42;ES;158.6;+27.091
+2020;MotoGP;3;ANC;Jerez;Rabat; Tito;Hublot Reale Avintia;Ducati;11;5;53;ES;158.1;+33.628
+2020;MotoGP;3;ANC;Jerez;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;12;4;38;GB;158.0;+36.306
+2020;MotoGP;3;ANC;Jerez;Crutchlow; Cal;LCR Honda CASTROL;Honda;13;3;35;GB;151.1;1 Lap
+2020;MotoGP;3;ANC;Jerez;Bagnaia; Francesco;Pramac Racing;Ducati;-1;0;63;IT;160.1;6 Laps
+2020;MotoGP;3;ANC;Jerez;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;-1;0;21;IT;159.9;9 Laps
+2020;MotoGP;3;ANC;Jerez;Binder; Brad;Red Bull KTM Factory Racing;KTM;-1;0;33;ZA;158.1;13 Laps
+2020;MotoGP;3;ANC;Jerez;Petrucci; Danilo;Ducati Team;Ducati;-1;0;9;IT;159.2;14 Laps
+2020;MotoGP;3;ANC;Jerez;Miller; Jack;Pramac Racing;Ducati;-1;0;43;AU;159.6;15 Laps
+2020;MotoGP;3;ANC;Jerez;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;158.5;17 Laps
+2020;MotoGP;3;ANC;Jerez;Lecuona; Iker;Red Bull KTM Tech 3;KTM;-1;0;27;ES;156.7;20 Laps
+2020;MotoGP;3;ANC;Jerez;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;-4;0;88;PT;;0 Lap
+2020;MotoGP;4;CZE;Brno;Binder; Brad;Red Bull KTM Factory Racing;KTM;1;25;33;ZA;163.4;41'38.764
+2020;MotoGP;4;CZE;Brno;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;2;20;21;IT;163.1;+5.266
+2020;MotoGP;4;CZE;Brno;Zarco; Johann;Esponsorama Racing;Ducati;3;16;5;FR;163.0;+6.470
+2020;MotoGP;4;CZE;Brno;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;4;13;42;ES;163.0;+6.609
+2020;MotoGP;4;CZE;Brno;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;5;11;46;IT;162.9;+7.517
+2020;MotoGP;4;CZE;Brno;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;6;10;88;PT;162.9;+7.969
+2020;MotoGP;4;CZE;Brno;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;7;9;20;FR;162.6;+11.827
+2020;MotoGP;4;CZE;Brno;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;8;8;30;JP;162.6;+12.862
+2020;MotoGP;4;CZE;Brno;Miller; Jack;Pramac Racing;Ducati;9;7;43;AU;162.4;+15.013
+2020;MotoGP;4;CZE;Brno;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;10;6;41;ES;162.4;+15.087
+2020;MotoGP;4;CZE;Brno;Dovizioso; Andrea;Ducati Team;Ducati;11;5;4;IT;162.3;+16.455
+2020;MotoGP;4;CZE;Brno;Petrucci; Danilo;Ducati Team;Ducati;12;4;9;IT;162.2;+18.506
+2020;MotoGP;4;CZE;Brno;Crutchlow; Cal;LCR Honda CASTROL;Honda;13;3;35;GB;162.2;+18.736
+2020;MotoGP;4;CZE;Brno;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;14;2;12;ES;162.1;+19.720
+2020;MotoGP;4;CZE;Brno;Marquez; Alex;Repsol Honda Team;Honda;15;1;73;ES;161.8;+24.597
+2020;MotoGP;4;CZE;Brno;Rabat; Tito;Esponsorama Racing;Ducati;16;0;53;ES;161.5;+29.004
+2020;MotoGP;4;CZE;Brno;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;17;0;38;GB;161.3;+32.290
+2020;MotoGP;4;CZE;Brno;Bradl; Stefan;Repsol Honda Team;Honda;18;0;6;DE;159.8;+55.977
+2020;MotoGP;4;CZE;Brno;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;-1;0;44;ES;163.5;12 Laps
+2020;MotoGP;4;CZE;Brno;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;-1;0;36;ES;160.2;18 Laps
+2020;MotoGP;4;CZE;Brno;Lecuona; Iker;Red Bull KTM Tech 3;KTM;-1;0;27;ES;160.1;18 Laps
+2020;MotoGP;5;AUT;Spielberg;Dovizioso; Andrea;Ducati Team;Ducati;1;25;4;IT;182.7;28'20.853
+2020;MotoGP;5;AUT;Spielberg;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;2;20;36;ES;182.6;+1.377
+2020;MotoGP;5;AUT;Spielberg;Miller; Jack;Pramac Racing;Ducati;3;16;43;AU;182.6;+1.549
+2020;MotoGP;5;AUT;Spielberg;Binder; Brad;Red Bull KTM Factory Racing;KTM;4;13;33;ZA;182.1;+5.526
+2020;MotoGP;5;AUT;Spielberg;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;5;11;46;IT;182.1;+5.837
+2020;MotoGP;5;AUT;Spielberg;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;6;10;30;JP;182.1;+6.403
+2020;MotoGP;5;AUT;Spielberg;Petrucci; Danilo;Ducati Team;Ducati;7;9;9;IT;181.4;+12.498
+2020;MotoGP;5;AUT;Spielberg;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;8;8;20;FR;181.4;+12.534
+2020;MotoGP;5;AUT;Spielberg;Lecuona; Iker;Red Bull KTM Tech 3;KTM;9;7;27;ES;181.2;+14.117
+2020;MotoGP;5;AUT;Spielberg;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;10;6;12;ES;181.1;+15.276
+2020;MotoGP;5;AUT;Spielberg;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;11;5;41;ES;180.8;+17.772
+2020;MotoGP;5;AUT;Spielberg;Pirro; Michele;Pramac Racing;Ducati;12;4;51;IT;180.3;+23.271
+2020;MotoGP;5;AUT;Spielberg;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;13;3;38;GB;180.1;+24.868
+2020;MotoGP;5;AUT;Spielberg;Marquez; Alex;Repsol Honda Team;Honda;14;2;73;ES;180.1;+24.943
+2020;MotoGP;5;AUT;Spielberg;Crutchlow; Cal;LCR Honda CASTROL;Honda;15;1;35;GB;179.8;+27.435
+2020;MotoGP;5;AUT;Spielberg;Rabat; Tito;Esponsorama Racing;Ducati;16;0;53;ES;179.7;+28.502
+2020;MotoGP;5;AUT;Spielberg;Bradl; Stefan;Repsol Honda Team;Honda;17;0;6;DE;179.7;+28.609
+2020;MotoGP;5;AUT;Spielberg;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-1;0;42;ES;182.6;10 Laps
+2020;MotoGP;5;AUT;Spielberg;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;-1;0;44;ES;182.1;12 Laps
+2020;MotoGP;5;AUT;Spielberg;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;-1;0;88;PT;182.1;12 Laps
+2020;MotoGP;5;AUT;Spielberg;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;-1;0;21;IT;;0 Lap
+2020;MotoGP;5;AUT;Spielberg;Zarco; Johann;Esponsorama Racing;Ducati;-1;0;5;FR;;0 Lap
+2020;MotoGP;6;STY;Spielberg;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;1;25;88;PT;183.5;16'56.025
+2020;MotoGP;6;STY;Spielberg;Miller; Jack;Pramac Racing;Ducati;2;20;43;AU;183.5;+0.316
+2020;MotoGP;6;STY;Spielberg;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;3;16;44;ES;183.4;+0.540
+2020;MotoGP;6;STY;Spielberg;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;4;13;36;ES;183.4;+0.641
+2020;MotoGP;6;STY;Spielberg;Dovizioso; Andrea;Ducati Team;Ducati;5;11;4;IT;183.3;+1.414
+2020;MotoGP;6;STY;Spielberg;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;6;10;42;ES;183.3;+1.450
+2020;MotoGP;6;STY;Spielberg;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;7;9;30;JP;183.2;+1.864
+2020;MotoGP;6;STY;Spielberg;Binder; Brad;Red Bull KTM Factory Racing;KTM;8;8;33;ZA;182.8;+4.150
+2020;MotoGP;6;STY;Spielberg;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;9;7;46;IT;182.7;+4.517
+2020;MotoGP;6;STY;Spielberg;Lecuona; Iker;Red Bull KTM Tech 3;KTM;10;6;27;ES;182.6;+5.068
+2020;MotoGP;6;STY;Spielberg;Petrucci; Danilo;Ducati Team;Ducati;11;5;9;IT;182.5;+5.918
+2020;MotoGP;6;STY;Spielberg;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;12;4;41;ES;182.4;+6.411
+2020;MotoGP;6;STY;Spielberg;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;13;3;20;FR;182.2;+7.406
+2020;MotoGP;6;STY;Spielberg;Zarco; Johann;Esponsorama Racing;Ducati;14;2;5;FR;182.2;+7.454
+2020;MotoGP;6;STY;Spielberg;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;15;1;21;IT;181.7;+10.191
+2020;MotoGP;6;STY;Spielberg;Marquez; Alex;Repsol Honda Team;Honda;16;0;73;ES;181.7;+10.524
+2020;MotoGP;6;STY;Spielberg;Crutchlow; Cal;LCR Honda CASTROL;Honda;17;0;35;GB;181.5;+11.447
+2020;MotoGP;6;STY;Spielberg;Bradl; Stefan;Repsol Honda Team;Honda;18;0;6;DE;181.4;+11.943
+2020;MotoGP;6;STY;Spielberg;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;19;0;38;GB;181.3;+12.732
+2020;MotoGP;6;STY;Spielberg;Pirro; Michele;Pramac Racing;Ducati;20;0;51;IT;181.0;+14.349
+2020;MotoGP;6;STY;Spielberg;Rabat; Tito;Esponsorama Racing;Ducati;21;0;53;ES;181.0;+14.548
+2020;MotoGP;6;STY;Spielberg;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;-5;0;12;ES;;0 Lap
+2020;MotoGP;7;RSM;Misano;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;1;25;21;IT;162.8;42'02.272
+2020;MotoGP;7;RSM;Misano;Bagnaia; Francesco;Pramac Racing;Ducati;2;20;63;IT;162.7;+2.217
+2020;MotoGP;7;RSM;Misano;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;162.7;+2.290
+2020;MotoGP;7;RSM;Misano;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;4;13;46;IT;162.6;+2.643
+2020;MotoGP;7;RSM;Misano;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;5;11;42;ES;162.5;+4.044
+2020;MotoGP;7;RSM;Misano;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;6;10;12;ES;162.5;+5.383
+2020;MotoGP;7;RSM;Misano;Dovizioso; Andrea;Ducati Team;Ducati;7;9;4;IT;162.1;+10.358
+2020;MotoGP;7;RSM;Misano;Miller; Jack;Pramac Racing;Ducati;8;8;43;AU;162.1;+11.155
+2020;MotoGP;7;RSM;Misano;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;9;7;30;JP;162.1;+10.839
+2020;MotoGP;7;RSM;Misano;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;10;6;44;ES;162.0;+12.030
+2020;MotoGP;7;RSM;Misano;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;11;5;88;PT;162.0;+12.376
+2020;MotoGP;7;RSM;Misano;Binder; Brad;Red Bull KTM Factory Racing;KTM;12;4;33;ZA;162.0;+12.405
+2020;MotoGP;7;RSM;Misano;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;13;3;41;ES;161.8;+15.142
+2020;MotoGP;7;RSM;Misano;Lecuona; Iker;Red Bull KTM Tech 3;KTM;14;2;27;ES;161.5;+19.914
+2020;MotoGP;7;RSM;Misano;Zarco; Johann;Esponsorama Racing;Ducati;15;1;5;FR;161.5;+20.152
+2020;MotoGP;7;RSM;Misano;Petrucci; Danilo;Ducati Team;Ducati;16;0;9;IT;161.4;+22.094
+2020;MotoGP;7;RSM;Misano;Marquez; Alex;Repsol Honda Team;Honda;17;0;73;ES;161.4;+22.473
+2020;MotoGP;7;RSM;Misano;Bradl; Stefan;Repsol Honda Team;Honda;18;0;6;DE;160.4;+37.856
+2020;MotoGP;7;RSM;Misano;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;19;0;38;GB;157.9;+1'18.831
+2020;MotoGP;7;RSM;Misano;Rabat; Tito;Esponsorama Racing;Ducati;-1;0;53;ES;161.1;5 Laps
+2020;MotoGP;7;RSM;Misano;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;-1;0;20;FR;150.7;9 Laps
+2020;MotoGP;8;EMI;Misano;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;1;25;12;ES;163.2;41'55.846
+2020;MotoGP;8;EMI;Misano;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;2;20;36;ES;163.1;+2.425
+2020;MotoGP;8;EMI;Misano;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;3;16;44;ES;162.9;+4.528
+2020;MotoGP;8;EMI;Misano;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;4;13;20;FR;163.0;+6.419
+2020;MotoGP;8;EMI;Misano;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;5;11;88;PT;162.7;+7.368
+2020;MotoGP;8;EMI;Misano;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;6;10;30;JP;162.5;+11.139
+2020;MotoGP;8;EMI;Misano;Marquez; Alex;Repsol Honda Team;Honda;7;9;73;ES;162.5;+11.929
+2020;MotoGP;8;EMI;Misano;Dovizioso; Andrea;Ducati Team;Ducati;8;8;4;IT;162.4;+13.113
+2020;MotoGP;8;EMI;Misano;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;9;7;21;IT;162.2;+15.880
+2020;MotoGP;8;EMI;Misano;Petrucci; Danilo;Ducati Team;Ducati;10;6;9;IT;162.1;+17.682
+2020;MotoGP;8;EMI;Misano;Zarco; Johann;Esponsorama Racing;Ducati;11;5;5;FR;161.7;+23.144
+2020;MotoGP;8;EMI;Misano;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;12;4;42;ES;161.6;+24.962
+2020;MotoGP;8;EMI;Misano;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;13;3;38;GB;161.3;+30.008
+2020;MotoGP;8;EMI;Misano;Lecuona; Iker;Red Bull KTM Tech 3;KTM;-1;0;27;ES;162.7;3 Laps
+2020;MotoGP;8;EMI;Misano;Bagnaia; Francesco;Pramac Racing;Ducati;-1;0;63;IT;163.6;7 Laps
+2020;MotoGP;8;EMI;Misano;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;-1;0;46;IT;159.6;12 Laps
+2020;MotoGP;8;EMI;Misano;Rabat; Tito;Esponsorama Racing;Ducati;-1;0;53;ES;160.5;15 Laps
+2020;MotoGP;8;EMI;Misano;Miller; Jack;Pramac Racing;Ducati;-1;0;43;AU;160.8;20 Laps
+2020;MotoGP;8;EMI;Misano;Binder; Brad;Red Bull KTM Factory Racing;KTM;-1;0;33;ZA;147.1;24 Laps
+2020;MotoGP;8;EMI;Misano;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-4;0;41;ES;;0 Lap
+2020;MotoGP;9;CAT;Catalunya;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;1;25;20;FR;164.3;40'33.176
+2020;MotoGP;9;CAT;Catalunya;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;2;20;36;ES;164.2;+0.928
+2020;MotoGP;9;CAT;Catalunya;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;3;16;42;ES;164.1;+1.898
+2020;MotoGP;9;CAT;Catalunya;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;4;13;21;IT;164.1;+2.846
+2020;MotoGP;9;CAT;Catalunya;Miller; Jack;Pramac Racing;Ducati;5;11;43;AU;164.0;+3.391
+2020;MotoGP;9;CAT;Catalunya;Bagnaia; Francesco;Pramac Racing;Ducati;6;10;63;IT;164.0;+3.518
+2020;MotoGP;9;CAT;Catalunya;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;7;9;30;JP;164.0;+3.671
+2020;MotoGP;9;CAT;Catalunya;Petrucci; Danilo;Ducati Team;Ducati;8;8;9;IT;163.8;+6.117
+2020;MotoGP;9;CAT;Catalunya;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;9;7;12;ES;163.3;+13.607
+2020;MotoGP;9;CAT;Catalunya;Crutchlow; Cal;LCR Honda CASTROL;Honda;10;6;35;GB;163.3;+14.483
+2020;MotoGP;9;CAT;Catalunya;Binder; Brad;Red Bull KTM Factory Racing;KTM;11;5;33;ZA;163.2;+14.927
+2020;MotoGP;9;CAT;Catalunya;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;12;4;41;ES;163.2;+15.647
+2020;MotoGP;9;CAT;Catalunya;Marquez; Alex;Repsol Honda Team;Honda;13;3;73;ES;163.1;+17.327
+2020;MotoGP;9;CAT;Catalunya;Lecuona; Iker;Red Bull KTM Tech 3;KTM;14;2;27;ES;162.4;+27.066
+2020;MotoGP;9;CAT;Catalunya;Rabat; Tito;Esponsorama Racing;Ducati;15;1;53;ES;162.4;+27.282
+2020;MotoGP;9;CAT;Catalunya;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;16;0;38;GB;162.3;+28.736
+2020;MotoGP;9;CAT;Catalunya;Bradl; Stefan;Repsol Honda Team;Honda;17;0;6;DE;162.1;+32.643
+2020;MotoGP;9;CAT;Catalunya;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;-1;0;88;PT;163.9;6 Laps
+2020;MotoGP;9;CAT;Catalunya;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;-1;0;46;IT;165.0;9 Laps
+2020;MotoGP;9;CAT;Catalunya;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;-1;0;44;ES;164.1;12 Laps
+2020;MotoGP;9;CAT;Catalunya;Zarco; Johann;Esponsorama Racing;Ducati;-4;0;5;FR;;0 Lap
+2020;MotoGP;9;CAT;Catalunya;Dovizioso; Andrea;Ducati Team;Ducati;-4;0;4;IT;;0 Lap
+2020;MotoGP;10;FRA;Le Mans;Petrucci; Danilo;Ducati Team;Ducati;1;25;9;IT;142.1;45'54.736
+2020;MotoGP;10;FRA;Le Mans;Marquez; Alex;Repsol Honda Team;Honda;2;20;73;ES;142.1;+1.273
+2020;MotoGP;10;FRA;Le Mans;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;3;16;44;ES;142.1;+1.711
+2020;MotoGP;10;FRA;Le Mans;Dovizioso; Andrea;Ducati Team;Ducati;4;13;4;IT;141.9;+3.911
+2020;MotoGP;10;FRA;Le Mans;Zarco; Johann;Esponsorama Racing;Ducati;5;11;5;FR;141.9;+4.310
+2020;MotoGP;10;FRA;Le Mans;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;6;10;88;PT;141.9;+4.466
+2020;MotoGP;10;FRA;Le Mans;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;7;9;30;JP;141.8;+5.921
+2020;MotoGP;10;FRA;Le Mans;Bradl; Stefan;Repsol Honda Team;Honda;8;8;6;DE;141.3;+15.597
+2020;MotoGP;10;FRA;Le Mans;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;9;7;20;FR;141.3;+16.687
+2020;MotoGP;10;FRA;Le Mans;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;10;6;12;ES;141.3;+16.895
+2020;MotoGP;10;FRA;Le Mans;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;11;5;36;ES;141.3;+16.980
+2020;MotoGP;10;FRA;Le Mans;Binder; Brad;Red Bull KTM Factory Racing;KTM;12;4;33;ZA;140.8;+27.321
+2020;MotoGP;10;FRA;Le Mans;Bagnaia; Francesco;Pramac Racing;Ducati;13;3;63;IT;140.4;+33.351
+2020;MotoGP;10;FRA;Le Mans;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;14;2;41;ES;140.2;+39.176
+2020;MotoGP;10;FRA;Le Mans;Lecuona; Iker;Red Bull KTM Tech 3;KTM;15;1;27;ES;139.6;+51.087
+2020;MotoGP;10;FRA;Le Mans;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;-5;0;42;ES;138.4;+1'14.190
+2020;MotoGP;10;FRA;Le Mans;Miller; Jack;Pramac Racing;Ducati;-1;0;43;AU;139.9;7 Laps
+2020;MotoGP;10;FRA;Le Mans;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;-1;0;21;IT;136.7;8 Laps
+2020;MotoGP;10;FRA;Le Mans;Crutchlow; Cal;LCR Honda CASTROL;Honda;-1;0;35;GB;141.0;9 Laps
+2020;MotoGP;10;FRA;Le Mans;Rabat; Tito;Esponsorama Racing;Ducati;-1;0;53;ES;133.5;12 Laps
+2020;MotoGP;10;FRA;Le Mans;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;-1;0;38;GB;138.4;18 Laps
+2020;MotoGP;10;FRA;Le Mans;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;-4;0;46;IT;;0 Lap
+2020;MotoGP;11;ARA;Aragón;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;1;25;42;ES;167.1;41'54.391
+2020;MotoGP;11;ARA;Aragón;Marquez; Alex;Repsol Honda Team;Honda;2;20;73;ES;167.1;+0.263
+2020;MotoGP;11;ARA;Aragón;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;167.0;+2.644
+2020;MotoGP;11;ARA;Aragón;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;4;13;12;ES;166.9;+2.880
+2020;MotoGP;11;ARA;Aragón;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;5;11;30;JP;166.8;+4.570
+2020;MotoGP;11;ARA;Aragón;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;6;10;21;IT;166.8;+4.756
+2020;MotoGP;11;ARA;Aragón;Dovizioso; Andrea;Ducati Team;Ducati;7;9;4;IT;166.6;+8.639
+2020;MotoGP;11;ARA;Aragón;Crutchlow; Cal;LCR Honda CASTROL;Honda;8;8;35;GB;166.5;+8.913
+2020;MotoGP;11;ARA;Aragón;Miller; Jack;Pramac Racing;Ducati;9;7;43;AU;166.5;+9.390
+2020;MotoGP;11;ARA;Aragón;Zarco; Johann;Esponsorama Racing;Ducati;10;6;5;FR;166.5;+9.617
+2020;MotoGP;11;ARA;Aragón;Binder; Brad;Red Bull KTM Factory Racing;KTM;11;5;33;ZA;166.3;+13.200
+2020;MotoGP;11;ARA;Aragón;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;12;4;44;ES;166.2;+13.689
+2020;MotoGP;11;ARA;Aragón;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;13;3;41;ES;166.2;+14.598
+2020;MotoGP;11;ARA;Aragón;Lecuona; Iker;Red Bull KTM Tech 3;KTM;14;2;27;ES;166.1;+15.291
+2020;MotoGP;11;ARA;Aragón;Petrucci; Danilo;Ducati Team;Ducati;15;1;9;IT;166.1;+15.941
+2020;MotoGP;11;ARA;Aragón;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;16;0;88;PT;165.9;+18.284
+2020;MotoGP;11;ARA;Aragón;Bradl; Stefan;Repsol Honda Team;Honda;17;0;6;DE;165.8;+20.136
+2020;MotoGP;11;ARA;Aragón;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;18;0;20;FR;165.7;+21.498
+2020;MotoGP;11;ARA;Aragón;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;19;0;38;GB;165.5;+25.300
+2020;MotoGP;11;ARA;Aragón;Rabat; Tito;Esponsorama Racing;Ducati;20;0;53;ES;165.5;+25.558
+2020;MotoGP;11;ARA;Aragón;Bagnaia; Francesco;Pramac Racing;Ducati;-1;0;63;IT;162.0;21 Laps
+2020;MotoGP;12;TER;Aragón;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;1;25;21;IT;167.6;41'47.652
+2020;MotoGP;12;TER;Aragón;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;2;20;42;ES;167.4;+2.205
+2020;MotoGP;12;TER;Aragón;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;3;16;36;ES;167.2;+5.376
+2020;MotoGP;12;TER;Aragón;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;4;13;44;ES;166.9;+10.299
+2020;MotoGP;12;TER;Aragón;Zarco; Johann;Esponsorama Racing;Ducati;5;11;5;FR;166.7;+12.915
+2020;MotoGP;12;TER;Aragón;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;6;10;88;PT;166.7;+12.953
+2020;MotoGP;12;TER;Aragón;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;7;9;12;ES;166.6;+14.262
+2020;MotoGP;12;TER;Aragón;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;8;8;20;FR;166.6;+14.720
+2020;MotoGP;12;TER;Aragón;Lecuona; Iker;Red Bull KTM Tech 3;KTM;9;7;27;ES;166.4;+17.177
+2020;MotoGP;12;TER;Aragón;Petrucci; Danilo;Ducati Team;Ducati;10;6;9;IT;166.3;+19.519
+2020;MotoGP;12;TER;Aragón;Crutchlow; Cal;LCR Honda CASTROL;Honda;11;5;35;GB;166.3;+19.708
+2020;MotoGP;12;TER;Aragón;Bradl; Stefan;Repsol Honda Team;Honda;12;4;6;DE;166.2;+20.591
+2020;MotoGP;12;TER;Aragón;Dovizioso; Andrea;Ducati Team;Ducati;13;3;4;IT;166.1;+22.222
+2020;MotoGP;12;TER;Aragón;Rabat; Tito;Esponsorama Racing;Ducati;14;2;53;ES;165.8;+26.496
+2020;MotoGP;12;TER;Aragón;Smith; Bradley;Aprilia Racing Team Gresini;Aprilia;15;1;38;GB;165.5;+31.816
+2020;MotoGP;12;TER;Aragón;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-1;0;41;ES;166.6;3 Laps
+2020;MotoGP;12;TER;Aragón;Marquez; Alex;Repsol Honda Team;Honda;-1;0;73;ES;167.3;10 Laps
+2020;MotoGP;12;TER;Aragón;Bagnaia; Francesco;Pramac Racing;Ducati;-1;0;63;IT;152.9;18 Laps
+2020;MotoGP;12;TER;Aragón;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;-4;0;30;JP;;0 Lap
+2020;MotoGP;12;TER;Aragón;Miller; Jack;Pramac Racing;Ducati;-4;0;43;AU;;0 Lap
+2020;MotoGP;12;TER;Aragón;Binder; Brad;Red Bull KTM Factory Racing;KTM;-4;0;33;ZA;;0 Lap
+2020;MotoGP;13;EUR;Ricardo Tormo;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;1;25;36;ES;155.8;41'37.297
+2020;MotoGP;13;EUR;Ricardo Tormo;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;2;20;42;ES;155.8;+0.651
+2020;MotoGP;13;EUR;Ricardo Tormo;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;3;16;44;ES;155.8;+1.203
+2020;MotoGP;13;EUR;Ricardo Tormo;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;4;13;30;JP;155.7;+2.194
+2020;MotoGP;13;EUR;Ricardo Tormo;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;5;11;88;PT;155.3;+8.046
+2020;MotoGP;13;EUR;Ricardo Tormo;Miller; Jack;Pramac Racing;Ducati;6;10;43;AU;155.3;+8.755
+2020;MotoGP;13;EUR;Ricardo Tormo;Binder; Brad;Red Bull KTM Factory Racing;KTM;7;9;33;ZA;155.2;+10.137
+2020;MotoGP;13;EUR;Ricardo Tormo;Dovizioso; Andrea;Ducati Team;Ducati;8;8;4;IT;155.2;+10.801
+2020;MotoGP;13;EUR;Ricardo Tormo;Zarco; Johann;Esponsorama Racing;Ducati;9;7;5;FR;155.1;+11.550
+2020;MotoGP;13;EUR;Ricardo Tormo;Petrucci; Danilo;Ducati Team;Ducati;10;6;9;IT;154.8;+16.803
+2020;MotoGP;13;EUR;Ricardo Tormo;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;11;5;21;IT;154.7;+17.617
+2020;MotoGP;13;EUR;Ricardo Tormo;Bradl; Stefan;Repsol Honda Team;Honda;12;4;6;DE;154.3;+24.350
+2020;MotoGP;13;EUR;Ricardo Tormo;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;13;3;12;ES;154.3;+25.403
+2020;MotoGP;13;EUR;Ricardo Tormo;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;14;2;20;FR;153.4;+39.639
+2020;MotoGP;13;EUR;Ricardo Tormo;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;-1;0;32;IT;145.6;2 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Marquez; Alex;Repsol Honda Team;Honda;-1;0;73;ES;155.1;4 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Rabat; Tito;Esponsorama Racing;Ducati;-1;0;53;ES;151.0;14 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Bagnaia; Francesco;Pramac Racing;Ducati;-1;0;63;IT;152.6;22 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Crutchlow; Cal;LCR Honda CASTROL;Honda;-1;0;35;GB;151.9;22 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;-1;0;46;IT;151.3;23 Laps
+2020;MotoGP;13;EUR;Ricardo Tormo;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;-4;0;41;ES;;0 Lap
+2020;MotoGP;14;VAL;Ricardo Tormo;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;1;25;21;IT;156.8;41'22.478
+2020;MotoGP;14;VAL;Ricardo Tormo;Miller; Jack;Pramac Racing;Ducati;2;20;43;AU;156.8;+0.093
+2020;MotoGP;14;VAL;Ricardo Tormo;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;3;16;44;ES;156.6;+3.006
+2020;MotoGP;14;VAL;Ricardo Tormo;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;4;13;42;ES;156.5;+3.697
+2020;MotoGP;14;VAL;Ricardo Tormo;Binder; Brad;Red Bull KTM Factory Racing;KTM;5;11;33;ZA;156.5;+4.127
+2020;MotoGP;14;VAL;Ricardo Tormo;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;6;10;88;PT;156.3;+7.272
+2020;MotoGP;14;VAL;Ricardo Tormo;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;7;9;36;ES;156.2;+8.703
+2020;MotoGP;14;VAL;Ricardo Tormo;Dovizioso; Andrea;Ducati Team;Ducati;8;8;4;IT;156.2;+8.729
+2020;MotoGP;14;VAL;Ricardo Tormo;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;9;7;41;ES;155.8;+15.512
+2020;MotoGP;14;VAL;Ricardo Tormo;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;10;6;12;ES;155.6;+19.043
+2020;MotoGP;14;VAL;Ricardo Tormo;Bagnaia; Francesco;Pramac Racing;Ducati;11;5;63;IT;155.5;+19.456
+2020;MotoGP;14;VAL;Ricardo Tormo;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;12;4;46;IT;155.5;+19.717
+2020;MotoGP;14;VAL;Ricardo Tormo;Crutchlow; Cal;LCR Honda CASTROL;Honda;13;3;35;GB;155.3;+23.802
+2020;MotoGP;14;VAL;Ricardo Tormo;Bradl; Stefan;Repsol Honda Team;Honda;14;2;6;DE;155.0;+27.430
+2020;MotoGP;14;VAL;Ricardo Tormo;Petrucci; Danilo;Ducati Team;Ducati;15;1;9;IT;154.9;+30.570
+2020;MotoGP;14;VAL;Ricardo Tormo;Marquez; Alex;Repsol Honda Team;Honda;16;0;73;ES;154.9;+30.619
+2020;MotoGP;14;VAL;Ricardo Tormo;Rabat; Tito;Esponsorama Racing;Ducati;17;0;53;ES;154.1;+42.365
+2020;MotoGP;14;VAL;Ricardo Tormo;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;18;0;32;IT;153.9;+46.472
+2020;MotoGP;14;VAL;Ricardo Tormo;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;-1;0;30;JP;156.6;9 Laps
+2020;MotoGP;14;VAL;Ricardo Tormo;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;-1;0;20;FR;153.8;19 Laps
+2020;MotoGP;14;VAL;Ricardo Tormo;Zarco; Johann;Esponsorama Racing;Ducati;-1;0;5;FR;154.7;22 Laps
+2020;MotoGP;15;POR;Algarve;Oliveira; Miguel;Red Bull KTM Tech 3;KTM;1;25;88;PT;164.7;41'48.163
+2020;MotoGP;15;POR;Algarve;Miller; Jack;Pramac Racing;Ducati;2;20;43;AU;164.5;+3.193
+2020;MotoGP;15;POR;Algarve;Morbidelli; Franco;Petronas Yamaha SRT;Yamaha;3;16;21;IT;164.5;+3.298
+2020;MotoGP;15;POR;Algarve;Espargaro; Pol;Red Bull KTM Factory Racing;KTM;4;13;44;ES;163.9;+12.626
+2020;MotoGP;15;POR;Algarve;Nakagami; Takaaki;LCR Honda IDEMITSU;Honda;5;11;30;JP;163.9;+13.318
+2020;MotoGP;15;POR;Algarve;Dovizioso; Andrea;Ducati Team;Ducati;6;10;4;IT;163.7;+15.578
+2020;MotoGP;15;POR;Algarve;Bradl; Stefan;Repsol Honda Team;Honda;7;9;6;DE;163.7;+15.738
+2020;MotoGP;15;POR;Algarve;Espargaro; Aleix;Aprilia Racing Team Gresini;Aprilia;8;8;41;ES;163.7;+16.034
+2020;MotoGP;15;POR;Algarve;Marquez; Alex;Repsol Honda Team;Honda;9;7;73;ES;163.5;+18.325
+2020;MotoGP;15;POR;Algarve;Zarco; Johann;Esponsorama Racing;Ducati;10;6;5;FR;163.5;+18.596
+2020;MotoGP;15;POR;Algarve;Viñales; Maverick;Monster Energy Yamaha MotoGP;Yamaha;11;5;12;ES;163.5;+18.685
+2020;MotoGP;15;POR;Algarve;Rossi; Valentino;Monster Energy Yamaha MotoGP;Yamaha;12;4;46;IT;163.5;+18.946
+2020;MotoGP;15;POR;Algarve;Crutchlow; Cal;LCR Honda CASTROL;Honda;13;3;35;GB;163.5;+19.159
+2020;MotoGP;15;POR;Algarve;Quartararo; Fabio;Petronas Yamaha SRT;Yamaha;14;2;20;FR;163.1;+24.376
+2020;MotoGP;15;POR;Algarve;Rins; Alex;Team SUZUKI ECSTAR;Suzuki;15;1;42;ES;162.9;+27.776
+2020;MotoGP;15;POR;Algarve;Petrucci; Danilo;Ducati Team;Ducati;16;0;9;IT;162.5;+34.266
+2020;MotoGP;15;POR;Algarve;Kallio; Mika;Red Bull KTM Tech 3;KTM;17;0;82;FI;161.6;+48.410
+2020;MotoGP;15;POR;Algarve;Rabat; Tito;Esponsorama Racing;Ducati;18;0;53;ES;161.6;+48.411
+2020;MotoGP;15;POR;Algarve;Savadori; Lorenzo;Aprilia Racing Team Gresini;Aprilia;-1;0;32;IT;162.6;3 Laps
+2020;MotoGP;15;POR;Algarve;Mir; Joan;Team SUZUKI ECSTAR;Suzuki;-1;0;36;ES;161.3;10 Laps
+2020;MotoGP;15;POR;Algarve;Binder; Brad;Red Bull KTM Factory Racing;KTM;-1;0;33;ZA;157.4;23 Laps
+2020;MotoGP;15;POR;Algarve;Bagnaia; Francesco;Pramac Racing;Ducati;-4;0;63;IT;;0 Lap
