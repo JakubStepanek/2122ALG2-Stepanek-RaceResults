@@ -11,50 +11,58 @@ import utils.FileExplorer;
 public class Menu {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        Scanner sc = new Scanner(System.in);
-        char choice;
-        boolean end = false;
-        while (end == false) {
-            showMainMenu();
-            switch ((choice = sc.next().charAt(0))) {
-                case '1':
-                    showRaceMenu();
-                    String userAnswer = sc.next();
-                    System.out.println(userAnswer);
-                    Race race = new Race();
-                    try {
-                        File file = new File(System.getProperty("user.dir") + File.separator + "src" + File.separator
-                                + "Data" + File.separator + userAnswer);
-                        System.out.println(file);
-                        race.loadStats(file);
-                        System.out.println(race);
-                    } catch (Exception e) {
-                        throw new FileNotFoundException("Neplatný název souboru!");
-                    }
+        try (Scanner sc = new Scanner(System.in)) {
+            String choice;
+            boolean end = false;
+            while (!end) {
+                showMainMenu();
+                choice = sc.nextLine();
+                switch (choice) {
+                    case "1":
 
-                    // TODO: executeMenu()
-
-                    // read race from file
-                    // show race result
-                    break;
-                case '2':
-                    // add race
-                    // add riders
-                    // save to file
-                    break;
-                case '3':
-                    // TODO:
-                    break;
-                case 'q':
-                    System.out.println("Ukončuji...");
-                    end = true;
-                    break;
-                default:
-                    System.out.println("neplatná volba");
-                    break;
+                        // raceMenu()
+                        showRaceMenu();
+                        String userAnswer = sc.nextLine();
+                        Race race = new Race();
+                        try {
+                            File file = new File(
+                                    System.getProperty("user.dir") + File.separator + "src" + File.separator
+                                            + "Data" + File.separator + userAnswer);
+                            System.out.println(file);
+                            race.loadStats(file);
+                            System.out.println(race);
+                        } catch (Exception e) {
+                            throw new FileNotFoundException("Neplatný název souboru!");
+                        }
+                        System.out.println("Chceš zobrazit detail jezdce? [a/n]");
+                        String answer = sc.nextLine().toLowerCase();
+                        if (answer.equals("a")) {
+                            System.out.print("Zadej jméno jezdce: ");
+                            String surname = sc.nextLine();
+                            System.out.println(race.showDetailOfRacer(surname));
+                        }
+                        break;
+                    case "2":
+                        break;
+                    case "3":
+                        // TODO:
+                        break;
+                    case "q":
+                        System.out.println("Ukončuji...");
+                        end = true;
+                        break;
+                    default:
+                        System.out.println("neplatná volba");
+                        break;
+                }
             }
         }
     }
+
+    // public static void showRacerSelectionMenu() {
+    // System.out.println("1 ...zobrazit detail závodníka");
+    // System.out.println("q ...konec");
+    // }
 
     public static void showMainMenu() {
         // clear console space

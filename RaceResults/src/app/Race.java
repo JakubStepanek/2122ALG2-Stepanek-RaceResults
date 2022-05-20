@@ -85,6 +85,15 @@ public class Race {
         return index;
     }
 
+    private Racer firstRacer() {
+        for (Racer racer : racers) {
+            if (racer.getPozition() == 1) {
+                return new Racer(racer);
+            }
+        }
+        return null;
+    }
+
     public void loadStats(File file) throws FileNotFoundException, IOException {
         String line;
         String[] parts;
@@ -98,6 +107,13 @@ public class Race {
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
                 r.setRacingNumber(parts[11]);
+                if (parts[14].contains("+")) {
+                    int temp = TimeTools.timeToSeconds(parts[14].substring(1, parts[14].length()));
+                    int shortestTime = TimeTools.timeToSeconds(firstRacer().getRaceTime());
+                    r.setRaceTime(TimeTools.secondsToTimeString(temp + shortestTime));
+                } else {
+                    r.setRaceTime(parts[14]);
+                }
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
@@ -112,6 +128,15 @@ public class Race {
         Comparator cbs = new ComparatorRacerBySurname();
         Collections.sort(copy, cbs);
         return copy;
+    }
+
+    public Racer showDetailOfRacer(String surname) {
+        for (Racer racer : racers) {
+            if ((racer.getSurname()).equals(surname)) {
+                return new Racer(racer);
+            }
+        }
+        return null;
     }
 
     @Override
@@ -138,9 +163,13 @@ public class Race {
         // DataControl.loadStats(dataDirectory, race);
         race.loadStats(dataDirectory);
         // race.loadStats(dataDirectory);
-        System.out.println(race);
+        // System.out.println(race);
         // TODO: better show of sortBySurname
         // System.out.println(race.sortBySurname());
+
+        Scanner sc = new Scanner(System.in);
+        String surname = sc.nextLine();
+        System.out.println(race.showDetailOfRacer(surname));
 
     }
 }

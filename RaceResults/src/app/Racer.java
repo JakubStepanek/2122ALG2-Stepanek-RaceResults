@@ -19,6 +19,7 @@ public class Racer implements Comparable<Racer> {
     private String team;
     private String racingNumber;
     private double maxSpeed;
+    private String raceTime;
 
     public Racer(String name, String surname, Nationality nationality) {
         this.name = name;
@@ -36,6 +37,7 @@ public class Racer implements Comparable<Racer> {
         this.team = racer.team;
         this.racingNumber = racer.racingNumber;
         this.maxSpeed = racer.maxSpeed;
+        this.raceTime = racer.raceTime;
     }
 
     public String getName() {
@@ -52,6 +54,14 @@ public class Racer implements Comparable<Racer> {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public void setRaceTime(String raceTime) {
+        this.raceTime = raceTime;
+    }
+
+    public String getRaceTime() {
+        return this.raceTime;
     }
 
     public Nationality getNationality() {
@@ -112,9 +122,10 @@ public class Racer implements Comparable<Racer> {
 
     @Override
     public String toString() {
-        return String.format("%10s %10s %15s %30s %10s Startovní číslo: %2s pozice: %2d %.1fmph", name, surname,
+        return String.format("%10s %10s %15s %30s %10s Startovní číslo: %2s pozice: %2d %.1fmph %s seconds ", name,
+                surname,
                 this.nationality.getNationalityValue(),
-                this.getTeam(), this.getBike(), this.getRacingNumber(), getPozition(), getMaxSpeed());
+                this.getTeam(), this.getBike(), this.getRacingNumber(), getPozition(), getMaxSpeed(), getRaceTime());
     }
 
     public static void main(String[] args) {

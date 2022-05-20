@@ -14,7 +14,7 @@ public class TimeTools {
     private int minutes;
     private int seconds;
 
-    //constructor mask: XX XX XXXX
+    // constructor mask: XX XX XXXX
     public TimeTools(String time) {
         String[] arrOfTime = time.split(" ");
         int[] arrInt = new int[3];
@@ -61,8 +61,8 @@ public class TimeTools {
     }
 
     public static int timeToSeconds(String seconds) {
-        String arr[] = seconds.split(":", 3);
-        return Integer.parseInt(arr[0]) * 3600 + Integer.parseInt(arr[1]) * 60 + Integer.parseInt(arr[2]);
+        String arr[] = seconds.split("'", 2);
+        return Integer.parseInt(arr[0]) * 60 + Integer.parseInt(arr[1]);
     }
 
     @Override
