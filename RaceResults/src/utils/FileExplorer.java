@@ -19,9 +19,9 @@ public class FileExplorer {
     }
 
     public static void main(String[] args) {
-        String actualDir = System.getProperty("user.dir") + File.separator + "src" +
-        File.separator + "Data";
-        File file = new File(actualDir);
-        System.out.println(showPathFile(file, 0));
+        // String actualDir = System.getProperty("user.dir") +
+        // File.separator + "Data";
+        // File file = new File(actualDir);
+        // System.out.println(showPathFile(file, 0));
     }
 }

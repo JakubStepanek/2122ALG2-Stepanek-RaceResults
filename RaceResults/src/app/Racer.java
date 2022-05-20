@@ -122,7 +122,7 @@ public class Racer implements Comparable<Racer> {
 
     @Override
     public String toString() {
-        return String.format("%10s %10s %15s %30s %10s Startovní číslo: %2s pozice: %2d %.1fmph %s seconds ", name,
+        return String.format("%10s %10s %15s %30s %10s Startovní číslo: %2s pozice: %2d %.1fmph %s", name,
                 surname,
                 this.nationality.getNationalityValue(),
                 this.getTeam(), this.getBike(), this.getRacingNumber(), getPozition(), getMaxSpeed(), getRaceTime());

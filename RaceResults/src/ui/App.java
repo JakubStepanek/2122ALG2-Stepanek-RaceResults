@@ -8,7 +8,7 @@ import java.util.Scanner;
 import app.Race;
 import utils.FileExplorer;
 
-public class Menu {
+public class App {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         try (Scanner sc = new Scanner(System.in)) {
@@ -19,15 +19,14 @@ public class Menu {
                 choice = sc.nextLine();
                 switch (choice) {
                     case "1":
-
                         // raceMenu()
                         showRaceMenu();
                         String userAnswer = sc.nextLine();
                         Race race = new Race();
                         try {
                             File file = new File(
-                                    System.getProperty("user.dir") + File.separator + "src" + File.separator
-                                            + "Data" + File.separator + userAnswer);
+                                    System.getProperty("user.dir") + File.separator + "Data" + File.separator
+                                            + userAnswer);
                             System.out.println(file);
                             race.loadStats(file);
                             System.out.println(race);
@@ -78,13 +77,10 @@ public class Menu {
     }
 
     public static void showRaceMenu() {
-        String actualDir = System.getProperty("user.dir") + File.separator + "src" +
-                File.separator + "Data";
+        String actualDir = System.getProperty("user.dir") + File.separator + "Data";
         File file = new File(actualDir);
         System.out.println(FileExplorer.showPathFile(file, 0));
         System.out.print("Vyberte soubor se závody: ");
-        // read races from file
-        // ask for selection
     }
 
 }
