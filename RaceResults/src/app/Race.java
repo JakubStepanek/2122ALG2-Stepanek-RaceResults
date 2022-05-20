@@ -43,6 +43,22 @@ public class Race {
         return new Racer(racers.get(findIndexOfRacer(racer)));
     }
 
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+
+    public void setSeasonYear(int seasonYear) {
+        this.seasonYear = seasonYear;
+    }
+
+    public int getSeasonYear() {
+        return this.seasonYear;
+    }
+
     public ArrayList<Racer> getRacers() {
         ArrayList<Racer> copy = new ArrayList<>();
         for (Racer racer : this.racers) {
@@ -76,7 +92,6 @@ public class Race {
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
                 r.setRacingNumber(parts[11]);
-                r.setBike(parts[8]);
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
@@ -89,33 +104,35 @@ public class Race {
     public ArrayList<Racer> sortBySurname() {
         ArrayList copy = getRacers();
         Comparator cbs = new ComparatorRacerBySurname();
-        Collections.sort(copy);
+        Collections.sort(copy, cbs);
         return copy;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        ArrayList<Racer> racers = getRacers();
-        sb.append("Okruh: " + this.circuitName + "\n");
+        ArrayList<Racer> racersToString = getRacers();
         sb.append("Výsledky: \n");
         sb.append("========== \n");
-        for (Racer racer : racers) {
+        sb.append(String.format("Sezóna %s, okruh %s%n", getSeasonYear(), getLocation()));
+        for (Racer racer : racersToString) {
             sb.append(racer + "\n");
         }
-
         return sb.toString();
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        Scanner sc = new Scanner(System.in);
         Race race = new Race(2021, "Brno");
-        String parentPath = System.getProperty("user.dir") + File.separator + "data" + File.separator
-                + "raceResults2021.csv";
+        // String parentPath = System.getProperty("user.dir") + File.separator + "data"
+        // + File.separator
+        // + "raceResults2021.csv";
+        // File dataDirectory = new File(parentPath);
         File dataDirectory = new File(
                 "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021OneRace.csv");
         race.loadStats(dataDirectory);
         System.out.println(race);
+        // TODO: better show
+        System.out.println(race.sortBySurname());
 
     }
 }
