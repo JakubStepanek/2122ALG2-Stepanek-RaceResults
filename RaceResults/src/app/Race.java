@@ -62,7 +62,17 @@ public class Race {
     }
 
     public int getSeasonYear() {
-        return this.seasonYear;
+        if (isSeasonValid()) {
+            return this.seasonYear;
+        }
+        throw new IllegalArgumentException("Sezóna nebyla nastavena");
+    }
+
+    private boolean isSeasonValid() {
+        if (this.seasonYear < 1851) {
+            return false;
+        }
+        return true;
     }
 
     public ArrayList<Racer> getRacers() {
@@ -103,6 +113,9 @@ public class Race {
             br.readLine();
             while ((line = br.readLine()) != null) {
                 parts = line.split(";");
+                if (!isSeasonValid()) {
+                    setSeasonYear(Integer.parseInt(parts[0]));
+                }
                 r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
@@ -123,6 +136,10 @@ public class Race {
         }
     }
 
+    // TODO: Method to save data to file...
+
+
+
     public ArrayList<Racer> sortBySurname() {
         ArrayList copy = getRacers();
         Comparator cbs = new ComparatorRacerBySurname();
@@ -130,7 +147,7 @@ public class Race {
         return copy;
     }
 
-    public Racer showDetailOfRacer(String surname) {
+    public Racer getRacer(String surname) {
         for (Racer racer : racers) {
             if ((racer.getSurname()).equals(surname)) {
                 return new Racer(racer);
@@ -159,17 +176,17 @@ public class Race {
         // + "raceResults2021.csv";
         // File dataDirectory = new File(parentPath);
         File dataDirectory = new File(
-                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2020.csv");
+                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021OneRace.csv");
         // DataControl.loadStats(dataDirectory, race);
         race.loadStats(dataDirectory);
         // race.loadStats(dataDirectory);
-        // System.out.println(race);
+        System.out.println(race);
         // TODO: better show of sortBySurname
         // System.out.println(race.sortBySurname());
 
-        Scanner sc = new Scanner(System.in);
-        String surname = sc.nextLine();
-        System.out.println(race.showDetailOfRacer(surname));
+        // Scanner sc = new Scanner(System.in);
+        // String surname = sc.nextLine();
+        // System.out.println(race.showDetailOfRacer(surname));
 
     }
 }
