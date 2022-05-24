@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class DataControl extends Race{
 
-    public DataControl(int seasonYear, String circuitName) {
+    public DataControl(int seasonYear, Circuit circuitName) {
         super(seasonYear, circuitName);
         //TODO Auto-generated constructor stub
     }

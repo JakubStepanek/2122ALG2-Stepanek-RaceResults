@@ -73,7 +73,11 @@ public class Racer implements Comparable<Racer> {
     }
 
     public int getPozition() {
-        return this.pozition;
+        if (this.pozition < 0) {
+            return 0;
+        } else {
+            return this.pozition;
+        }
     }
 
     public void setPozition(int pozition) {
@@ -120,12 +124,20 @@ public class Racer implements Comparable<Racer> {
         this.maxSpeed = maxSpeed;
     }
 
+    public String getNationalityValue() {
+        return this.nationality.getNationalityValue();
+    }
+
     @Override
     public String toString() {
-        return String.format("%10s %10s %15s %30s %10s %2s %2d. %.1fmph %s", name,
-                surname,
-                this.nationality.getNationalityValue(),
-                this.getTeam(), this.getBike(), this.getRacingNumber(), getPozition(), getMaxSpeed(), getRaceTime());
+        // create two variables to now call getPozition twice a Racer to string
+        int tempPozitionNumber = getPozition();
+        String tempPozition = (tempPozitionNumber == 0 ? "DNF" : tempPozitionNumber + ".");
+        return String.format("%3s %10s %10s %15s %30s %10s %2s %.1fmph %s",
+                tempPozition, getName(),
+                getSurname(),
+                getNationalityValue(),
+                getTeam(), getBike(), getRacingNumber(), getMaxSpeed(), getRaceTime());
     }
 
     public static void main(String[] args) {

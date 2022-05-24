@@ -8,9 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Scanner;
-
-import javax.xml.crypto.Data;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -23,20 +20,15 @@ import javax.xml.crypto.Data;
 public class Race {
     private int seasonYear;
     private Category category;
-    private String circuitName;
+    private Circuit circuitName;
     private String location;
     private ArrayList<Racer> racers = new ArrayList<>();
-    private TimeTools raceDuration;
-    private int topSpeed;
-    private String teamName;
-    private String bikeName;
-    private TimeTools time;
 
     public Race() {
 
     }
 
-    public Race(int seasonYear, String circuitName) {
+    public Race(int seasonYear, Circuit circuitName) {
         this.seasonYear = seasonYear;
         this.circuitName = circuitName;
     }
@@ -53,8 +45,12 @@ public class Race {
         this.location = location;
     }
 
-    public String getLocation() {
-        return this.location;
+    public String getCircuitName() {
+        return this.circuitName.getCircuitValue();
+    }
+
+    public Circuit getCircuitShortcut() {
+        return this.circuitName;
     }
 
     public void setSeasonYear(int seasonYear) {
@@ -69,7 +65,7 @@ public class Race {
     }
 
     private boolean isSeasonValid() {
-        if (this.seasonYear < 1851) {
+        if (this.seasonYear <= 1949) {
             return false;
         }
         return true;
@@ -116,6 +112,9 @@ public class Race {
                 if (!isSeasonValid()) {
                     setSeasonYear(Integer.parseInt(parts[0]));
                 }
+                if (!isCircuitNameSet()) {
+                    setCircuitName(Circuit.valueOf(parts[3]));
+                }
                 r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
@@ -138,7 +137,16 @@ public class Race {
 
     // TODO: Method to save data to file...
 
+    private boolean isCircuitNameSet() {
+        if (this.circuitName == null) {
+            return false;
+        }
+        return true;
+    }
 
+    public void setCircuitName(Circuit circuitName) {
+        this.circuitName = circuitName;
+    }
 
     public ArrayList<Racer> sortBySurname() {
         ArrayList copy = getRacers();
@@ -162,7 +170,7 @@ public class Race {
         ArrayList<Racer> racersToString = getRacers();
         sb.append("Výsledky: \n");
         sb.append("========== \n");
-        sb.append(String.format("Sezóna %s, okruh %s%n", getSeasonYear(), getLocation()));
+        sb.append(String.format("Sezóna %s, okruh %s [%s]%n", getSeasonYear(), getCircuitName(), getCircuitShortcut()));
         for (Racer racer : racersToString) {
             sb.append(racer + "\n");
         }
@@ -170,7 +178,7 @@ public class Race {
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        Race race = new Race(2021, "Brno");
+        Race race = new Race();
         // String parentPath = System.getProperty("user.dir") + File.separator + "data"
         // + File.separator
         // + "raceResults2021.csv";

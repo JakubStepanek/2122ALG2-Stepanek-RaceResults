@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
+import app.Circuit;
 import app.Race;
 import utils.FileExplorer;
 
@@ -30,9 +31,6 @@ public class App {
                             File file = new File(
                                     System.getProperty("user.dir") + File.separator + "Data" + File.separator
                                             + userAnswer);
-                            // File file = new File(
-                            // "/Users/kubin/Documents/TUL/Semestr
-                            // 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2020.csv");
                             race.loadStats(file);
                             System.out.println(race);
                         } catch (Exception e) {
@@ -50,9 +48,17 @@ public class App {
                         }
                         break;
                     case "2":
+                        // TODO: working case selection
+
+                        Race raceByUser = new Race();
+                        System.out.print("Zadejte sezónu, kdy se jel závod: ");
+                        raceByUser.setSeasonYear(sc.nextInt());
+                        System.out.print("Zadejte název okruhu: ");
+                        raceByUser.setCircuitName(Circuit.of(sc.nextLine()));
+
                         break;
                     case "3":
-                        System.out.print("Zadej příjmené závodníka: ");
+                        System.out.print("Zadej příjmení závodníka: ");
                         String surname = sc.nextLine();
                         System.out.println(race.getRacer(surname));
                         break;
