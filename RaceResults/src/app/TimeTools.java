@@ -5,7 +5,7 @@ package app;
  */
 
 /**
- *
+ *hipityhopityuco
  * @author kubin
  */
 public class TimeTools {

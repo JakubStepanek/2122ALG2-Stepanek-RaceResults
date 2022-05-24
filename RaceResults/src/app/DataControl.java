@@ -29,7 +29,7 @@ public class DataControl extends Race{
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
-                r.setPozition(Integer.parseInt(parts[9]));
+                r.setPosition(Integer.parseInt(parts[9]));
                 race.addRacer(r);
             }
         }

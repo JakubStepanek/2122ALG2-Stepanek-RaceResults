@@ -13,7 +13,7 @@ public class Racer implements Comparable<Racer> {
     private String name;
     private String surname;
     private Nationality nationality;
-    private int pozition;
+    private int position;
     private int points;
     private String bike;
     private String team;
@@ -31,7 +31,7 @@ public class Racer implements Comparable<Racer> {
         this.name = racer.name;
         this.surname = racer.surname;
         this.nationality = racer.nationality;
-        this.pozition = racer.pozition;
+        this.position = racer.position;
         this.points = racer.points;
         this.bike = racer.bike;
         this.team = racer.team;
@@ -72,16 +72,16 @@ public class Racer implements Comparable<Racer> {
         this.nationality = nationality;
     }
 
-    public int getPozition() {
-        if (this.pozition < 0) {
+    public int getPosition() {
+        if (this.position < 0) {
             return 0;
         } else {
-            return this.pozition;
+            return this.position;
         }
     }
 
-    public void setPozition(int pozition) {
-        this.pozition = pozition;
+    public void setPosition(int position) {
+        this.position = position;
     }
 
     public int getPoints() {
@@ -130,14 +130,14 @@ public class Racer implements Comparable<Racer> {
 
     @Override
     public String toString() {
-        // create two variables to now call getPozition twice a Racer to string
-        int tempPozitionNumber = getPozition();
-        String tempPozition = (tempPozitionNumber == 0 ? "DNF" : tempPozitionNumber + ".");
-        return String.format("%3s %10s %10s %15s %30s %10s %2s %.1fmph %s",
-                tempPozition, getName(),
+        // create two variables to now call getPosition twice a Racer to string
+        int tempPositionNumber = getPosition();
+        String tempPosition = (tempPositionNumber == 0 ? "DNF" : tempPositionNumber + ".");
+        return String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-10s %.1fmph %s %s",
+                tempPosition, getName(),
                 getSurname(),
                 getNationalityValue(),
-                getTeam(), getBike(), getRacingNumber(), getMaxSpeed(), getRaceTime());
+                getTeam(), getBike(), getRacingNumber(), getMaxSpeed(), getRaceTime(), getPoints());
     }
 
     public static void main(String[] args) {

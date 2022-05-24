@@ -1,13 +1,18 @@
 package app;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -22,7 +27,7 @@ public class Race {
     private Category category;
     private Circuit circuitName;
     private String location;
-    private ArrayList<Racer> racers = new ArrayList<>();
+    private final ArrayList<Racer> racers = new ArrayList<>();
 
     public Race() {
 
@@ -85,15 +90,16 @@ public class Race {
             if (!wantedRacer.equals(racer)) {
                 index++;
             } else {
-                break;
+                return index;
+
             }
         }
-        return index;
+        return -1;
     }
 
     private Racer firstRacer() {
         for (Racer racer : racers) {
-            if (racer.getPozition() == 1) {
+            if (racer.getPosition() == 1) {
                 return new Racer(racer);
             }
         }
@@ -118,30 +124,39 @@ public class Race {
                 r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
+                r.setPoints(Integer.parseInt(parts[10]));
                 r.setRacingNumber(parts[11]);
-                if (parts[14].contains("+")) {
-                    int temp = TimeTools.timeToSeconds(parts[14].substring(1, parts[14].length()));
-                    int shortestTime = TimeTools.timeToSeconds(firstRacer().getRaceTime());
-                    r.setRaceTime(TimeTools.secondsToTimeString(temp + shortestTime));
-                } else {
-                    r.setRaceTime(parts[14]);
-                }
+                r.setRaceTime(parts[14]);
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
-                r.setPozition(Integer.parseInt(parts[9]));
+                r.setPosition(Integer.parseInt(parts[9]));
                 addRacer(r);
             }
         }
     }
 
-    // TODO: Method to save data to file...
+    // TODO: TEST
+    public void saveToFile(File results) throws IOException {
+        int rank = 1;
+        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(results, true)))) {
+            // header
+            pw.println(String.format("%5s %10s %10s", "Pořadí", "Jméno", "Příjmení"));
+            for (Racer racer : racers) {
+                pw.print(String.format("%4d ", rank));
+                pw.println(racer);
+                rank++;
+            }
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+    }
 
     private boolean isCircuitNameSet() {
-        if (this.circuitName == null) {
-            return false;
-        }
-        return true;
+        return !(this.circuitName == null);
+
     }
 
     public void setCircuitName(Circuit circuitName) {
@@ -149,27 +164,26 @@ public class Race {
     }
 
     public ArrayList<Racer> sortBySurname() {
-        ArrayList copy = getRacers();
-        Comparator cbs = new ComparatorRacerBySurname();
+        ArrayList<Racer> copy = getRacers();
+        Comparator<Racer> cbs = new ComparatorRacerBySurname();
         Collections.sort(copy, cbs);
         return copy;
     }
 
-    public Racer getRacer(String surname) {
-        for (Racer racer : racers) {
-            if ((racer.getSurname()).equals(surname)) {
-                return new Racer(racer);
-            }
-        }
-        return null;
+    public List<Racer> getRacer(String surname) {
+        List<Racer> foundRacers = racers.stream().filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
+                .collect(Collectors.toList());
+        return foundRacers;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         ArrayList<Racer> racersToString = getRacers();
-        sb.append("Výsledky: \n");
-        sb.append("========== \n");
+        sb.append("Výsledky:");
+        sb.append(System.lineSeparator());
+        sb.append("==========");
+        sb.append(System.lineSeparator());
         sb.append(String.format("Sezóna %s, okruh %s [%s]%n", getSeasonYear(), getCircuitName(), getCircuitShortcut()));
         for (Racer racer : racersToString) {
             sb.append(racer + "\n");
