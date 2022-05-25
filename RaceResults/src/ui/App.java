@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -49,7 +50,11 @@ public class App {
                 switch (choice) {
                     case "1":
                         showRaceMenu();
-                        loadResults(race);
+                        try {
+                            loadResults(race);
+                        } catch (NoSuchFieldError e) {
+                            System.out.println(e.getLocalizedMessage());
+                        }
                         break;
                     case "2":
                         Race raceByUser = createNewRace();
@@ -234,18 +239,18 @@ public class App {
                             + userAnswer);
             race.loadStats(file);
             System.out.println(race);
+            if (showRacerDetail(race)) {
+                System.out.print("Zadej příjmení jezdce: ");
+                String surname = sc.nextLine();
+                System.out.println(
+                        String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
+                                "Jméno",
+                                "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
+                                "Max. rychlost", "Čas"));
+                findRacers(race, surname);
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
-        }
-        if (showRacerDetail(race)) {
-            System.out.print("Zadej příjmení jezdce: ");
-            String surname = sc.nextLine();
-            System.out.println(
-                    String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
-                            "Jméno",
-                            "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
-                            "Max. rychlost", "Čas"));
-            findRacers(race, surname);
         }
 
     }
