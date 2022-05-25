@@ -128,12 +128,20 @@ public class Racer implements Comparable<Racer> {
         return this.nationality.getNationalityValue();
     }
 
+    public String toInternalDatabaseFormat() {
+        // rider_name;rider_surname;team_name;bike_name;points;number;country
+        return String.format("%-10s %-10s %-15s %-30s %-10s %-10s %s", getName(), getSurname(), getNationalityValue(),
+                getTeam(), getBike(),
+                getPoints(),
+                getRacingNumber());
+    }
+
     @Override
     public String toString() {
         // create two variables to now call getPosition twice a Racer to string
         int tempPositionNumber = getPosition();
         String tempPosition = (tempPositionNumber == 0 ? "DNF" : tempPositionNumber + ".");
-        return String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-10s %.1fmph %s %s bodů",
+        return String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %.1fmph %s %s bodů",
                 tempPosition, getName(),
                 getSurname(),
                 getNationalityValue(),

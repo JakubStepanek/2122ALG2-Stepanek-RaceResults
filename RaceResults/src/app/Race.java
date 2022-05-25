@@ -11,7 +11,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 import java.util.stream.Collectors;
 
 /*
@@ -170,10 +169,19 @@ public class Race {
         return copy;
     }
 
-    public List<Racer> getRacer(String surname) {
-        List<Racer> foundRacers = racers.stream().filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
+    public ArrayList<Racer> getRacer(String surname) {
+        ArrayList<Racer> foundRacers = (ArrayList<Racer>) racers.stream()
+                .filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
                 .collect(Collectors.toList());
         return foundRacers;
+    }
+
+    public void deleteRacer(Racer racer) {
+        for (Racer racer2 : this.racers) {
+            if (racer2.getSurname().compareTo(racer.getName()) == 0) {
+                this.racers.remove(racer2);
+            }
+        }
     }
 
     @Override
