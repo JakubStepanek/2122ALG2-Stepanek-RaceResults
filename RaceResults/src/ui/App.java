@@ -1,10 +1,13 @@
 package ui;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -26,7 +29,7 @@ public class App {
         app.start();
     }
 
-    private void start() {
+    private void start() throws IOException {
         try {
             initialization();
         } catch (IOException e) {
@@ -50,7 +53,12 @@ public class App {
                         addPointsToRacerStats();
                         break;
                     case "2":
-                        createNewRace();
+                        Race raceByUser = createNewRace();
+                        System.out.print("Přejete si závod uložit? [ano/ne]");
+                        String save = sc.nextLine();
+                        if (save.equalsIgnoreCase("ano")) {
+                            saveRace(raceByUser);
+                        }
                         break;
                     case "3":
                         if (race.getRacers().size() == 0) {
@@ -79,6 +87,22 @@ public class App {
         }
     }
 
+    private void saveRace(Race race) throws IOException {
+        String results = System.getProperty("user.dir") + File.separator + "Data" + File.separator
+                + race.getSeasonYear() + race.getCircuitName() + ".csv";
+        // new PrintWriter(new OutputStreamWriter () pouzit, kdyz chci kodovani
+        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(results, true)))) {
+            pw.println(String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
+                    "Jméno",
+                    "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
+                    "Max. rychlost", "Čas"));
+            for (Racer racer : race.getRacers()) {
+                pw.println(racer);
+            }
+        }
+
+    }
+
     private void initialization() throws FileNotFoundException, IOException {
         String line;
         String[] parts;
@@ -104,7 +128,7 @@ public class App {
 
     }
 
-    public static void createNewRace() {
+    public static Race createNewRace() {
         // TODO: add new racer to riders.csv
         Race raceByUser = new Race();
         System.out.print("Zadejte sezónu, kdy se jel závod: ");
@@ -114,21 +138,22 @@ public class App {
         raceByUser.setCircuitName(Circuit.of(sc.nextLine()));
         String answer;
         do {// TODO: add racers to raceByUser
-            System.out.println("Přejete si přidat závodníka?");
+            System.out.print("Přejete si přidat závodníka? [ano/ne]: ");
             answer = sc.nextLine().toLowerCase();
-            if (answer.equals("a")) {
+            if (answer.equalsIgnoreCase("ano")) {
                 raceByUser.addRacer(addRacerByUser());
             }
-        } while (answer.equals("a"));
+        } while (answer.equalsIgnoreCase("ano"));
 
-        System.out.println(raceByUser);
+        return raceByUser;
     }
 
     public static Racer addRacerByUser() {
-        System.out.println("Zadejte jméno závodníka");
+        System.out.print("Zadejte jméno závodníka: ");
         String name = sc.nextLine();
-        System.out.println("Zadejte příjmení závodníka");
+        System.out.print("Zadejte příjmení závodníka: ");
         String surname = sc.nextLine();
+        System.out.print("Zadejte zkratku národnosti: ");
         Nationality nationality = Nationality.valueOf(sc.nextLine());
         Racer r = new Racer(name, surname, nationality);
         return r;
