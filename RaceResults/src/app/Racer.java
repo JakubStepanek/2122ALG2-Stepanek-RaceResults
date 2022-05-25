@@ -133,7 +133,7 @@ public class Racer implements Comparable<Racer> {
         // create two variables to now call getPosition twice a Racer to string
         int tempPositionNumber = getPosition();
         String tempPosition = (tempPositionNumber == 0 ? "DNF" : tempPositionNumber + ".");
-        return String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-10s %.1fmph %s %s",
+        return String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-10s %.1fmph %s %s bodů",
                 tempPosition, getName(),
                 getSurname(),
                 getNationalityValue(),
@@ -150,8 +150,7 @@ public class Racer implements Comparable<Racer> {
 
     @Override
     public int compareTo(Racer o) {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.getPoints() - o.getPoints();
     }
 
 }
