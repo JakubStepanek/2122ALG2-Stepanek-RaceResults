@@ -41,8 +41,8 @@ public class RaceUtils {
     // }
     // }
     // }
-    public static boolean areRacersLoaded(Race race) {
-        return race.getRacers().size() == 0;
+    public static boolean areRacersEmpty(Race race) {
+        return race.getRacers().isEmpty();
     }
 
     public static Race createNewRace() {

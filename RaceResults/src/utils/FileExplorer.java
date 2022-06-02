@@ -18,6 +18,14 @@ public class FileExplorer {
         return sb.toString();
     }
 
+    public static void showRaceMenu() {
+        String actualDir = System.getProperty("user.dir") + File.separator + "Data";
+        File file = new File(actualDir);
+        System.out.println(FileExplorer.showPathFile(file, 0));
+        System.out.print("Vyberte soubor se závody: ");
+    }
+
+
     public static void main(String[] args) {
         // String actualDir = System.getProperty("user.dir") +
         // File.separator + "Data";

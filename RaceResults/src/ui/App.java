@@ -15,11 +15,13 @@ import app.Nationality;
 import app.Race;
 import app.Racer;
 import utils.FileExplorer;
+import utils.InputCheck;
 import utils.RaceUtils;
 
 public class App {
     private static Scanner sc = new Scanner(System.in);
-    private final ArrayList<Racer> racerStats = new ArrayList<>();
+    // racerStats -> internat database updated on initialization
+    private ArrayList<Racer> racerStats = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         App app = new App();
@@ -28,7 +30,7 @@ public class App {
 
     private void start() throws IOException {
         try {
-            initialization();
+            racerStats = initialization();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -42,17 +44,16 @@ public class App {
             boolean end = false;
             while (!end) {
                 showMainMenu();
+                // vstup ošetřen switchem -> default
                 choice = sc.nextLine();
                 switch (choice) {
                     case "1":
-                        showRaceMenu();
-                        try {
-                            loadResults(race);
-                        } catch (NoSuchFieldError e) {
-                            System.out.println(e.getLocalizedMessage());
-                        }
+                        FileExplorer.showRaceMenu();
+                        loadResults(race);
                         break;
+
                     case "2":
+                        // create new race
                         Race raceByUser = RaceUtils.createNewRace();
                         boolean exitNewRaceMenu = false;
                         while (!exitNewRaceMenu) {
@@ -60,11 +61,7 @@ public class App {
                             switch (sc.nextLine().toLowerCase()) {
                                 case "1":
                                     // add racer
-                                    try {
-                                        raceByUser.addRacer(RaceUtils.addRacerByUser());
-                                    } catch (IllegalArgumentException e) {
-                                        System.out.println(e.getMessage());
-                                    }
+                                    raceByUser.addRacer(RaceUtils.addRacerByUser());
                                     break;
                                 case "2":
                                     // edit racer
@@ -93,19 +90,23 @@ public class App {
                         break;
                     case "3":
                         // TODO: change values of RACER
-                        if (RaceUtils.areRacersLoaded(race)) {
+                        if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         }
                         System.out.print("Zadej příjmení závodníka: ");
                         String surname = sc.nextLine();
-                        RaceUtils.findRacers(race, surname);
+                        try {
+                            System.out.println(RaceUtils.findRacers(race, surname));
+                        } catch (Exception e) {
+                            System.out.println(e.getMessage());
+                        }
                         break;
                     case "4":
                         showRacerInterDatabase();
                         break;
                     case "5":
-                        if (RaceUtils.areRacersLoaded(race)) {
+                        if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         } else {
@@ -129,6 +130,12 @@ public class App {
 
     public static void showNewRaceEditRacerMenu() {
         // TODO: edit values ...
+        System.out.println("1 ...změnit tým závodníka");
+        System.out.println("2 ...změnit motocykl závodníka");
+        System.out.println("3 ...přidat body závodníkovy");
+        System.out.println("4 ...");
+        System.out.println("5 ...");
+        System.out.println("6 ...");
     }
 
     public static void showNewRaceMenu() {
@@ -154,7 +161,8 @@ public class App {
                 r = new Racer(parts[1], parts[0], Nationality.valueOf(parts[6]));
                 r.setTeam(parts[2]);
                 r.setBike(parts[3]);
-                if (parts[4] != "") {
+                // check if riders has set points
+                if (!parts[4].equals("")) {
                     r.setPoints(Integer.parseInt(parts[4]));
                 }
                 r.setRacingNumber(parts[5]);
@@ -176,12 +184,17 @@ public class App {
             if (RaceUtils.showRacerDetail(race)) {
                 System.out.print("Zadej příjmení jezdce: ");
                 String surname = sc.nextLine();
-                System.out.println(
-                        String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
-                                "Jméno",
-                                "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
-                                "Max. rychlost", "Čas"));
-                RaceUtils.findRacers(race, surname);
+                // moc unavený na kontrolu...
+                if (InputCheck.checkChoiceFormatBoolean(surname)) {
+                    RaceUtils.findRacers(race, surname);
+                    System.out.println(
+                            String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
+                                    "Jméno",
+                                    "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
+                                    "Max. rychlost", "Čas"));
+                }
+                System.out.println("Závodník nebyl nalezen.");
+
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
@@ -191,7 +204,8 @@ public class App {
 
     public static void showMainMenu() {
         // clear console space
-        System.out.println("\n".repeat(5));
+        System.out.println("\n");
+        System.out.println("-".repeat(30));
         System.out.println("1 ...zobrazit výsledky závodu");
         System.out.println("2 ...zahájit nový závod");
         System.out.println("3 ...upravit závodníka");
@@ -199,13 +213,6 @@ public class App {
         System.out.println("5 ...uložit načtené závodníky");
         System.out.println("q ...konec");
         System.out.print("Vyberte jednu z možností: ");
-    }
-
-    public static void showRaceMenu() {
-        String actualDir = System.getProperty("user.dir") + File.separator + "Data";
-        File file = new File(actualDir);
-        System.out.println(FileExplorer.showPathFile(file, 0));
-        System.out.print("Vyberte soubor se závody: ");
     }
 
     public void showRacerInterDatabase() {

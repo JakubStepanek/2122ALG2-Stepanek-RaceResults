@@ -170,10 +170,9 @@ public class Race {
     }
 
     public ArrayList<Racer> getRacer(String surname) {
-        ArrayList<Racer> foundRacers = (ArrayList<Racer>) racers.stream()
+        return (ArrayList<Racer>) racers.stream()
                 .filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
                 .collect(Collectors.toList());
-        return foundRacers;
     }
 
     public void deleteRacer(Racer racer) {
