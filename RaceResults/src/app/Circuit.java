@@ -3,7 +3,8 @@ package app;
 public enum Circuit {
     SPA("Jerez"), CZE("Brno"), AUT("Spielberg"), STY("Spielberg"), RSM("Misano"), CAT("Catalunya"), FRA("Le Mans"),
     ARA("Aragón"), TER("Aragón"), EUR("Ricardo Tormo"), VAL("Ricardo Tormo"), POR("Algarve"), QAT("Losai"),
-    DOH("Losail"), ITA("Mugello"), GER("Sachsenring"), NED("Assen"), GBR("Silverstone"), AME("Texas"), EMI("Misano");
+    DOH("Losail"), ITA("Mugello"), GER("Sachsenring"), NED("Assen"), GBR("Silverstone"), AME("Texas"), EMI("Misano"),
+    SEP("Sepang");
 
     private String circuit;
 
@@ -21,7 +22,7 @@ public enum Circuit {
                 return c;
             }
         }
-        return null;
+        throw new IllegalArgumentException("Zadaný okruh neexistuje");
 
     }
 

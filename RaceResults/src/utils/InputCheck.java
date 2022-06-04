@@ -2,8 +2,6 @@ package utils;
 
 import java.time.*;
 
-import app.Nationality;
-
 public class InputCheck {
     private static final int START_OF_RACING = 1949;
 
@@ -32,28 +30,6 @@ public class InputCheck {
         return (choice.equalsIgnoreCase("ano") || choice.equalsIgnoreCase("ne"));
     }
 
-    public static String checkNationality(String nationality) {
-        // go through Nationality and check
-        Nationality.values();
-        return null;
-    }
-
-    public static String checkCircuitValues(String circuit) {
-        
-        // go through Circuit and check
-        return null;
-    }
-
-    public static boolean inputIsNumber() {
-        // TODO: check if input is number
-        return false;
-    }
-
-    public static boolean inputIsString() {
-        // TODO: check if input is string
-        return false;
-    }
-
     public static int checkSeasonYear(int year) {
         int currentYear = Year.from(LocalDate.now()).getValue();
 
@@ -61,9 +37,5 @@ public class InputCheck {
             throw new IllegalArgumentException("Rok nesedí: 1949 < zadaný rok ≤ " + currentYear);
         }
         return year;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

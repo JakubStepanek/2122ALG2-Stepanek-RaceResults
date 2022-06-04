@@ -23,9 +23,7 @@ import java.util.stream.Collectors;
  */
 public class Race {
     private int seasonYear;
-    private Category category;
     private Circuit circuitName;
-    private String location;
     private final ArrayList<Racer> racers = new ArrayList<>();
 
     public Race() {
@@ -43,10 +41,6 @@ public class Race {
 
     public Racer getRacer(Racer racer) {
         return new Racer(racers.get(findIndexOfRacer(racer)));
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 
     public String getCircuitName() {
@@ -96,15 +90,6 @@ public class Race {
         return -1;
     }
 
-    private Racer firstRacer() {
-        for (Racer racer : racers) {
-            if (racer.getPosition() == 1) {
-                return new Racer(racer);
-            }
-        }
-        return null;
-    }
-
     public void loadStats(File file) throws FileNotFoundException, IOException {
         String line;
         String[] parts;
@@ -124,7 +109,7 @@ public class Race {
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
                 r.setPoints(Integer.parseInt(parts[10]));
-                r.setRacingNumber(parts[11]);
+                r.setRacingNumber(Integer.parseInt(parts[11]));
                 r.setRaceTime(parts[14]);
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
@@ -176,10 +161,16 @@ public class Race {
     }
 
     public void deleteRacer(Racer racer) {
-        for (Racer racer2 : this.racers) {
-            if (racer2.getSurname().compareTo(racer.getName()) == 0) {
-                this.racers.remove(racer2);
+        ArrayList<Racer> copy = this.racers;
+        // nebezpečné?
+        this.racers.clear();
+        for (Racer racer2 : copy) {
+            if (racer2.getSurname().compareTo(racer.getSurname()) != 0) {
+                copy.add(racer);
             }
+        }
+        for (Racer racer2 : copy) {
+            this.racers.add(racer2);
         }
     }
 
@@ -197,38 +188,4 @@ public class Race {
         }
         return sb.toString();
     }
-
-    public static void main(String[] args) throws FileNotFoundException, IOException {
-        Race race = new Race();
-        // String parentPath = System.getProperty("user.dir") + File.separator + "data"
-        // + File.separator
-        // + "raceResults2021.csv";
-        // File dataDirectory = new File(parentPath);
-        File dataDirectory = new File(
-                "/Users/kubin/Documents/TUL/Semestr 2/Java/2122ALG2-RaceResults/RaceResults/src/Data/raceResults2021OneRace.csv");
-        // DataControl.loadStats(dataDirectory, race);
-        race.loadStats(dataDirectory);
-        // race.loadStats(dataDirectory);
-        System.out.println(race);
-        // TODO: better show of sortBySurname
-        // System.out.println(race.sortBySurname());
-
-        // Scanner sc = new Scanner(System.in);
-        // String surname = sc.nextLine();
-        // System.out.println(race.showDetailOfRacer(surname));
-
-    }
 }
-
-// DEBUG CODES
-// Racer racer = new Racer("Jakub", "Štěpánek", Nationality.CZ);
-// Racer racer1 = new Racer("Matěj", "SADA", Nationality.ES);
-// Racer racer2 = new Racer("Pavel", "Vácha", Nationality.GB);
-// Racer racer3 = new Racer("Fabian", "Klein", Nationality.DE);
-// race.addRacer(racer);
-// race.addRacer(racer1);
-// race.addRacer(racer2);
-// race.addRacer(racer3);
-// System.out.println(race);
-// System.out.println();
-// System.out.println(race.getRacer(racer2));

@@ -24,7 +24,6 @@ public class App {
     private ArrayList<Racer> racerStats = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-
         App app = new App();
         app.start();
     }
@@ -36,6 +35,9 @@ public class App {
             System.out.println(e.getMessage());
         }
         String title = "Vítejte v prohlížení závodních výsledků";
+
+        // = podle počtu písmen v nadpise :))
+        System.out.println("\n" + "=".repeat(title.length()));
         System.out.println(title);
         // = podle počtu písmen v nadpise :))
         System.out.println("=".repeat(title.length()));
@@ -46,74 +48,23 @@ public class App {
         while (!end) {
             try {
                 showMainMenu();
-                // vstup ošetřen switchem -> default
+                // vstup ošetřen switchem => default
                 choice = sc.nextLine();
                 switch (choice) {
                     case "1":
                         FileExplorer.showRaceMenu();
                         loadResults(race);
                         break;
-
                     case "2":
                         // create new race
-                        // Race raceByUser = new Race();
-
-                        Race raceByUser = RaceUtils.createNewRace();
-
-                        boolean exitNewRaceMenu = false;
-                        while (!exitNewRaceMenu) {
-                            showNewRaceMenu();
-                            // input checked by "default" in switch
-                            switch (sc.nextLine().toLowerCase()) {
-                                case "1":
-                                    // add racer
-                                    raceByUser.addRacer(RaceUtils.addRacerByUser());
-                                    break;
-                                case "2":
-                                    // edit racer
-                                    if (!raceByUser.getRacers().isEmpty()) {
-                                        showNewRaceEditRacerMenu();
-                                    }
-                                    System.out.println("Nejdříve musíte přidat závodníka!");
-                                    break;
-                                case "3":
-                                    // delete racer
-                                    if (!raceByUser.getRacers().isEmpty()) {
-                                        System.out.print("Zadejte příjmení závodníka: ");
-                                        String surname = sc.nextLine();
-                                        raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser, surname));
-                                        System.out.println("Závodník smazán.");
-                                    }
-                                    System.out.println("Nejdříve musíte přidat závodníka!");
-
-                                    break;
-                                case "q":
-                                    exitNewRaceMenu = true;
-                                    break;
-                                default:
-                                    System.out.println("Neplatná volba! ");
-                                    break;
-                            }
-                        }
-                        System.out.print("Přejete si závod uložit? [ano/ne]: ");
-                        String save = sc.nextLine();
-                        if (save.equalsIgnoreCase("ano")) {
-                            RaceUtils.saveRace(raceByUser, raceByUser.getCircuitName() + raceByUser.getSeasonYear());
-                        }
+                        createNewRace();
                         break;
                     case "3":
-                        // TODO: change values of RACER
                         if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         }
-                        System.out.print("Zadej příjmení závodníka: ");
-                        String surname = sc.nextLine();
-                        try {
-                            System.out.println(RaceUtils.findRacers(race, surname));
-                        } catch (Exception e) {
-                            System.out.println(e.getMessage());
-                        }
+                        changeRacerArappearance(race);
                         break;
                     case "4":
                         showRacerInterDatabase();
@@ -141,14 +92,124 @@ public class App {
         }
     }
 
-    public static void showNewRaceEditRacerMenu() {
-        // TODO: edit values ...
-        System.out.println("1 ...změnit tým závodníka");
-        System.out.println("2 ...změnit motocykl závodníka");
-        System.out.println("3 ...přidat body závodníkovy");
-        System.out.println("4 ...");
-        System.out.println("5 ...");
-        System.out.println("6 ...");
+    private static void changeRacerArappearance(Race race) {
+        boolean end = false;
+        Racer foundRacer = RaceUtils.findRacer(race);
+        while (!end) {
+            showRacerChangeMenu();
+            String choice = sc.nextLine();
+            switch (choice) {
+                case "1":
+                    System.out.print("Zadejte místo, kde se závodník umístil: ");
+                    try {
+                        foundRacer.setPosition(sc.nextInt());
+                    } catch (NumberFormatException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    // clear buffer
+                    sc.nextLine();
+                    break;
+                case "2":
+                    System.out.print("Zadejte čas, kdy projel závodník cílem [XX:XX:XX]: ");
+                    foundRacer.setRaceTime(sc.nextLine());
+                    break;
+                case "3":
+                    System.out.print("Zadejte název týmu: ");
+                    foundRacer.setTeam(sc.nextLine());
+                    break;
+                case "4":
+                    System.out.print("Zadejte továrnu motocyklu: ");
+                    foundRacer.setBike(sc.nextLine());
+                    break;
+                case "5":
+                    System.out.print("Zadejte startovní číslo závodníka: ");
+                    foundRacer.setRacingNumber(sc.nextInt());
+                    // clear buffer
+                    sc.nextLine();
+                    break;
+                case "6":
+                    System.out.print("Zadejte maximální rychlost [xxx,x]: ");
+                    foundRacer.setMaxSpeed(sc.nextDouble());
+                    // clear buffer
+                    sc.nextLine();
+                    break;
+                case "q":
+                    end = true;
+                    break;
+
+                default:
+                    System.out.println("Neplatná volba");
+                    break;
+            }
+        }
+
+    }
+
+    public static void showRacerChangeMenu() {
+        System.out.println("-".repeat(30));
+        System.out.println("1 ...umístění");
+        System.out.println("2 ...čas v cíli");
+        System.out.println("3 ...tým");
+        System.out.println("4 ...motocykl");
+        System.out.println("5 ...startovní číslo");
+        System.out.println("6 ...maximální rychlost");
+        System.out.println("q ...konec");
+        System.out.print("Vyberte, co si přejete změnit: ");
+
+    }
+
+    public static void createNewRace() {
+        Race raceByUser = RaceUtils.createNewRace();
+
+        boolean exitNewRaceMenu = false;
+        while (!exitNewRaceMenu) {
+            try {
+                showNewRaceMenu();
+                // input checked by "default" in switch
+                switch (sc.nextLine().toLowerCase()) {
+                    case "1":
+                        // add racer
+                        raceByUser.addRacer(RaceUtils.addRacerByUser());
+                        break;
+                    case "2":
+                        // edit racer
+                        if (!raceByUser.getRacers().isEmpty()) {
+                            changeRacerArappearance(raceByUser);
+                        }
+                        System.out.println("Nejdříve musíte přidat závodníka!");
+                        break;
+                    case "3":
+                        // delete racer
+                        if (!raceByUser.getRacers().isEmpty()) {
+                            raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser));
+                            System.out.println("Závodník smazán.");
+                            break;
+                        }
+                        System.out.println("Nejdříve musíte přidat závodníka!");
+
+                        break;
+                    case "q":
+                        exitNewRaceMenu = true;
+                        break;
+                    default:
+                        System.out.println("Neplatná volba! ");
+                        break;
+                }
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+        System.out.print("Přejete si závod uložit? [ano/ne]: ");
+        String save = sc.nextLine();
+        if (save.equalsIgnoreCase("ano")) {
+            try {
+                RaceUtils.saveRace(raceByUser, raceByUser.getCircuitName() + raceByUser.getSeasonYear());
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
     }
 
     public static void showNewRaceMenu() {
@@ -179,7 +240,7 @@ public class App {
                 if (!parts[4].equals("")) {
                     r.setPoints(Integer.parseInt(parts[4]));
                 }
-                r.setRacingNumber(parts[5]);
+                r.setRacingNumber(Integer.parseInt(parts[5]));
                 racerStats.add(r);
             }
         }
@@ -195,7 +256,7 @@ public class App {
                             + userAnswer);
             race.loadStats(file);
             System.out.println(race);
-            if (RaceUtils.showRacerDetail(race)) {
+            if (RaceUtils.showRacerDetail()) {
                 System.out.print("Zadej příjmení jezdce: ");
                 String surname = sc.nextLine();
                 // moc unavený na kontrolu...
@@ -222,7 +283,7 @@ public class App {
         System.out.println("-".repeat(30));
         System.out.println("1 ...zobrazit výsledky závodu");
         System.out.println("2 ...zahájit nový závod");
-        System.out.println("3 ...upravit závodníka");
+        System.out.println("3 ...upravit v načteném závodě závodníka");
         System.out.println("4 ...vypsat detail závodníků");
         System.out.println("5 ...uložit načtené závodníky");
         System.out.println("q ...konec");

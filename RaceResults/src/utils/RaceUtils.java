@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 import app.Circuit;
@@ -54,7 +55,9 @@ public class RaceUtils {
         // buffer clear
         sc.nextLine();
         System.out.print("Zadejte název okruhu: ");
-        raceByUser.setCircuitName(Circuit.of(InputCheck.checkCircuitValues(sc.nextLine())));
+        // raceByUser.setCircuitName(Circuit.of(InputCheck.checkCircuitValues(sc.nextLine())));
+        raceByUser.setCircuitName(Circuit.of(sc.nextLine()));
+
         String answer;
         // do {// TODO: add racers to raceByUser InternalDB
         // System.out.print("Přejete si přidat závodníka? [ano/ne]: ");
@@ -79,31 +82,28 @@ public class RaceUtils {
         return r;
     }
 
-    public static ArrayList<Racer> findRacers(Race race, String surname) {
+    public static List<Racer> findRacers(Race race, String surname) {
         ArrayList<Racer> foundRacers = race.getRacer(surname);
-        if (foundRacers.size() == 0) {
+        if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
         } else {
-            // for (Racer racer : foundRacers) {
-            // System.out.println(racer);
-            // }
+            // return all found racers
             return foundRacers;
         }
     }
 
-    public static Racer findRacer(Race race, String surname) {
-        ArrayList<Racer> foundRacers = race.getRacer(surname);
-        if (foundRacers.size() == 0) {
+    public static Racer findRacer(Race race) {
+        System.out.print("Zadejte příjmení hledaného závodníka: ");
+        ArrayList<Racer> foundRacers = race.getRacer(InputCheck.surnameCheckFormat(sc.nextLine()));
+        if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
         } else {
-            // for (Racer racer : foundRacers) {
-            // System.out.println(racer);
-            // }
+            // return first found racer
             return foundRacers.get(0);
         }
     }
 
-    public static boolean showRacerDetail(Race race) {
+    public static boolean showRacerDetail() {
         System.out.println("Chceš zobrazit detail jezdce? [a/n]");
         String answer = sc.nextLine().toLowerCase();
         return answer.equals("a");

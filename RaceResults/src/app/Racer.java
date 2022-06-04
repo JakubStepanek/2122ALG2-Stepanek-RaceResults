@@ -17,7 +17,7 @@ public class Racer implements Comparable<Racer> {
     private int points;
     private String bike;
     private String team;
-    private String racingNumber;
+    private int racingNumber;
     private double maxSpeed;
     private String raceTime;
 
@@ -108,11 +108,11 @@ public class Racer implements Comparable<Racer> {
         this.team = team;
     }
 
-    public String getRacingNumber() {
+    public int getRacingNumber() {
         return this.racingNumber;
     }
 
-    public void setRacingNumber(String racingNumber) {
+    public void setRacingNumber(int racingNumber) {
         this.racingNumber = racingNumber;
     }
 

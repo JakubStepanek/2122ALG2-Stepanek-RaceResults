@@ -6,11 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class DataControl extends Race{
+public class DataControl extends Race {
 
     public DataControl(int seasonYear, Circuit circuitName) {
         super(seasonYear, circuitName);
-        //TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub
     }
 
     public static void loadStats(File file, Race race) throws FileNotFoundException, IOException {
@@ -25,7 +25,7 @@ public class DataControl extends Race{
                 r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
                 r.setTeam(parts[7]);
                 r.setBike(parts[8]);
-                r.setRacingNumber(parts[11]);
+                r.setRacingNumber(Integer.parseInt(parts[11]));
                 if (parts[13].length() != 0) {
                     r.setMaxSpeed(Double.parseDouble(parts[13]));
                 }
