@@ -20,10 +20,11 @@ import utils.RaceUtils;
 
 public class App {
     private static Scanner sc = new Scanner(System.in);
-    // racerStats -> internat database updated on initialization
+    // racerStats ...internal database updated on initialization
     private ArrayList<Racer> racerStats = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+
         App app = new App();
         app.start();
     }
@@ -39,10 +40,11 @@ public class App {
         // = podle počtu písmen v nadpise :))
         System.out.println("=".repeat(title.length()));
         Race race = new Race();
-        try {
-            String choice;
-            boolean end = false;
-            while (!end) {
+
+        String choice;
+        boolean end = false;
+        while (!end) {
+            try {
                 showMainMenu();
                 // vstup ošetřen switchem -> default
                 choice = sc.nextLine();
@@ -54,10 +56,14 @@ public class App {
 
                     case "2":
                         // create new race
+                        // Race raceByUser = new Race();
+
                         Race raceByUser = RaceUtils.createNewRace();
+
                         boolean exitNewRaceMenu = false;
                         while (!exitNewRaceMenu) {
                             showNewRaceMenu();
+                            // input checked by "default" in switch
                             switch (sc.nextLine().toLowerCase()) {
                                 case "1":
                                     // add racer
@@ -65,14 +71,21 @@ public class App {
                                     break;
                                 case "2":
                                     // edit racer
-                                    showNewRaceEditRacerMenu();
+                                    if (!raceByUser.getRacers().isEmpty()) {
+                                        showNewRaceEditRacerMenu();
+                                    }
+                                    System.out.println("Nejdříve musíte přidat závodníka!");
                                     break;
                                 case "3":
                                     // delete racer
-                                    System.out.print("Zadejte příjmení závodníka: ");
-                                    String surname = sc.nextLine();
-                                    raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser, surname));
-                                    System.out.println("Závodník smazán.");
+                                    if (!raceByUser.getRacers().isEmpty()) {
+                                        System.out.print("Zadejte příjmení závodníka: ");
+                                        String surname = sc.nextLine();
+                                        raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser, surname));
+                                        System.out.println("Závodník smazán.");
+                                    }
+                                    System.out.println("Nejdříve musíte přidat závodníka!");
+
                                     break;
                                 case "q":
                                     exitNewRaceMenu = true;
@@ -121,10 +134,10 @@ public class App {
                         System.out.println("neplatná volba");
                         break;
                 }
-            }
 
-        } catch (IllegalArgumentException | FileNotFoundException e) {
-            System.out.println(e.getMessage());
+            } catch (IllegalArgumentException | FileNotFoundException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 
@@ -139,6 +152,7 @@ public class App {
     }
 
     public static void showNewRaceMenu() {
+        System.out.println("-".repeat(30));
         System.out.println("1 ...přidat závodníka");
         System.out.println("2 ...upravit závodníka");
         System.out.println("3 ...smazat závodníka");

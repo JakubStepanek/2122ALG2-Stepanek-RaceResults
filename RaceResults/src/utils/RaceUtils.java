@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import app.Circuit;
@@ -45,31 +46,32 @@ public class RaceUtils {
         return race.getRacers().isEmpty();
     }
 
-    public static Race createNewRace() {
+    public static Race createNewRace() throws IllegalArgumentException {
         // TODO: add new racer to riders.csv
         Race raceByUser = new Race();
         System.out.print("Zadejte sezónu, kdy se jel závod: ");
-        raceByUser.setSeasonYear(sc.nextInt());
-        System.out.print("Zadejte název okruhu: ");
+        raceByUser.setSeasonYear(InputCheck.checkSeasonYear(sc.nextInt()));
+        // buffer clear
         sc.nextLine();
-        raceByUser.setCircuitName(Circuit.of(sc.nextLine()));
+        System.out.print("Zadejte název okruhu: ");
+        raceByUser.setCircuitName(Circuit.of(InputCheck.checkCircuitValues(sc.nextLine())));
         String answer;
-        do {// TODO: add racers to raceByUser InternalDB
-            System.out.print("Přejete si přidat závodníka? [ano/ne]: ");
-            answer = sc.nextLine().toLowerCase();
-            if (answer.equalsIgnoreCase("ano")) {
-                raceByUser.addRacer(addRacerByUser());
-            }
-        } while (answer.equalsIgnoreCase("ano"));
+        // do {// TODO: add racers to raceByUser InternalDB
+        // System.out.print("Přejete si přidat závodníka? [ano/ne]: ");
+        // answer = sc.nextLine().toLowerCase();
+        // if (answer.equalsIgnoreCase("ano")) {
+        // raceByUser.addRacer(addRacerByUser());
+        // }
+        // } while (answer.equalsIgnoreCase("ano"));
 
         return raceByUser;
     }
 
     public static Racer addRacerByUser() {
         System.out.print("Zadejte jméno závodníka: ");
-        String name = sc.nextLine();
+        String name = InputCheck.nameCheckFormat(sc.nextLine());
         System.out.print("Zadejte příjmení závodníka: ");
-        String surname = sc.nextLine();
+        String surname = InputCheck.surnameCheckFormat(sc.nextLine());
         System.out.print("Zadejte zkratku národnosti: ");
         Nationality nationality = Nationality.valueOf(sc.nextLine().toUpperCase());
         Racer r = new Racer(name, surname, nationality);

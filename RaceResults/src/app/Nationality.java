@@ -1,5 +1,7 @@
 package app;
 
+import javax.print.attribute.standard.MediaSize.NA;
+
 public enum Nationality {
     AU("Austrálie"), DE("Německo"), CZ("Česká republika"), ES("Španělsko"), FR("Francie"), IT("Itálie"),
     PT("Portugalsko"), ZA("Jižní Afrika"), JP("Japonsko"), US("Amerika"), GB("Velká Británie"), FI("Finsko");
@@ -20,12 +22,10 @@ public enum Nationality {
                 return n;
             }
         }
-        return null;
-
+        throw new IllegalArgumentException("Neplatná zkratka národnosti");
     }
 
     public static void main(String[] args) {
-        System.out.println();
-    }
 
+    }
 }
