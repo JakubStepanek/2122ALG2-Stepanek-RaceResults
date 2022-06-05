@@ -11,19 +11,24 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-import app.BinaryFile;
 import app.ComparatorRacerBySurname;
 import app.Nationality;
 import app.Race;
 import app.Racer;
-import utils.FileExplorer;
-import utils.InputCheck;
+import utils.BinaryFileUtils;
+import utils.FileExplorerUtils;
+import utils.FileUtils;
+import utils.MenuUtils;
 import utils.RaceUtils;
+import utils.RacerUtils;
 
 public class App {
     private static Scanner sc = new Scanner(System.in);
     // racerStats ...internal database updated on initialization
     private ArrayList<Racer> racerStats = new ArrayList<>();
+    private BinaryFileUtils binaryFileUtils = new BinaryFileUtils();
+    private FileUtils fileUtils = new FileUtils();
+    private String path;
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         App app = new App();
@@ -31,6 +36,7 @@ public class App {
     }
 
     private void start() throws IOException {
+        File result;
         try {
             racerStats = initialization();
         } catch (IOException e) {
@@ -49,24 +55,28 @@ public class App {
         boolean end = false;
         while (!end) {
             try {
-                showMainMenu();
+                MenuUtils.showMainMenu();
                 // vstup ošetřen switchem => default
                 choice = sc.nextLine();
                 switch (choice) {
                     case "1":
-                        FileExplorer.showRaceMenu();
-                        loadResults(race);
+                        FileExplorerUtils.showRaceMenu();
+                        String fileToLoad = sc.nextLine();
+                        path = System.getProperty("user.dir") + File.separator + "data" + File.separator + fileToLoad;
+                        result = new File(path);
+                        fileUtils.loadToRace(result, race);
+                        System.out.println(race);
                         break;
                     case "2":
                         // create new race
-                        createNewRace();
+                        RaceUtils.startNewRace();
                         break;
                     case "3":
                         if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         }
-                        changeRacerArappearance(race);
+                        RacerUtils.changeRacerAppearance(race);
                         break;
                     case "4":
                         showRacerInterDatabase();
@@ -76,18 +86,16 @@ public class App {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         } else {
-                            RaceUtils.saveRace(race, race.getCircuitName() + race.getSeasonYear());
+                            fileUtils.saveRace(race, race.getCircuitName() + race.getSeasonYear());
                         }
                         break;
                     case "6":
-                        BinaryFile bf = new BinaryFile();
-                        File result = new File("racersBinary.bat");
-                        bf.save(result, race);
+                        result = new File("racersBinary.dat");
+                        binaryFileUtils.save(result, race);
                         break;
                     case "7":
-                        BinaryFile bf1 = new BinaryFile();
-                        File result1 = new File("racersBinary.bat");
-                        System.out.println(bf1.load(result1));
+                        result = new File("racersBinary.dat");
+                        System.out.println(binaryFileUtils.load(result, race));
                         break;
                     case "q":
                         System.out.println("Ukončuji...");
@@ -102,135 +110,6 @@ public class App {
                 System.out.println(e.getMessage());
             }
         }
-    }
-
-    private static void changeRacerArappearance(Race race) {
-        boolean end = false;
-        Racer foundRacer = RaceUtils.findRacer(race);
-        while (!end) {
-            showRacerChangeMenu();
-            String choice = sc.nextLine();
-            switch (choice) {
-                case "1":
-                    System.out.print("Zadejte místo, kde se závodník umístil: ");
-                    try {
-                        foundRacer.setPosition(sc.nextInt());
-                    } catch (NumberFormatException e) {
-                        System.out.println(e.getMessage());
-                    }
-                    // clear buffer
-                    sc.nextLine();
-                    break;
-                case "2":
-                    System.out.print("Zadejte čas, kdy projel závodník cílem [XX:XX:XX]: ");
-                    foundRacer.setRaceTime(sc.nextLine());
-                    break;
-                case "3":
-                    System.out.print("Zadejte název týmu: ");
-                    foundRacer.setTeam(sc.nextLine());
-                    break;
-                case "4":
-                    System.out.print("Zadejte továrnu motocyklu: ");
-                    foundRacer.setBike(sc.nextLine());
-                    break;
-                case "5":
-                    System.out.print("Zadejte startovní číslo závodníka: ");
-                    foundRacer.setRacingNumber(sc.nextInt());
-                    // clear buffer
-                    sc.nextLine();
-                    break;
-                case "6":
-                    System.out.print("Zadejte maximální rychlost [xxx,x]: ");
-                    foundRacer.setMaxSpeed(sc.nextDouble());
-                    // clear buffer
-                    sc.nextLine();
-                    break;
-                case "q":
-                    end = true;
-                    break;
-
-                default:
-                    System.out.println("Neplatná volba");
-                    break;
-            }
-        }
-
-    }
-
-    public static void showRacerChangeMenu() {
-        System.out.println("-".repeat(30));
-        System.out.println("1 ...umístění");
-        System.out.println("2 ...čas v cíli");
-        System.out.println("3 ...tým");
-        System.out.println("4 ...motocykl");
-        System.out.println("5 ...startovní číslo");
-        System.out.println("6 ...maximální rychlost");
-        System.out.println("q ...konec");
-        System.out.print("Vyberte, co si přejete změnit: ");
-
-    }
-
-    public static void createNewRace() {
-        Race raceByUser = RaceUtils.createNewRace();
-
-        boolean exitNewRaceMenu = false;
-        while (!exitNewRaceMenu) {
-            try {
-                showNewRaceMenu();
-                // input checked by "default" in switch
-                switch (sc.nextLine().toLowerCase()) {
-                    case "1":
-                        // add racer
-                        raceByUser.addRacer(RaceUtils.addRacerByUser());
-                        break;
-                    case "2":
-                        // edit racer
-                        if (!raceByUser.getRacers().isEmpty()) {
-                            changeRacerArappearance(raceByUser);
-                        }
-                        System.out.println("Nejdříve musíte přidat závodníka!");
-                        break;
-                    case "3":
-                        // delete racer
-                        if (!raceByUser.getRacers().isEmpty()) {
-                            raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser));
-                            System.out.println("Závodník smazán.");
-                            break;
-                        }
-                        System.out.println("Nejdříve musíte přidat závodníka!");
-
-                        break;
-                    case "q":
-                        exitNewRaceMenu = true;
-                        break;
-                    default:
-                        System.out.println("Neplatná volba! ");
-                        break;
-                }
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-        System.out.print("Přejete si závod uložit? [ano/ne]: ");
-        String save = sc.nextLine();
-        if (save.equalsIgnoreCase("ano")) {
-            try {
-                RaceUtils.saveRace(raceByUser, raceByUser.getCircuitName() + raceByUser.getSeasonYear());
-
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-
-    }
-
-    public static void showNewRaceMenu() {
-        System.out.println("-".repeat(30));
-        System.out.println("1 ...přidat závodníka");
-        System.out.println("2 ...upravit závodníka");
-        System.out.println("3 ...smazat závodníka");
-        System.out.println("q ...konec");
-        System.out.print("Vyberte jednu z možností: ");
     }
 
     private ArrayList<Racer> initialization() throws FileNotFoundException, IOException {
@@ -260,50 +139,34 @@ public class App {
 
     }
 
-    public static void loadResults(Race race) throws FileNotFoundException {
-        String userAnswer = sc.nextLine();
-        try {
-            File file = new File(
-                    System.getProperty("user.dir") + File.separator + "Data" + File.separator
-                            + userAnswer);
-            race.loadStats(file);
-            System.out.println(race);
-            if (RaceUtils.showRacerDetail()) {
-                System.out.print("Zadej příjmení jezdce: ");
-                String surname = sc.nextLine();
-                // moc unavený na kontrolu...
-                if (InputCheck.checkChoiceFormatBoolean(surname)) {
-                    RaceUtils.findRacers(race, surname);
-                    System.out.println(
-                            String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
-                                    "Jméno",
-                                    "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
-                                    "Max. rychlost", "Čas"));
-                }
-                System.out.println("Závodník nebyl nalezen.");
+    // public static void loadResults(Race race) throws FileNotFoundException {
+    // String userAnswer = sc.nextLine();
+    // try {
+    // File file = new File(
+    // System.getProperty("user.dir") + File.separator + "Data" + File.separator
+    // + userAnswer);
+    // // race.loadStats(file);
+    // System.out.println(race);
+    // if (RaceUtils.showRacerDetail()) {
+    // System.out.print("Zadej příjmení jezdce: ");
+    // String surname = sc.nextLine();
+    // // moc unavený na kontrolu...
+    // if (InputCheckUtils.checkChoiceFormatBoolean(surname)) {
+    // RaceUtils.findRacers(race, surname);
+    // System.out.println(
+    // String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
+    // "Jméno",
+    // "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
+    // "Max. rychlost", "Čas"));
+    // }
+    // System.out.println("Závodník nebyl nalezen.");
 
-            }
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+    // }
+    // } catch (Exception e) {// IOException
+    // System.out.println(e.getMessage());
+    // }
 
-    }
-
-    public static void showMainMenu() {
-        // clear console space
-        System.out.println("\n");
-        System.out.println("-".repeat(30));
-        System.out.println("1 ...zobrazit výsledky závodu");
-        System.out.println("2 ...zahájit nový závod");
-        System.out.println("3 ...upravit v načteném závodě závodníka");
-        System.out.println("4 ...vypsat detail závodníků");
-        System.out.println("5 ...uložit načtené závodníky");
-        System.out.println("6 ...uložit načtené závodníky do binárního souboru");
-        System.out.println("7 ...načíst závodníky z binárního souboru");
-
-        System.out.println("q ...konec");
-        System.out.print("Vyberte jednu z možností: ");
-    }
+    // }
 
     public void showRacerInterDatabase() {
         ArrayList<Racer> copy = new ArrayList<>();

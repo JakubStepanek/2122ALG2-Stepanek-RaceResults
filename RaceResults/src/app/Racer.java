@@ -150,7 +150,7 @@ public class Racer implements Comparable<Racer> {
 
     @Override
     public int compareTo(Racer o) {
-        return this.getPoints() - o.getPoints();
+        return Integer.compare(this.points, o.points);
     }
 
 }

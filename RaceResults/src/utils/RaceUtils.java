@@ -1,10 +1,6 @@
 package utils;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,22 +10,68 @@ import app.Nationality;
 import app.Race;
 import app.Racer;
 
-public class RaceUtils {
-    public static Scanner sc = new Scanner(System.in);
+public final class RaceUtils {
+    private static Scanner sc = new Scanner(System.in);
+    private static FileUtils fileUtils = new FileUtils();
 
-    public static void saveRace(Race race, String fileName) throws IOException {
-        String result = System.getProperty("user.dir") + File.separator + "Data" + File.separator
-                + fileName + ".csv";
-        // new PrintWriter(new OutputStreamWriter () pouzit, kdyz chci kodovani
-        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(result, true)))) {
-            pw.println(String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
-                    "Jméno",
-                    "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
-                    "Max. rychlost", "Čas"));
-            for (Racer racer : race.getRacers()) {
-                pw.println(racer);
+    private RaceUtils() {
+
+    }
+
+    public static void startNewRace() {
+        Race raceByUser = RaceUtils.createNewRace();
+
+        boolean exitNewRaceMenu = false;
+        while (!exitNewRaceMenu) {
+            try {
+                MenuUtils.showNewRaceMenu();
+                // input checked by "default" in switch
+                switch (sc.nextLine().toLowerCase()) {
+                    case "1":
+                        // add racer
+                        raceByUser.addRacer(RaceUtils.addRacerByUser());
+                        break;
+                    case "2":
+                        // edit racer
+                        if (!raceByUser.getRacers().isEmpty()) {
+                            RacerUtils.changeRacerAppearance(raceByUser);
+                        } else {
+                            System.out.println("Nejdříve musíte přidat závodníka!");
+                        }
+                        break;
+                    case "3":
+                        // delete racer
+                        if (!raceByUser.getRacers().isEmpty()) {
+                            raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser));
+                            System.out.println("Závodník smazán.");
+
+                        } else {
+                            System.out.println("Nejdříve musíte přidat závodníka!");
+                        }
+
+                        break;
+                    case "q":
+                        exitNewRaceMenu = true;
+                        break;
+                    default:
+                        System.out.println("Neplatná volba! ");
+                        break;
+                }
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
             }
         }
+        System.out.print("Přejete si závod uložit? [ano/ne]: ");
+        String save = sc.nextLine();
+        if (save.equalsIgnoreCase("ano")) {
+            try {
+                fileUtils.saveRace(raceByUser, (raceByUser.getCircuitName() + raceByUser.getSeasonYear()));
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
     }
 
     public static boolean areRacersEmpty(Race race) {
@@ -40,7 +82,7 @@ public class RaceUtils {
         // TODO: add new racer to riders.csv
         Race raceByUser = new Race();
         System.out.print("Zadejte sezónu, kdy se jel závod: ");
-        raceByUser.setSeasonYear(InputCheck.checkSeasonYear(sc.nextInt()));
+        raceByUser.setSeasonYear(InputCheckUtils.checkSeasonYear(sc.nextInt()));
         // buffer clear
         sc.nextLine();
         System.out.print("Zadejte název okruhu: ");
@@ -50,9 +92,9 @@ public class RaceUtils {
 
     public static Racer addRacerByUser() {
         System.out.print("Zadejte jméno závodníka: ");
-        String name = InputCheck.nameCheckFormat(sc.nextLine());
+        String name = InputCheckUtils.nameCheckFormat(sc.nextLine());
         System.out.print("Zadejte příjmení závodníka: ");
-        String surname = InputCheck.surnameCheckFormat(sc.nextLine());
+        String surname = InputCheckUtils.surnameCheckFormat(sc.nextLine());
         System.out.print("Zadejte zkratku národnosti: ");
         Nationality nationality = Nationality.valueOf(sc.nextLine().toUpperCase());
         Racer r = new Racer(name, surname, nationality);
@@ -64,26 +106,26 @@ public class RaceUtils {
         ArrayList<Racer> foundRacers = (ArrayList<Racer>) race.getRacer(surname);
         if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
-        } else {
-            // return all found racers
-            return foundRacers;
         }
+        // return all found racers
+        return foundRacers;
+
     }
 
     public static Racer findRacer(Race race) {
         System.out.print("Zadejte příjmení hledaného závodníka: ");
-        ArrayList<Racer> foundRacers = (ArrayList<Racer>) race.getRacer(InputCheck.surnameCheckFormat(sc.nextLine()));
+        ArrayList<Racer> foundRacers = (ArrayList<Racer>) race
+                .getRacer(InputCheckUtils.surnameCheckFormat(sc.nextLine()));
         if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
-        } else {
-            // return first found racer
-            return foundRacers.get(0);
         }
+        // return first found racer
+        return foundRacers.get(0);
+
     }
 
     public static boolean showRacerDetail() {
         System.out.println("Chceš zobrazit detail jezdce? [a/n]");
-        String answer = sc.nextLine().toLowerCase();
-        return answer.equals("a");
+        return sc.nextLine().equalsIgnoreCase("a");
     }
 }

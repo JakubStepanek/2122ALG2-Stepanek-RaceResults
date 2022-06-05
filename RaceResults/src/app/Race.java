@@ -1,20 +1,12 @@
 package app;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import utils.InputCheck;
+import utils.InputCheckUtils;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -60,7 +52,7 @@ public class Race {
     }
 
     public int getSeasonYear() {
-        if (InputCheck.checkSeasonYearBoolean(this.seasonYear)) {
+        if (InputCheckUtils.checkSeasonYearBoolean(this.seasonYear)) {
             return this.seasonYear;
         }
         throw new IllegalArgumentException("Sezóna nebyla nastavena");
@@ -90,55 +82,7 @@ public class Race {
         return -1;
     }
 
-    public void loadStats(File file) throws FileNotFoundException, IOException {
-        String line;
-        String[] parts;
-        Racer r;
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            // skip header
-            br.readLine();
-            while ((line = br.readLine()) != null) {
-                parts = line.split(";");
-                if (InputCheck.checkSeasonYearBoolean(Integer.parseInt(parts[0]))) {
-                    setSeasonYear(Integer.parseInt(parts[0]));
-                }
-                if (!isCircuitNameSet()) {
-                    setCircuitName(Circuit.valueOf(parts[3]));
-                }
-                r = new Racer(parts[6], parts[5], Nationality.valueOf(parts[12]));
-                r.setTeam(parts[7]);
-                r.setBike(parts[8]);
-                r.setPoints(Integer.parseInt(parts[10]));
-                r.setRacingNumber(Integer.parseInt(parts[11]));
-                r.setRaceTime(parts[14]);
-                if (parts[13].length() != 0) {
-                    r.setMaxSpeed(Double.parseDouble(parts[13]));
-                }
-                r.setPosition(Integer.parseInt(parts[9]));
-                addRacer(r);
-            }
-        }
-    }
-
-    // TODO: TEST
-    public void saveToFile(File results) throws IOException {
-        int rank = 1;
-        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(results, true)))) {
-            // header
-            pw.println(String.format("%5s %10s %10s", "Pořadí", "Jméno", "Příjmení"));
-            for (Racer racer : racers) {
-                pw.print(String.format("%4d ", rank));
-                pw.println(racer);
-                rank++;
-            }
-
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
-    }
-
-    private boolean isCircuitNameSet() {
+    public boolean isCircuitNameSet() {
         return (this.circuitName != null);
 
     }
@@ -187,7 +131,12 @@ public class Race {
         sb.append(System.lineSeparator());
         sb.append("==========");
         sb.append(System.lineSeparator());
-        sb.append(String.format("Sezóna %s, okruh %s [%s]%n", getSeasonYear(), getCircuitName(), getCircuitShortcut()));
+        sb.append(String.format("Sezóna %s, okruh %s [%s]\n", getSeasonYear(), getCircuitName(), getCircuitShortcut()));
+        sb.append(String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
+                "Jméno",
+                "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
+                "Max. rychlost", "Čas"));
+        sb.append(System.lineSeparator());
         for (Racer racer : racersToString) {
             sb.append(racer + "\n");
         }
