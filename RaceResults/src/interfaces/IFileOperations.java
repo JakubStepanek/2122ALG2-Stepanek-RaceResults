@@ -1,8 +1,13 @@
 package interfaces;
 
-public interface IFileOperations {
-    public void load(); // method to load data from file
+import java.io.File;
+import java.io.IOException;
 
-    public void save(); // method to store data to file
+import app.Race;
+
+public interface IFileOperations {
+    public String load(File result) throws IOException; // method to load data from file
+
+    public void save(File results, Race race) throws IOException; // method to store data to file
 
 }

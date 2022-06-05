@@ -6,11 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class DataControl extends Race {
+import interfaces.IFileOperations;
+
+public class DataControl extends Race implements IFileOperations {
 
     public DataControl(int seasonYear, Circuit circuitName) {
         super(seasonYear, circuitName);
-        // TODO Auto-generated constructor stub
     }
 
     public static void loadStats(File file, Race race) throws FileNotFoundException, IOException {
@@ -33,6 +34,19 @@ public class DataControl extends Race {
                 race.addRacer(r);
             }
         }
+    }
+
+    @Override
+    public String load(File result) throws IOException {
+        return "";
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void save(File result, Race race) {
+        // TODO Auto-generated method stub
+
     }
 
 }

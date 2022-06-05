@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
+
+import app.BinaryFile;
 import app.ComparatorRacerBySurname;
 import app.Nationality;
 import app.Race;
@@ -76,6 +78,16 @@ public class App {
                         } else {
                             RaceUtils.saveRace(race, race.getCircuitName() + race.getSeasonYear());
                         }
+                        break;
+                    case "6":
+                        BinaryFile bf = new BinaryFile();
+                        File result = new File("racersBinary.bat");
+                        bf.save(result, race);
+                        break;
+                    case "7":
+                        BinaryFile bf1 = new BinaryFile();
+                        File result1 = new File("racersBinary.bat");
+                        System.out.println(bf1.load(result1));
                         break;
                     case "q":
                         System.out.println("Ukončuji...");
@@ -286,6 +298,9 @@ public class App {
         System.out.println("3 ...upravit v načteném závodě závodníka");
         System.out.println("4 ...vypsat detail závodníků");
         System.out.println("5 ...uložit načtené závodníky");
+        System.out.println("6 ...uložit načtené závodníky do binárního souboru");
+        System.out.println("7 ...načíst závodníky z binárního souboru");
+
         System.out.println("q ...konec");
         System.out.print("Vyberte jednu z možností: ");
     }

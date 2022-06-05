@@ -33,7 +33,6 @@ public class TimeTools {
     }
 
     public static String secondsToTimeString(int seconds) {
-        // TO-DO: StringBuilder sb = new StringBuilder();
         int h, m, s, sLeft;
         h = seconds / 3600;
         sLeft = seconds - h * 3600;

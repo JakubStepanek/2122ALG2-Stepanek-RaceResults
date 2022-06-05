@@ -4,14 +4,14 @@ public enum Nationality {
     AU("Austrálie"), DE("Německo"), CZ("Česká republika"), ES("Španělsko"), FR("Francie"), IT("Itálie"),
     PT("Portugalsko"), ZA("Jižní Afrika"), JP("Japonsko"), US("Amerika"), GB("Velká Británie"), FI("Finsko");
 
-    private String nationality;
+    private String name;
 
     private Nationality(String nationality) {
-        this.nationality = nationality;
+        this.name = nationality;
     }
 
     public String getNationalityValue() {
-        return nationality;
+        return name;
     }
 
     public static Nationality of(String nationality) {

@@ -11,7 +11,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
+
+import utils.InputCheck;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -25,6 +28,7 @@ public class Race {
     private int seasonYear;
     private Circuit circuitName;
     private final ArrayList<Racer> racers = new ArrayList<>();
+    private ArrayList<Racer> racersBackup = new ArrayList<>();
 
     public Race() {
 
@@ -56,25 +60,22 @@ public class Race {
     }
 
     public int getSeasonYear() {
-        if (isSeasonValid()) {
+        if (InputCheck.checkSeasonYearBoolean(this.seasonYear)) {
             return this.seasonYear;
         }
         throw new IllegalArgumentException("Sezóna nebyla nastavena");
     }
 
-    private boolean isSeasonValid() {
-        if (this.seasonYear <= 1949) {
-            return false;
-        }
-        return true;
-    }
-
-    public ArrayList<Racer> getRacers() {
+    public List<Racer> getRacers() {
         ArrayList<Racer> copy = new ArrayList<>();
         for (Racer racer : this.racers) {
             copy.add(new Racer(racer));
         }
         return copy;
+    }
+
+    public int getRacersSize() {
+        return this.racers.size();
     }
 
     private int findIndexOfRacer(Racer wantedRacer) {
@@ -84,7 +85,6 @@ public class Race {
                 index++;
             } else {
                 return index;
-
             }
         }
         return -1;
@@ -99,7 +99,7 @@ public class Race {
             br.readLine();
             while ((line = br.readLine()) != null) {
                 parts = line.split(";");
-                if (!isSeasonValid()) {
+                if (InputCheck.checkSeasonYearBoolean(Integer.parseInt(parts[0]))) {
                     setSeasonYear(Integer.parseInt(parts[0]));
                 }
                 if (!isCircuitNameSet()) {
@@ -139,7 +139,7 @@ public class Race {
     }
 
     private boolean isCircuitNameSet() {
-        return !(this.circuitName == null);
+        return (this.circuitName != null);
 
     }
 
@@ -147,21 +147,22 @@ public class Race {
         this.circuitName = circuitName;
     }
 
-    public ArrayList<Racer> sortBySurname() {
-        ArrayList<Racer> copy = getRacers();
+    public List<Racer> sortBySurname() {
+        ArrayList<Racer> copy = (ArrayList<Racer>) getRacers();
         Comparator<Racer> cbs = new ComparatorRacerBySurname();
         Collections.sort(copy, cbs);
         return copy;
     }
 
-    public ArrayList<Racer> getRacer(String surname) {
-        return (ArrayList<Racer>) racers.stream()
+    public List<Racer> getRacer(String surname) {
+        return racers.stream()
                 .filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
                 .collect(Collectors.toList());
     }
 
     public void deleteRacer(Racer racer) {
         ArrayList<Racer> copy = this.racers;
+        backupRacers(this.racers);
         // nebezpečné?
         this.racers.clear();
         for (Racer racer2 : copy) {
@@ -174,10 +175,14 @@ public class Race {
         }
     }
 
+    private void backupRacers(ArrayList<Racer> racers) {
+        this.racersBackup = racers;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        ArrayList<Racer> racersToString = getRacers();
+        ArrayList<Racer> racersToString = (ArrayList<Racer>) getRacers();
         sb.append("Výsledky:");
         sb.append(System.lineSeparator());
         sb.append("==========");

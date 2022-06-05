@@ -4,6 +4,7 @@ import java.time.*;
 
 public class InputCheck {
     private static final int START_OF_RACING = 1949;
+    private static final int CURRENT_YEAR = Year.from(LocalDate.now()).getValue();
 
     public static String nameCheckFormat(String name) {
         if (!name.matches("^[A-Ž][a-ž]+$")) { // ukazka pouziti regularniho vyrazu na test validity
@@ -31,11 +32,13 @@ public class InputCheck {
     }
 
     public static int checkSeasonYear(int year) {
-        int currentYear = Year.from(LocalDate.now()).getValue();
-
-        if (!(START_OF_RACING < year && year <= currentYear)) {
-            throw new IllegalArgumentException("Rok nesedí: 1949 < zadaný rok ≤ " + currentYear);
+        if (!(START_OF_RACING < year && year <= CURRENT_YEAR)) {
+            throw new IllegalArgumentException("Rok nesedí: 1949 < zadaný rok ≤ " + CURRENT_YEAR);
         }
         return year;
+    }
+
+    public static boolean checkSeasonYearBoolean(int year) {
+        return (START_OF_RACING < year && year <= CURRENT_YEAR);
     }
 }

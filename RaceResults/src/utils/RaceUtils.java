@@ -6,7 +6,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,16 +32,6 @@ public class RaceUtils {
         }
     }
 
-    // public void addPointsToInternalDatabase(Race race) {
-    // ArrayList<Racer> loadedRacers = race.getRacers();
-    // for (Racer racer : racerStats) {
-    // for (int i = 0; i < loadedRacers.size(); i++) {
-    // if (racer.getRacingNumber().equals(loadedRacers.get(i).getRacingNumber())) {
-    // racer.setPoints(racer.getPoints() + loadedRacers.get(i).getPoints());
-    // }
-    // }
-    // }
-    // }
     public static boolean areRacersEmpty(Race race) {
         return race.getRacers().isEmpty();
     }
@@ -55,18 +44,7 @@ public class RaceUtils {
         // buffer clear
         sc.nextLine();
         System.out.print("Zadejte název okruhu: ");
-        // raceByUser.setCircuitName(Circuit.of(InputCheck.checkCircuitValues(sc.nextLine())));
         raceByUser.setCircuitName(Circuit.of(sc.nextLine()));
-
-        String answer;
-        // do {// TODO: add racers to raceByUser InternalDB
-        // System.out.print("Přejete si přidat závodníka? [ano/ne]: ");
-        // answer = sc.nextLine().toLowerCase();
-        // if (answer.equalsIgnoreCase("ano")) {
-        // raceByUser.addRacer(addRacerByUser());
-        // }
-        // } while (answer.equalsIgnoreCase("ano"));
-
         return raceByUser;
     }
 
@@ -83,7 +61,7 @@ public class RaceUtils {
     }
 
     public static List<Racer> findRacers(Race race, String surname) {
-        ArrayList<Racer> foundRacers = race.getRacer(surname);
+        ArrayList<Racer> foundRacers = (ArrayList<Racer>) race.getRacer(surname);
         if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
         } else {
@@ -94,7 +72,7 @@ public class RaceUtils {
 
     public static Racer findRacer(Race race) {
         System.out.print("Zadejte příjmení hledaného závodníka: ");
-        ArrayList<Racer> foundRacers = race.getRacer(InputCheck.surnameCheckFormat(sc.nextLine()));
+        ArrayList<Racer> foundRacers = (ArrayList<Racer>) race.getRacer(InputCheck.surnameCheckFormat(sc.nextLine()));
         if (foundRacers.isEmpty()) {
             throw new IllegalArgumentException("Závodníka se zadaným příjmením nelze najít!");
         } else {

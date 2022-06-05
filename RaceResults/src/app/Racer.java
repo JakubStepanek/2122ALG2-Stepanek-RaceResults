@@ -148,14 +148,6 @@ public class Racer implements Comparable<Racer> {
                 getTeam(), getBike(), getRacingNumber(), getMaxSpeed(), getRaceTime(), getPoints());
     }
 
-    public static void main(String[] args) {
-        Racer r = new Racer("Jakub", "Štěpánek", Nationality.CZ);
-        System.out.println(r);
-        // r.setRacingNumber("88");
-        // System.out.println(r);
-
-    }
-
     @Override
     public int compareTo(Racer o) {
         return this.getPoints() - o.getPoints();

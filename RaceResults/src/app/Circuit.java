@@ -6,14 +6,14 @@ public enum Circuit {
     DOH("Losail"), ITA("Mugello"), GER("Sachsenring"), NED("Assen"), GBR("Silverstone"), AME("Texas"), EMI("Misano"),
     SEP("Sepang");
 
-    private String circuit;
+    private String name;
 
     private Circuit(String circuit) {
-        this.circuit = circuit;
+        this.name = circuit;
     }
 
     public String getCircuitValue() {
-        return circuit;
+        return name;
     }
 
     public static Circuit of(String circuit) {
