@@ -62,7 +62,7 @@ public class App {
 
         String choice;
         boolean end = false;
-        String path;
+        String dataPath = System.getProperty("user.dir") + File.separator + "data" + File.separator;
 
         while (!end) {
             try {
@@ -73,7 +73,7 @@ public class App {
                     case "1":
                         FileExplorerUtils.showRaceMenu();
                         String fileToLoad = sc.nextLine();
-                        path = System.getProperty("user.dir") + File.separator + "data" + File.separator + fileToLoad;
+                        String path = dataPath + fileToLoad;
                         result = new File(path);
                         fileUtils.loadToRace(result, race);
                         System.out.println(race);
@@ -101,11 +101,11 @@ public class App {
                         }
                         break;
                     case "6":
-                        result = new File("racersBinary.dat");
+                        result = new File(dataPath + "racersBinary.dat");
                         binaryFileUtils.save(result, race);
                         break;
                     case "7":
-                        result = new File("racersBinary.dat");
+                        result = new File(dataPath + "racersBinary.dat");
                         System.out.println(binaryFileUtils.load(result, race));
                         break;
                     case "q":
