@@ -43,19 +43,17 @@ public final class RaceUtils {
                 MenuUtils.showNewRaceMenu();
                 // input checked by "default" in switch
                 switch (sc.nextLine().toLowerCase()) {
-                    case "1":
-                        // add racer
+                    case "1" -> // add racer
                         raceByUser.addRacer(RaceUtils.addRacerByUser());
-                        break;
-                    case "2":
+                    case "2" -> {
                         // edit racer
                         if (!raceByUser.getRacers().isEmpty()) {
                             RacerUtils.changeRacerAppearance(raceByUser);
                         } else {
                             System.out.println("Nejdříve musíte přidat závodníka!");
                         }
-                        break;
-                    case "3":
+                    }
+                    case "3" -> {
                         // delete racer
                         if (!raceByUser.getRacers().isEmpty()) {
                             raceByUser.deleteRacer(RaceUtils.findRacer(raceByUser));
@@ -64,14 +62,9 @@ public final class RaceUtils {
                         } else {
                             System.out.println("Nejdříve musíte přidat závodníka!");
                         }
-
-                        break;
-                    case "q":
-                        exitNewRaceMenu = true;
-                        break;
-                    default:
-                        System.out.println("Neplatná volba! ");
-                        break;
+                    }
+                    case "q" -> exitNewRaceMenu = true;
+                    default -> System.out.println("Neplatná volba! ");
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());

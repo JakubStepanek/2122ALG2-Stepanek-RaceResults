@@ -19,6 +19,7 @@ import app.Racer;
 import utils.BinaryFileUtils;
 import utils.FileExplorerUtils;
 import utils.FileUtils;
+import utils.J2HTML;
 import utils.MenuUtils;
 import utils.RaceUtils;
 import utils.RacerUtils;
@@ -26,8 +27,8 @@ import utils.RacerUtils;
 /**
  * @author JakubStepanek
  */
-
 public class App {
+
     private static Scanner sc = new Scanner(System.in);
     // racerStats ...internal database updated on initialization
     private ArrayList<Racer> racerStats = new ArrayList<>();
@@ -41,7 +42,7 @@ public class App {
 
     /**
      * Method to start running application
-     * 
+     *
      * @throws IOException
      */
     private void start() throws IOException {
@@ -70,51 +71,46 @@ public class App {
                 // vstup ošetřen switchem => default
                 choice = sc.nextLine();
                 switch (choice) {
-                    case "1":
+                    case "1" -> {
                         FileExplorerUtils.showRaceMenu();
                         String fileToLoad = sc.nextLine();
                         String path = dataPath + fileToLoad;
                         result = new File(path);
                         fileUtils.loadToRace(result, race);
                         System.out.println(race);
-                        break;
-                    case "2":
-                        // create new race
+                    }
+                    case "2" -> // create new race
                         RaceUtils.startNewRace();
-                        break;
-                    case "3":
+                    case "3" -> {
                         if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         }
                         RacerUtils.changeRacerAppearance(race);
-                        break;
-                    case "4":
-                        showRacerInterDatabase();
-                        break;
-                    case "5":
+                    }
+                    case "4" -> showRacerInterDatabase();
+                    case "5" -> {
                         if (RaceUtils.areRacersEmpty(race)) {
                             System.out.println("Nejdřív musíte načíst závod!");
                             break;
                         } else {
                             fileUtils.saveRace(race, race.getCircuitName() + race.getSeasonYear());
                         }
-                        break;
-                    case "6":
+                    }
+                    case "6" -> {
                         result = new File(dataPath + "racersBinary.dat");
                         binaryFileUtils.save(result, race);
-                        break;
-                    case "7":
+                    }
+                    case "7" -> {
                         result = new File(dataPath + "racersBinary.dat");
                         System.out.println(binaryFileUtils.load(result, race));
-                        break;
-                    case "q":
+                    }
+                    case "8" -> fileUtils.save(J2HTML.saveHTML(race), new File(dataPath + "index.html"));
+                    case "q" -> {
                         System.out.println("Ukončuji...");
                         end = true;
-                        break;
-                    default:
-                        System.out.println("neplatná volba");
-                        break;
+                    }
+                    default -> System.out.println("neplatná volba");
                 }
 
             } catch (IllegalArgumentException | FileNotFoundException | InputMismatchException e) {
@@ -125,7 +121,7 @@ public class App {
 
     /**
      * Function which loads racers from internal database
-     * 
+     *
      * @return
      * @throws FileNotFoundException
      * @throws IOException
@@ -137,7 +133,7 @@ public class App {
         String parentPath = System.getProperty("user.dir") + File.separator + "data" + File.separator
                 + "riders.csv";
         File dataDirectory = new File(parentPath);
-        try (BufferedReader br = new BufferedReader(new FileReader(dataDirectory))) {
+        try ( BufferedReader br = new BufferedReader(new FileReader(dataDirectory))) {
             // skip header
             br.readLine();
             while ((line = br.readLine()) != null) {

@@ -9,9 +9,18 @@ import java.io.IOException;
 import app.Race;
 
 public interface IFileOperations {
+
+    /**
+     * Method to save data into the file
+     *
+     * @param content
+     * @param file
+     */
+    public void save(String content, File file) throws IOException;
+
     /**
      * Function for loading data from file
-     * 
+     *
      * @param result
      * @param race
      * @return
@@ -21,7 +30,7 @@ public interface IFileOperations {
 
     /**
      * Method to save data into the file
-     * 
+     *
      * @param results
      * @param race
      * @throws IOException
@@ -30,18 +39,17 @@ public interface IFileOperations {
 
     /**
      * Method to load data from race
-     * 
+     *
      * @param result
      * @param race
      * @throws IOException
      */
-
     public void loadToRace(File result, Race race) throws IOException; // method to load data from file and store them
-                                                                       // in race
+    // in race
 
     /**
      * Method to save race data to file
-     * 
+     *
      * @param race
      * @param fileName
      * @throws IOException

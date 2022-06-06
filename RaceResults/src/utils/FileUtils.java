@@ -86,4 +86,11 @@ public final class FileUtils implements IFileOperations {
 
     }
 
+    @Override
+    public void save(String content, File file) throws IOException {
+        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file, false)))) {
+        pw.println(content);
+        }
+    }
+
 }

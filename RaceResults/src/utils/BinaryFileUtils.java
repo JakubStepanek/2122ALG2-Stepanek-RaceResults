@@ -97,4 +97,9 @@ public final class BinaryFileUtils implements IFileOperations {
         // TODO Auto-generated method stub
         
     }
+
+    @Override
+    public void save(String content, File file) throws IOException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

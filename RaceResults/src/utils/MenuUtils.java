@@ -3,8 +3,8 @@ package utils;
 /**
  * @author JakubStepanek
  */
-
 public final class MenuUtils {
+
     /**
      * public constructor
      */
@@ -53,6 +53,7 @@ public final class MenuUtils {
         System.out.println("5 ...uložit načtené závodníky");
         System.out.println("6 ...uložit načtené závodníky do binárního souboru");
         System.out.println("7 ...načíst závodníky z binárního souboru");
+        System.out.println("8 ...uložit závodníky do HTML");
         System.out.println("q ...konec");
         System.out.print("Vyberte jednu z možností: ");
     }
