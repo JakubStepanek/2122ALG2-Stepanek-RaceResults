@@ -14,6 +14,7 @@ import interfaces.IFileOperations;
 
 /**
  * BinaryFile
+ * @author Jakub Štěpánek
  */
 public final class BinaryFileUtils implements IFileOperations {
     public BinaryFileUtils() {

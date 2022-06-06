@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import app.ComparatorRacerBySurname;
@@ -22,19 +23,27 @@ import utils.MenuUtils;
 import utils.RaceUtils;
 import utils.RacerUtils;
 
+/**
+ * @author JakubStepanek
+ */
+
 public class App {
     private static Scanner sc = new Scanner(System.in);
     // racerStats ...internal database updated on initialization
     private ArrayList<Racer> racerStats = new ArrayList<>();
     private BinaryFileUtils binaryFileUtils = new BinaryFileUtils();
     private FileUtils fileUtils = new FileUtils();
-    private String path;
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         App app = new App();
         app.start();
     }
 
+    /**
+     * Method to start running application
+     * 
+     * @throws IOException
+     */
     private void start() throws IOException {
         File result;
         try {
@@ -53,6 +62,8 @@ public class App {
 
         String choice;
         boolean end = false;
+        String path;
+
         while (!end) {
             try {
                 MenuUtils.showMainMenu();
@@ -106,12 +117,19 @@ public class App {
                         break;
                 }
 
-            } catch (IllegalArgumentException | FileNotFoundException e) {
+            } catch (IllegalArgumentException | FileNotFoundException | InputMismatchException e) {
                 System.out.println(e.getMessage());
             }
         }
     }
 
+    /**
+     * Function which loads racers from internal database
+     * 
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     private ArrayList<Racer> initialization() throws FileNotFoundException, IOException {
         String line;
         String[] parts;
@@ -139,35 +157,9 @@ public class App {
 
     }
 
-    // public static void loadResults(Race race) throws FileNotFoundException {
-    // String userAnswer = sc.nextLine();
-    // try {
-    // File file = new File(
-    // System.getProperty("user.dir") + File.separator + "Data" + File.separator
-    // + userAnswer);
-    // // race.loadStats(file);
-    // System.out.println(race);
-    // if (RaceUtils.showRacerDetail()) {
-    // System.out.print("Zadej příjmení jezdce: ");
-    // String surname = sc.nextLine();
-    // // moc unavený na kontrolu...
-    // if (InputCheckUtils.checkChoiceFormatBoolean(surname)) {
-    // RaceUtils.findRacers(race, surname);
-    // System.out.println(
-    // String.format("%-8s %-10s %-10s %-15s %-30s %-10s %-15s %-2s %s", "Umístění",
-    // "Jméno",
-    // "Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo",
-    // "Max. rychlost", "Čas"));
-    // }
-    // System.out.println("Závodník nebyl nalezen.");
-
-    // }
-    // } catch (Exception e) {// IOException
-    // System.out.println(e.getMessage());
-    // }
-
-    // }
-
+    /**
+     * Method to show Racers from Internal database
+     */
     public void showRacerInterDatabase() {
         ArrayList<Racer> copy = new ArrayList<>();
         for (Racer racer : this.racerStats) {

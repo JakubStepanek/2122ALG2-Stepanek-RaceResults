@@ -2,6 +2,7 @@ package utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,17 +11,32 @@ import app.Nationality;
 import app.Race;
 import app.Racer;
 
+/**
+ * @author JakubStepanek
+ */
 public final class RaceUtils {
     private static Scanner sc = new Scanner(System.in);
     private static FileUtils fileUtils = new FileUtils();
 
+    /**
+     * private constructor
+     */
     private RaceUtils() {
 
     }
 
+    /**
+     * Method to start new Race
+     */
     public static void startNewRace() {
-        Race raceByUser = RaceUtils.createNewRace();
-
+        Race raceByUser = new Race();
+        try {
+            raceByUser = RaceUtils.createNewRace();
+        } catch (InputMismatchException e) {
+            // clear buffer
+            sc.nextLine();
+            throw new InputMismatchException("Sezóna se zadává rokem");
+        }
         boolean exitNewRaceMenu = false;
         while (!exitNewRaceMenu) {
             try {
@@ -74,10 +90,22 @@ public final class RaceUtils {
 
     }
 
+    /**
+     * Function checks if Racers in Race are empty
+     *
+     * @param race
+     * @return
+     */
     public static boolean areRacersEmpty(Race race) {
         return race.getRacers().isEmpty();
     }
 
+    /**
+     * Function creates new Race()
+     * 
+     * @return
+     * @throws IllegalArgumentException
+     */
     public static Race createNewRace() throws IllegalArgumentException {
         // TODO: add new racer to riders.csv
         Race raceByUser = new Race();
@@ -90,6 +118,11 @@ public final class RaceUtils {
         return raceByUser;
     }
 
+    /**
+     * Function to add Racer by user in Race
+     * 
+     * @return
+     */
     public static Racer addRacerByUser() {
         System.out.print("Zadejte jméno závodníka: ");
         String name = InputCheckUtils.nameCheckFormat(sc.nextLine());
@@ -102,6 +135,13 @@ public final class RaceUtils {
         return r;
     }
 
+    /**
+     * Function to find Racer in Race by surname
+     * 
+     * @param race
+     * @param surname
+     * @return
+     */
     public static List<Racer> findRacers(Race race, String surname) {
         ArrayList<Racer> foundRacers = (ArrayList<Racer>) race.getRacer(surname);
         if (foundRacers.isEmpty()) {
@@ -112,6 +152,12 @@ public final class RaceUtils {
 
     }
 
+    /**
+     * Function to find Racer in Race by Surname
+     * 
+     * @param race
+     * @return
+     */
     public static Racer findRacer(Race race) {
         System.out.print("Zadejte příjmení hledaného závodníka: ");
         ArrayList<Racer> foundRacers = (ArrayList<Racer>) race
@@ -124,6 +170,11 @@ public final class RaceUtils {
 
     }
 
+    /**
+     * Funtion asks user if he wants to show detail of Racer
+     * 
+     * @return
+     */
     public static boolean showRacerDetail() {
         System.out.println("Chceš zobrazit detail jezdce? [a/n]");
         return sc.nextLine().equalsIgnoreCase("a");

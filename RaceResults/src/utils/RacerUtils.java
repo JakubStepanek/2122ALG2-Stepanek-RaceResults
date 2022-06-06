@@ -6,11 +6,24 @@ import java.util.Scanner;
 import app.Race;
 import app.Racer;
 
+/**
+ * @author JakubStepanek
+ */
+
 public final class RacerUtils {
     private static Scanner sc = new Scanner(System.in);
-    private RacerUtils(){
+
+    /**
+     * private constructor
+     */
+    private RacerUtils() {
     }
 
+    /**
+     * Method to change appearance of Racer
+     * 
+     * @param race
+     */
     public static void changeRacerAppearance(Race race) {
         boolean end = false;
         Racer foundRacer = RaceUtils.findRacer(race);
@@ -62,5 +75,5 @@ public final class RacerUtils {
         }
 
     }
-    
+
 }

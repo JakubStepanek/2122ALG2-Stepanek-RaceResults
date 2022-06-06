@@ -2,6 +2,9 @@ package utils;
 
 import java.io.File;
 
+/**
+ * @author Jakub Štěpánek
+ */
 public final class FileExplorerUtils {
     private FileExplorerUtils() {
 
@@ -22,6 +25,9 @@ public final class FileExplorerUtils {
         return sb.toString();
     }
 
+    /**
+     * Method to show Race menu, finds files in data folder
+     */
     public static void showRaceMenu() {
         String actualDir = System.getProperty("user.dir") + File.separator + "Data";
         File file = new File(actualDir);
@@ -29,10 +35,4 @@ public final class FileExplorerUtils {
         System.out.print("Zadejte soubor se závody: ");
     }
 
-    public static void main(String[] args) {
-        // String actualDir = System.getProperty("user.dir") +
-        // File.separator + "Data";
-        // File file = new File(actualDir);
-        // System.out.println(showPathFile(file, 0));
-    }
 }

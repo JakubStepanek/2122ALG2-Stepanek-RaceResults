@@ -7,18 +7,22 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Scanner;
+
 
 import app.Circuit;
 import app.Nationality;
 import app.Race;
 import app.Racer;
 import interfaces.IFileOperations;
+/** 
+ * @author Jakub Štěpánek
+ */
 
 public final class FileUtils implements IFileOperations {
 
-    private static Scanner sc = new Scanner(System.in);
-
+    /**
+     * public constructor
+     */
     public FileUtils() {
     }
 

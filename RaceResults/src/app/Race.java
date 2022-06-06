@@ -14,7 +14,7 @@ import utils.InputCheckUtils;
  */
 /**
  *
- * @author kubin
+ * @author Jakub Štěpánek
  */
 public class Race {
     private int seasonYear;
@@ -22,41 +22,71 @@ public class Race {
     private final ArrayList<Racer> racers = new ArrayList<>();
     private ArrayList<Racer> racersBackup = new ArrayList<>();
 
+    /**
+     * Public constructor
+     */
     public Race() {
-
     }
 
+    /**
+     * Public constructor
+     * 
+     * @param seasonYear
+     * @param circuitName
+     */
     public Race(int seasonYear, Circuit circuitName) {
         this.seasonYear = seasonYear;
         this.circuitName = circuitName;
     }
 
-    public void addRacer(Racer racer) {
-        this.racers.add(racer);
-    }
-
+    // getters
+    /**
+     * Function to get object Racer
+     * 
+     * @param racer
+     * @return Racer
+     */
     public Racer getRacer(Racer racer) {
         return new Racer(racers.get(findIndexOfRacer(racer)));
     }
+
+    /**
+     * Function to get Name of Circuit
+     * 
+     * @return String
+     */
 
     public String getCircuitName() {
         return this.circuitName.getCircuitValue();
     }
 
+    /**
+     * Function to get Shortcut of Circuit
+     * 
+     * @return Circuit
+     */
+
     public Circuit getCircuitShortcut() {
         return this.circuitName;
     }
 
-    public void setSeasonYear(int seasonYear) {
-        this.seasonYear = seasonYear;
-    }
-
+    /**
+     * Function to get Season year
+     * 
+     * @return int
+     */
     public int getSeasonYear() {
         if (InputCheckUtils.checkSeasonYearBoolean(this.seasonYear)) {
             return this.seasonYear;
         }
         throw new IllegalArgumentException("Sezóna nebyla nastavena");
     }
+
+    /**
+     * Function to get all Racers
+     * 
+     * @return List
+     */
 
     public List<Racer> getRacers() {
         ArrayList<Racer> copy = new ArrayList<>();
@@ -66,10 +96,51 @@ public class Race {
         return copy;
     }
 
+    /**
+     * Function to get count of Racers
+     * 
+     * @return int
+     */
+
     public int getRacersSize() {
         return this.racers.size();
     }
 
+    // setters
+    /**
+     * Method to add Racer to Race
+     * 
+     * @param racer
+     */
+    public void addRacer(Racer racer) {
+        this.racers.add(racer);
+    }
+
+    /**
+     * Method to assign Season year
+     * 
+     * @param seasonYear
+     */
+    public void setSeasonYear(int seasonYear) {
+        this.seasonYear = seasonYear;
+    }
+
+    /**
+     * Method to set name of Circuit
+     * 
+     * @param circuitName
+     */
+    public void setCircuitName(Circuit circuitName) {
+        this.circuitName = circuitName;
+    }
+
+    /**
+     * Function to get index of selected Racer, if there is no Racer like wanted
+     * Racer, function returns -1
+     * 
+     * @param wantedRacer
+     * @return int
+     */
     private int findIndexOfRacer(Racer wantedRacer) {
         int index = 0;
         for (Racer racer : racers) {
@@ -82,14 +153,21 @@ public class Race {
         return -1;
     }
 
+    /**
+     * Function checks is name of Circuit is set
+     * 
+     * @return boolean
+     */
     public boolean isCircuitNameSet() {
         return (this.circuitName != null);
 
     }
 
-    public void setCircuitName(Circuit circuitName) {
-        this.circuitName = circuitName;
-    }
+    /**
+     * Function to sort Racers by Surname
+     * 
+     * @return List<Racer>
+     */
 
     public List<Racer> sortBySurname() {
         ArrayList<Racer> copy = (ArrayList<Racer>) getRacers();
@@ -98,12 +176,23 @@ public class Race {
         return copy;
     }
 
+    /**
+     * Function to get Racers selected by Surname
+     * 
+     * @param surname
+     * @return List
+     */
     public List<Racer> getRacer(String surname) {
         return racers.stream()
                 .filter(racers -> racers.getSurname().equalsIgnoreCase(surname))
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Method to delete Racer from Race
+     * 
+     * @param racer
+     */
     public void deleteRacer(Racer racer) {
         ArrayList<Racer> copy = this.racers;
         backupRacers(this.racers);
@@ -118,6 +207,12 @@ public class Race {
             this.racers.add(racer2);
         }
     }
+
+    /**
+     * Private Method to backup Racers before deleting
+     * 
+     * @param racers
+     */
 
     private void backupRacers(ArrayList<Racer> racers) {
         this.racersBackup = racers;
