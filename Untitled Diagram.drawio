@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-06T22:58:38.808Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15" etag="LrVYNqU_C_J21GyZx2oj" version="19.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-06T22:59:40.370Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15" etag="aW5ePEukeIlUlgPfxioR" version="19.0.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="788" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,6 +75,12 @@
         </mxCell>
         <mxCell id="mKFjjN0TuRmioYyIV8rE-58" value="+ startNewRace() : void&#xa;+ areRacersEmpty(Race) : boolean&#xa;+ createNewRace() : Race&#xa;+ addRacerByUser() : Racer&#xa;+ findRacers(Race, String) : List&lt;Racer&gt;&#xa;+ findRacers(Race) : Racer&#xa;+ showRacerDetail() : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mKFjjN0TuRmioYyIV8rE-55">
           <mxGeometry y="68" width="230" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="mKFjjN0TuRmioYyIV8rE-59" value="RacerUtils" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="499" width="230" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="mKFjjN0TuRmioYyIV8rE-62" value="+ changeRacerAppearance(Race) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mKFjjN0TuRmioYyIV8rE-59">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
