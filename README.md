@@ -2,13 +2,12 @@
 
 ## Abstrakt
 
-Aplikace má simulovat správu datábáze a vyhodnocování závodníků například závodů ze seriálu **MotoGP**.
+Program **RaceResults** bude zpracovávat výsledky motocyklových závodů. Vstupem programu budou textové soubory - seznam okruhů pořádajících závod, seznam jezdců a výsledky. Soubor se seznamem okruhů bude uchovávat informace o trati (poloha, délka, nejrychlejší čas na kolo). Seznam jezdců bude nést data o aktuálně zúčastněných jezdcích. Do souboru s výsledky se zaznamená pořadí jezdců, jak projeli cílovou páskou. Jednotlivé údaje budou v souborech oddělené jednou nebo více mezerami. Program má umožnit načíst vstupní soubory a vypsat zpracované výsledky příslušného termínu. Výsledky požadujeme vypsat seřízené podle dosažených bodů, nebo abecedně podle příjmení. Výpis je volitelně na obrazovku, nebo do souboru.
 
 Aplikace v souborech uchovává seznam závodníků a přiřazuje jim data - umístění v daném závodě, maximální rychlost během závodu atd. Dále umožňuje vytvářet nové závody a upravovat data závodníků.
 
 **Cílem** práce je uchovat data závodníků a přehledně je zobrazit-
 
-Funkční specifikace – seznam funkcí z pohledu uživatele, které bude Váš program poskytovat např. formou větveného seznamu (stromu). Může sloužit následně jako podklad pro menu.
 
 ## Funkční specifikace
 Aplikace běží v konzolovém menu:
@@ -24,106 +23,84 @@ Aplikace běží v konzolovém menu:
     - smazat závodníky
 - uložit závod do souboru
 ### 3. upravit v načteném závodě závodníka
+- zobrazí samostaně závodníka
 ### 4. vypsat detail závodníků
+- vypíše pohled do interní databáze
 ### 5. uložit načtené závodníky
+- uloží načtené závodníky do souboru (CircuitSeasonYear.csv)
 ### 6. uložit načtené závodníky do binárního souboru
 ### 7. načíst závodníky z binárního soubor
-
-
-
-  
-
-
+### 8. uložit závodníky do HTML
+- uloží závodníky do souboru index.html
 
 ## Popis řešení
 
-Cílem bylo co nejvíce oddělit logiku od zobrazovací vrstvy. Aplikace je rozdělena do několika vrstev. Do datové vrstvy, servisní a prezenční. K tomu jsou ještě nějaké pomocné utility (Db, Menu, IO, ...).
-
-Jediný kdo komunikuje s databází, která se nachází na serveru (pavel-vacha.cz) je datová vrstva **Repository** přes databázový wrapper. Tyto data zpracovává pouze servisní vrstva **Service** a o tyto data si žádá **View**. (Proto se nejdná o MVC. V MVC View dostane data naservírované už od kontroleru a View generuje eventy na které kontroler reaguje).
-
-Základem všech pohledu je abstraktní třída **View**, která má v sobě `display()` a `showMessage()`
-
-O routování mezi View se stará třída **Navigator**. Má v sobě jakýsi zásobník a na základě zavolané metody se s ním pracuje... Více v kódu..
-
-O výpis menu (i s korektně ošetřenými právy) se stará třída _Menu_
-
-Databázový wrapper má vytvořený pool připojení a dynamicky je přidává a ubírá dokud není vyčerpáná interně zvolená kapacita. (Nebo server nepřestane odpovídat :)). Na serveru běží `10.3.27-MariaDB-0+deb10u1 - Debian 10`. Schéma lze najít níže
-
-## Databázové schéma
-
-  ![Databázové schéma](./images/semestral_project.png)
-
+**jaké datové typy bude obsahovat, čím budou odděleny jednotlivé údaje, jestli je požadovaný určitý formát názvů souborů a pod.**
 ## Formát souborů
+Úkolem aplikace je přehledně zobrazit zaznamenaná data zvýsledků závodů na silničním okruhu. 
+Data jsou načítána ze souborů s příponou *.csv*, oddělena pomocí středníku. Každý soubor musí mít **hlavičku**, která charakterizuje uložené data. 
 
-Vstupní soubor pro inspekci. Formát **.txt** první řádek jsou hlavičky a další soubory jsou oddělené mezerou. Datum musí být ve formátu **(dd/mm/yyyy)**
+Ukládání do souborů se drží zavedené struktury.
 
-```
-idDevice    idInspection    supplier        inspectionDate
-3           2               Altier          25/5/2022
-3           3               Caviar          26/5/2022
-3           1               Savo            13/5/2022
-```
+Další možností je uložení dat do binárního souboru, které je jedním z požadavků. Zde se ukládají závodníci a jejich zisk bodů. Tento způsob má simulovat interní databázi, jelikož binární soubory nejsou čitelné běžným prohlížečem, můžeme předpokládat, že naše data jsou v bezpečí a dokud bude způsob ukládání tajný, budou data "zašifrovaná". Mimo jiné aplikace nabízí možnost uložit data do těla HTML souboru a následně je zobrazit na webové stránce, to bude popsáno v kapitole o použité **externí knihovně**.
 
-Výstupní formát předmětů ze zdravotechniky. V hlavičce je ID, interní registrovací čísel, název a typ zařízení z číselníku. Vše je odděleno tabama. (Data se již neimportují zpět)
 
-```
-ID    IRN           NAME                  CPV_DEVICE_TYPE
-4     X-2321011     Rentegonový přístroj  Radiodiagnostické doplnňky(33124210-0)
-```
 
-V profilu jsem využil exportu a importu do binárního souboru, abych splnil požadavky :). Formát:
-
-```
-    1. int - ID uživatele
-    2. utf - jméno uživatele
-    3. utf - heslo uživatele (zahashované)
-    4. boolean - je admin?
-```
 
 ## Class diagram
 
-![Objektový návrh](./images/uml.png)
+![Objektový návrh](diagram.png)
 
 ## Testování
 
-Zdrojový kód k testům najdete v `package com.tul.vacha.semestralproject.ui.ConsoleApp;`. Otestoval jsem několik základních CRUD operací, limitních stavů a chybně zadaných vstupů od uživatele.
+| **Číslo testu** | **Typ testu, popis** | **Očekávaný výsledek** | **Skutečný výsledek** | **Prošel (ano/ne)** |
+|:------:|------|------|------|:------:|
+|   **1**  |   Zadání neplatné hodnoty v **hlavním menu**   |  Výpis chybové hlášky: *Neplatná volba*    |  Program zůstal v hlavním menu a vypsal chybovou hlášku    |  ano    |
+|   **2**  |  Zadání chybného názvu souboru při načítání    |  Program se vrátí do hlavního **menu**    |  Program se vrátil do hlavního **menu**    |   ano   |
+|   **3**  |    Zahájení nového závodu, zadání roku <1949 *začátek závodění*|Program se vrátí zpět do hlavního menu bez výstupu|Program ukončil vytváření nového závodu a vrátil se do hlavního menu|ano|
+|   **4**  |Zahájení nového závodu, zadání roku >aktuální rok|Program přeruší vytváření a navrátí se do hlavního menu|Program se vrátil do hlavního menu|ano|
+|   **5**  |Zahájení nového závodu, zadání nevalidního okruhu|Program opět přestane vytvářet nový záznam závodu|Program ukončil činnost a vrátil se do hlavního menu|ano|
+|   **6**  |Vytváření závodu -> smazat závodníka dříve, než alespoň jednoho přidáme|Program vrátí hlášku, že nejdříve musíme závodníka přidat|program vrátil hlášku, že nejprve musíme závodníka přídat|ano|
+|   **7**  |Vytváření závodu -> editace neexistujícího závodníka|Program zůstane v menu přidávání/editace/mazání závodníků|Program zůstal v menu|ano|
+|   **8**  |Editace údajů závodníka -> chybná hodnota|Program vrátí hlášku, s neplatným formátem dat|Program ukončil editaci a vrátil hlášku|ano|
+|   **9**  |Hlavní menu -> uložení nenačtení závodníků|Program uživatele upozorní, že závodníky je potřeba nejdříve načíst|Program podal hlášku, že závodníky je potřeba nejdříve načíst|ano|
+|   **10** |Upravit v nenačteném závodě závodníka|Hláška, že nejdříve je nutno načíst závod|Hláška: **Nejdřív musíte načíst závod!**|ano|
 
-![Objektový návrh](./images/tests.png)
+
+
+
+
+
 
 ## Popis fungování externí knihovny
 
-MySQL connector poskytuje připojení klientské aplikace v Jave k  MySQL a zastřešuje Java Database Connectivity (JDBC) API
+**J2HTML**, jak už název napovídá, je knihovna pro sestavování těla HTML souborů. 
 
-Použití:
+**Použití:**
 
 ```java
-import java.sql.*;
-class MysqlCon {
+package utils;
 
-    public static void main(String args[]) {
+import app.Race;
+import app.Racer;
+import static j2html.TagCreator.*;
+import java.util.List;
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo", "root", "root");
+public final class J2HTML {
 
-            //here sonoo is database name, root is username and password  
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("select * from emp");
+private J2HTML() {
 
-            while (rs.next())
-                System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.
+}
 
-                    getString(3));
-            con.close();
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
-    }
+public static String saveHTML(Race race) {
+	List<Racer> racers = race.getRacers();
+
+	return body(
+		h1(String.format("%d %s", race.getSeasonYear(), 		race.getCircuitName())), h3(String.format("%s\t".repeat(10),
+		" Pozice", " Jméno",
+		"Příjmení", "Národnost", "Tým", "Motocykl", "Startovní číslo", "Maximální rychlost", "Čas", "Počet bodů")),
+		div(each(racers, racer -> div(h5(racer.toString()))))
+		).render();
+	}
 }
 ```
-
-## ResultSetPropertiesSimplifyHelps
-
-Dále bylo využito jakési knihovničky ResultSetPropertiesSimplifyHelps, která by měla být schopna automaticky mapovat ResultSet z JDBC do javovských objektů.
-
-Po mírném zásahu a opravách v knihovně to bylo možné. Knihovnu jsem dále nezkoumal, je možné, že by mohla být i nebezpečná -> deserializace objektu všeobecně je nebezpečná, když je udělaná špatně.
