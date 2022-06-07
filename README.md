@@ -52,9 +52,8 @@ Další možností je uložení dat do binárního souboru, které je jedním z 
 ![Objektový návrh](diagram.png)
 
 ## Testování
-
 | Číslo testu | Typ testu, popis |Očekávaný výsledek |Skutečný výsledek| Prošel (ano/ne)|
-|--|--|--|--|--|--|
+|---|---|---|---|---|---|
 | 1 |Zadání neplatné hodnoty v **hlavním menu**|Výpis chybové hlášky: *Neplatná volba*|Program zůstal v hlavním menu a vypsal chybovou hlášku|ano|
 | 2 |Zadání chybného názvu souboru při načítání|Program se vrátí do hlavního **menu**|Program se vrátil do hlavního **menu**|ano|
 | 3 |Zahájení nového závodu, zadání roku <1949 *začátek závodění*|Program se vrátí zpět do hlavního menu bez výstupu|Program ukončil vytváření nového závodu a vrátil se do hlavního menu|ano|
@@ -65,6 +64,8 @@ Další možností je uložení dat do binárního souboru, které je jedním z 
 | 8 |Editace údajů závodníka -> chybná hodnota|Program vrátí hlášku, s neplatným formátem dat|Program ukončil editaci a vrátil hlášku|ano|
 | 9 |Hlavní menu -> uložení nenačtení závodníků|Program uživatele upozorní, že závodníky je potřeba nejdříve načíst|Program podal hlášku, že závodníky je potřeba nejdříve načíst|ano|
 | 10|Upravit v nenačteném závodě závodníka|Hláška, že nejdříve je nutno načíst závod|Hláška: ***Nejdřív musíte načíst závod!***|ano|
+
+
 
 
 
