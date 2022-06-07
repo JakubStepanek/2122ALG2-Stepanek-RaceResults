@@ -52,18 +52,21 @@ Další možností je uložení dat do binárního souboru, které je jedním z 
 ![Objektový návrh](diagram.png)
 
 ## Testování
-| Číslo testu | Typ testu, popis |Očekávaný výsledek |Skutečný výsledek| Prošel (ano/ne)|
-|---|---|---|---|---|---|
-| 1 |Zadání neplatné hodnoty v **hlavním menu**|Výpis chybové hlášky: *Neplatná volba*|Program zůstal v hlavním menu a vypsal chybovou hlášku|ano|
-| 2 |Zadání chybného názvu souboru při načítání|Program se vrátí do hlavního **menu**|Program se vrátil do hlavního **menu**|ano|
-| 3 |Zahájení nového závodu, zadání roku <1949 *začátek závodění*|Program se vrátí zpět do hlavního menu bez výstupu|Program ukončil vytváření nového závodu a vrátil se do hlavního menu|ano|
-| 4 |Zahájení nového závodu, zadání roku >aktuální rok|Program přeruší vytváření a navrátí se do hlavního menu|Program se vrátil do hlavního menu|ano|
-| 5 |Zahájení nového závodu, zadání nevalidního okruhu|Program opět přestane vytvářet nový záznam závodu|Program ukončil činnost a vrátil se do hlavního menu|ano|
-| 6 |Vytváření závodu -> smazat závodníka dříve, než alespoň jednoho přidáme|Program vrátí hlášku, že nejdříve musíme závodníka přidat|program vrátil hlášku, že nejprve musíme závodníka přídat|ano|
-| 7 |Vytváření závodu -> editace neexistujícího závodníka|Program zůstane v menu přidávání/editace/mazání závodníků|Program zůstal v menu|ano|
-| 8 |Editace údajů závodníka -> chybná hodnota|Program vrátí hlášku, s neplatným formátem dat|Program ukončil editaci a vrátil hlášku|ano|
-| 9 |Hlavní menu -> uložení nenačtení závodníků|Program uživatele upozorní, že závodníky je potřeba nejdříve načíst|Program podal hlášku, že závodníky je potřeba nejdříve načíst|ano|
-| 10|Upravit v nenačteném závodě závodníka|Hláška, že nejdříve je nutno načíst závod|Hláška: ***Nejdřív musíte načíst závod!***|ano|
+
+| **Číslo testu** | **Typ testu, popis** | **Očekávaný výsledek** | **Skutečný výsledek** | **Prošel (ano/ne)** |
+|:------:|------|------|------|:------:|
+|   **1**  |   Zadání neplatné hodnoty v **hlavním menu**   |  Výpis chybové hlášky: *Neplatná volba*    |  Program zůstal v hlavním menu a vypsal chybovou hlášku    |  ano    |
+|   **2**  |  Zadání chybného názvu souboru při načítání    |  Program se vrátí do hlavního **menu**    |  Program se vrátil do hlavního **menu**    |   ano   |
+|   **3**  |    Zahájení nového závodu, zadání roku <1949 *začátek závodění*|Program se vrátí zpět do hlavního menu bez výstupu|Program ukončil vytváření nového závodu a vrátil se do hlavního menu|ano|
+|   **4**  |Zahájení nového závodu, zadání roku >aktuální rok|Program přeruší vytváření a navrátí se do hlavního menu|Program se vrátil do hlavního menu|ano|
+|   **5**  |Zahájení nového závodu, zadání nevalidního okruhu|Program opět přestane vytvářet nový záznam závodu|Program ukončil činnost a vrátil se do hlavního menu|ano|
+|   **6**  |Vytváření závodu -> smazat závodníka dříve, než alespoň jednoho přidáme|Program vrátí hlášku, že nejdříve musíme závodníka přidat|program vrátil hlášku, že nejprve musíme závodníka přídat|ano|
+|   **7**  |Vytváření závodu -> editace neexistujícího závodníka|Program zůstane v menu přidávání/editace/mazání závodníků|Program zůstal v menu|ano|
+|   **8**  |Editace údajů závodníka -> chybná hodnota|Program vrátí hlášku, s neplatným formátem dat|Program ukončil editaci a vrátil hlášku|ano|
+|   **9**  |Hlavní menu -> uložení nenačtení závodníků|Program uživatele upozorní, že závodníky je potřeba nejdříve načíst|Program podal hlášku, že závodníky je potřeba nejdříve načíst|ano|
+|   **10** |Upravit v nenačteném závodě závodníka|Hláška, že nejdříve je nutno načíst závod|Hláška: **Nejdřív musíte načíst závod!**|ano|
+
+
 
 
 
