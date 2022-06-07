@@ -57,7 +57,7 @@ public final class RacerUtils {
                         sc.nextLine();
                     }
                     case "6" -> {
-                        System.out.print("Zadejte maximální rychlost [xxx,x]: ");
+                        System.out.print("Zadejte maximální rychlost [xxx.x]: ");
                         foundRacer.setMaxSpeed(sc.nextDouble());
                         // clear buffer
                         sc.nextLine();
